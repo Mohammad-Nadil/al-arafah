@@ -6,15 +6,16 @@ const LanguageContext = createContext();
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState("en");
 
-  // ইউজার আগে কোনটা সিলেক্ট করেছিল তা LocalStorage এ সেভ রাখার জন্য
   useEffect(() => {
-    const savedLang = localStorage.getItem("app-lang");
-    if (savedLang) setLang(savedLang);
+    const savedLang = localStorage.getItem("app-lang") || "en";
+    setLang(savedLang);
+    document.documentElement.setAttribute("lang", savedLang);
   }, []);
 
   const toggleLanguage = (newLang) => {
     setLang(newLang);
     localStorage.setItem("app-lang", newLang);
+    document.documentElement.setAttribute("lang", newLang);
   };
 
   return (

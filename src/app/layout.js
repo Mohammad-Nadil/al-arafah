@@ -1,29 +1,28 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cinzel, Hind_Siliguri, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { ThemeChanger } from "@/components/public/ThemeToggle";
 import { LanguageProvider } from "@/context/LanguageContext";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const cinzel = Cinzel({
   subsets: ["latin"],
+  variable: "--font-cinzel",
+  weight: ["400", "700", "900"],
+});
+
+const hindSiliguri = Hind_Siliguri({
+  subsets: ["bengali"],
+  variable: "--font-hind-siliguri",
+  weight: ["400", "600", "700"],
 });
 
 export const metadata = {
-  title: "Al-Arafah International School",
-  description:
-    "Learn about Al-Arafah International School & College, our historical background, mission, and academic excellence.",
-  keywords: [
-    "Al-Arafah",
-    "Islamic School Dhaka",
-    "Cambridge Curriculum",
-    "Hifz School",
-  ],
+  title: "Al-Arafah International School & College",
+  description: "Integrating Academic Excellence with Divine Islamic Tarbiyah",
 };
 
 export default function RootLayout({ children }) {
@@ -31,7 +30,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${cinzel.variable} ${hindSiliguri.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="light">
