@@ -127,7 +127,7 @@ export default function HeroBanner() {
             </span>
           </div>
 
-          <h1 className="js-hero-content-anim text-3xl xs:text-4xl sm:text-5xl md:text-6xl xl:text-8xl font-serif font-semibold text-[#fefcf8] tracking-wide leading-[1.15]">
+          <h1 className="js-hero-content-anim text-3xl xs:text-4xl sm:text-5xl md:text-6xl xl:text-8xl font-serif font-semibold text-[#fefcf8] tracking-wide leading-[1.15] ">
             {lang === "en" ? (
               <>
                 {SLIDES_DATA[currentSlide].titleEnLine1}

@@ -81,7 +81,7 @@ const Navbar = () => {
     >
       <Container>
         <div className="flex justify-between h-16 items-center">
-          <div className="flex items-center gap-3 cursor-pointer">
+          <a href="/" className="flex items-center gap-3 cursor-pointer">
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 shrink-0 transition-all duration-300">
               <Image
                 src={logo}
@@ -102,7 +102,7 @@ const Navbar = () => {
                   : " ইন্টারন্যাশনাল স্কুল অ্যান্ড কলেজ"}
               </span>
             </div>
-          </div>
+          </a>
 
           <div className="hidden lg:flex items-center gap-3 xl:gap-6">
             {menuItems[lang].map((item, index) => {
