@@ -1,10 +1,9 @@
 "use client";
-
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { useLanguage } from "@/context/LanguageContext";
+import { FiSun, FiMoon } from "react-icons/fi";
+
 export default function ThemeToggle() {
-  const { lang } = useLanguage(); 
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -12,23 +11,17 @@ export default function ThemeToggle() {
 
   if (!mounted) return null;
 
-  const text = {
-    darkToLight: {
-      en: "Light Mode",
-      bn: "লাইট মোড",
-    },
-    lightToDark: {
-      en: "Dark Mode",
-      bn: "ডার্ক মোড",
-    },
-  };
-
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded text-sm font-medium"
+      className="p-2 rounded-full border border-transparent hover:border-gray-200 dark:hover:border-border hover:bg-gray-50 dark:hover:bg-white/5 transition-all duration-300 text-accent cursor-pointer flex items-center justify-center group"
+      aria-label="Toggle Theme"
     >
-      {theme === "dark" ? text.darkToLight[lang] : text.lightToDark[lang]}
+      {theme === "dark" ? (
+        <FiSun className="w-4 h-4 transition-transform group-hover:rotate-45 duration-300" />
+      ) : (
+        <FiMoon className="w-4 h-4 transition-transform group-hover:-rotate-12 duration-300" />
+      )}
     </button>
   );
 }

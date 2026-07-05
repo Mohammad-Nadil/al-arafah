@@ -1,0 +1,123 @@
+al-arafah-school/
+├── app/
+│   ├── (public)/               ← Public website routes
+│   │   ├── page.jsx            ← Homepage
+│   │   ├── about/page.jsx
+│   │   ├── academics 
+│   │   │   ├── class routine/page.jsx 
+│   │   │   ├── exam routine/page.jsx 
+│   │   │   └── results/page.jsx   
+│   │   ├── admissions/page.jsx
+│   │   ├── notices/page.jsx
+│   │   ├── gallery/page.jsx
+│   │   └── contact/page.jsx
+│   │
+│   ├── (admin)/                ← Protected admin routes
+│   │   └── dashboard/
+│   │       ├── page.jsx        ← Dashboard home
+│   │       ├── notices/page.jsx
+│   │       ├── teachers/page.jsx
+│   │       ├── gallery/page.jsx
+│   │       ├── results/page.jsx
+│   │       └── admissions/page.jsx
+│   │
+│   ├── api/                    ← Backend API routes
+│   │   ├── auth/[...nextauth]/route.js
+│   │   ├── notices/route.js
+│   │   ├── teachers/route.js
+│   │   ├── gallery/route.js
+│   │   ├── results/route.js
+│   │   └── upload/route.js     ← Cloudinary upload
+│   │
+│   ├── layout.jsx
+│   └── globals.css
+│
+├── components/
+│   ├── ui/                     ← Reusable UI (ShadCN + custom)
+│   │   ├── Button.jsx
+│   │   ├── Modal.jsx
+│   │   └── DataTable.jsx
+│   ├── public/                 ← Public site components
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── HeroSection.jsx
+│   │   ├── NoticeBoard.jsx
+│   │   └── TeacherCard.jsx
+│   └── admin/                  ← Dashboard components
+│       ├── Sidebar.jsx
+│       ├── TopBar.jsx
+│       └── UploadWidget.jsx
+│
+├── lib/
+│   ├── db.js                   ← MongoDB connection (cached)
+│   ├── cloudinary.js           ← Cloudinary config
+│   └── auth.js                 ← NextAuth options
+│
+├── models/
+│   ├── Notice.js
+│   ├── Teacher.js
+│   ├── GalleryImage.js
+│   ├── Result.js
+│   └── AdmissionForm.js
+│
+├── middleware.js                ← Route protection
+├── .env.local
+└── next.config.js
+
+
+┌───────────────────────────────────────────────────┐
+│ 🏠 HOME PAGE  (/)        
+├───────────────────────────────────────────────────┤
+ <!-- 1. Hero Section (রাজকীয় ব্যানার, স্কুলের মেইন স্লোগান ও স্লাইডার)  
+ 2. Welcome Message (প্রধান শিক্ষকের বাণী ও স্কুলের পরিচিতি)  
+ 3. Our Facilities (ল্যাব, লাইব্রেরি, হিফজখানা, ট্রান্সপোর্ট গ্রিড)  
+ 4. Featured Notice (সর্বশেষ ৩টি নোটিশের কুইক ভিউ)   -->
+ 5. Hifz Program Highlights (হিফজ বিভাগের বিশেষ সেকশন)
+└───────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────┐
+ 🏫 ABOUT US PAGE (/about) 
+├───────────────────────────────────────────────────┤
+1. Hero Intro (ভিশনারি সূচনা)
+
+2. Core Pillars (৩টি মূল স্তম্ভ: কেমব্রিজ, হিফজ, রোবোটিক্স)
+
+3. Leadership Message (পরিচালনা পর্ষদের বাণী)
+
+4. Campus Facilities (বোরিং তালিকা না করে—স্মার্ট ল্যাব, ইসলামিক লাইব্রেরি,   পরিমিয়াম ক্লাসরুমের ৪টা কার্ড গ্রিড)
+
+5. Affiliations & Approvals (কেমব্রিজ ও সরকারি অনুমোদন লোগো)
+└───────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────┐
+ 📖 ACADEMICS PAGE (/academics)
+├───────────────────────────────────────────────────┤
+ 1. Academic Curriculum (প্লে থেকে দশম শ্রেণী এবং হিফজ কারিকুলাম)
+ 2. Class Routine Section (ক্লাস রুটিন দেখার এবং পিডিএফ ডাউনলোডের জায়গা)
+ 3. Exam Routine Section (পরীক্ষার সময়সূচী ও সিট প্ল্যান)
+ 4. Results Portal (আইডি/রোল দিয়ে স্টুডেন্টদের মার্কশিট সার্চ ইঞ্জিন)
+└────────────────── ────────────────────────────────┘
+
+┌───────────────────────────────────────────────────┐
+ 📝 ADMISSIONS PAGE (/admissions) 
+├───────────────────────────────────────────────────┤
+ 1. Admission Circular (ভর্তির যোগ্যতা ও নিয়মনীতি)
+ 2. Fees Structure (ভর্তি ও মাসিক বেতনের চার্ট বা টেবিল)
+ 3. How to Apply (ধাপ-দ্বারা-ধাপ গাইডলাইন)
+ 4. Online Application Form Link (অনলাইন ফর্মের গেটওয়ে)
+└───────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────┐
+ 🔔 NOTICES PAGE (/notices) 
+├───────────────────────────────────────────────────┤
+ 1. General Notices (সাধারণ নোটিশের তালিকা - ডাইনামিক)
+ 2. Filter Tabs (All, Academic, Exam, Holiday ফিল্টার করার অপশন)
+ 3. Archive Notice (পুরোনো নোটিশ খোঁজার জন্য সার্চ বার) 
+└───────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────┐
+ 🖼️ GALLERY & CONTACT PAGES (/gallery & /contact)
+├───────────────────────────────────────────────────┤
+ • Gallery: ইভেন্ট ও মাদ্রাসার সুন্দর সুন্দর ছবির অ্যালবাম গ্রিড। 
+ • Contact: গুগল ম্যাপ, ইমেইল, ফোন নম্বর এবং একটি মেসেজ পাঠানোর ফর্ম।
+└───────────────────────────────────────────────────┘

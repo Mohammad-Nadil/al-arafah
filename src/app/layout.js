@@ -1,17 +1,21 @@
-import { Cinzel, Hind_Siliguri, Inter } from "next/font/google";
+import { Cinzel, Hind_Siliguri, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { LanguageProvider } from "@/context/LanguageContext";
+import PublicHeader from "@/components/layout/PublicHeader";
+import SmoothScrollProvider from "@/providers/SmoothScrollProviders";
+import Footer from "@/components/layout/Footer";
 
-const inter = Inter({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-source-serif",
+  weight: ["400", "500", "600", "700"],
 });
 
 const cinzel = Cinzel({
   subsets: ["latin"],
   variable: "--font-cinzel",
-  weight: ["400", "700", "900"],
+  weight: ["400", "500", "600", "700", "900"],
 });
 
 const hindSiliguri = Hind_Siliguri({
@@ -30,11 +34,17 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${cinzel.variable} ${hindSiliguri.variable} h-full antialiased`}
+      className={`${sourceSerif.variable} ${cinzel.variable} ${hindSiliguri.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="light">
-          <LanguageProvider>{children}</LanguageProvider>
+          <LanguageProvider>
+            <SmoothScrollProvider>
+              <PublicHeader />
+              {children}
+              <Footer />
+            </SmoothScrollProvider>
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>
