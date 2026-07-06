@@ -4,82 +4,84 @@ import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import Container from "@/components/public/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
-import { FiCalendar, FiArrowRight, FiBell, FiFileText } from "react-icons/fi";
+import { FiCalendar, FiArrowRight, FiFileText } from "react-icons/fi";
 import Button from "@/components/ui/Button";
 
-// 📅 ডামি নোটিশ ডাটা (সহজে ব্যাকএন্ড ডায়নামিক করা যাবে)
-const NOTICES_DATA = [
-  {
-    id: 1,
-    tagEn: "Admission",
-    tagBn: "ভর্তি",
-    date: "05 July, 2026",
-    titleEn:
-      "Admission Open for Cambridge Curriculum & Hifz Track: Session 2026-2027",
-    titleBn: "কেমব্রিজ কারিকুলাম ও হিফজ ট্র্যাকে ভর্তি চলছে: সেশন ২০২৬-২০২৭",
-    descEn:
-      "Collect admission forms from the main campus office or apply online through our official portal.",
-    descBn:
-      "প্রধান ক্যাম্পাস অফিস থেকে ভর্তি ফরম সংগ্রহ করুন অথবা আমাদের অফিসিয়াল পোর্টালের মাধ্যমে অনলাইনে আবেদন করুন।",
+const cleanData = {
+  header: {
+    badgeEn: "Announcements",
+    badgeBn: "ঘোষণা ও নোটিশ",
+    titleEn: "Latest Announcements & Featured Notice",
+    titleBn: "সর্বশেষ ঘোষণা এবং গুরুত্বপূর্ণ নোটিশ",
+    highlightWordEn: "Notice",
+    highlightWordBn: "নোটিশ",
+    descEn: "Stay updated with the latest academic schedules, admission updates, and important announcements from Al-Arafah International.",
+    descBn: "আল-আরাফাহ ইন্টারন্যাশনালের সর্বশেষ একাডেমিক সময়সূচী, ভর্তির আপডেট এবং গুরুত্বপূর্ণ ঘোষণার সাথে সর্বদা আপডেট থাকুন।"
   },
-  {
-    id: 2,
-    tagEn: "Academic",
-    tagBn: "একাডেমিক",
-    date: "28 June, 2026",
-    titleEn: "Publishing of First Term Examination Routine & Syllabus",
-    titleBn: "প্রথম সাময়িক পরীক্ষার রুটিন ও সিলেবাস প্রকাশ",
-  },
-  {
-    id: 3,
-    tagEn: "Event",
-    tagBn: "ইভেন্ট",
-    date: "15 June, 2026",
-    titleEn:
-      "Annual Quran Recitation Competition and Islamic Cultural Tarbiyah 2026",
-    titleBn:
-      "বার্ষিক কুরআন তিলাওয়াত প্রতিযোগিতা এবং ইসলামিক সাংস্কৃতিক তারবিয়াহ ২০২৬",
-  },
-  {
-    id: 4,
-    tagEn: "Notice",
-    tagBn: "নোটিশ",
-    date: "10 June, 2026",
-    titleEn: "Summer Vacation and Eid-ul-Adha Holidays Declaration Notice",
-    titleBn: "গ্রীষ্মকালীন ছুটি ও ঈদুল আজহার ছুটি ঘোষণার নোটিশ",
-  },
-];
+  notices: [
+    {
+      id: 1,
+      tagEn: "Admission",
+      tagBn: "ভর্তী",
+      date: "05 July, 2026",
+      titleEn: "Admission Open for Cambridge Curriculum & Hifz Track: Session 2026-2027",
+      titleBn: "কেমব্রিজ কারিকুলাম ও হিফজ ট্র্যাকে ভর্তি চলছে: সেশন ২০২৬-২০২৭",
+      descEn: "Collect admission forms from the main campus office or apply online through our official portal.",
+      descBn: "প্রধান ক্যাম্পাস অফিস থেকে ভর্তি ফরম সংগ্রহ করুন অথবা আমাদের অফিসিয়াল পোর্টালের মাধ্যমে অনলাইনে আবেদন করুন।"
+    },
+    {
+      id: 2,
+      tagEn: "Academic",
+      tagBn: "একাডেমিক",
+      date: "28 June, 2026",
+      titleEn: "Publishing of First Term Examination Routine & Syllabus",
+      titleBn: "প্রথম সাময়িক পরীক্ষার রুটিন ও সিলেবাস প্রকাশ"
+    },
+    {
+      id: 3,
+      tagEn: "Event",
+      tagBn: "ইভেন্ট",
+      date: "15 June, 2026",
+      titleEn: "Annual Quran Recitation Competition and Islamic Cultural Tarbiyah 2026",
+      titleBn: "বার্ষিক কুরআন তিলাওয়াত প্রতিযোগিতা এবং ইসলামিক সাংস্কৃতিক তারবিয়াহ ২০২৬"
+    },
+    {
+      id: 4,
+      tagEn: "Notice",
+      tagBn: "নোটিশ",
+      date: "10 June, 2026",
+      titleEn: "Summer Vacation and Eid-ul-Adha Holidays Declaration Notice",
+      titleBn: "গ্রীষ্মকালীন ছুটি ও ঈদুল আজহার ছুটি ঘোষণার নোটিশ"
+    }
+  ],
+  buttons: {
+    viewAllEn: "View All Announcements",
+    viewAllBn: "সকল নোটিশ ও ঘোষণা দেখুন"
+  }
+};
 
 export default function FeaturedNotice() {
   const { lang } = useLanguage();
 
-  const mainNotice = NOTICES_DATA[0];
-  const listNotices = NOTICES_DATA.slice(1);
+  const mainNotice = cleanData.notices[0];
+  const listNotices = cleanData.notices.slice(1);
 
   return (
     <section
       id="featured-notices"
-      className="w-full py-20 md:py-28  transition-colors duration-500 overflow-hidden"
+      className="w-full py-20 md:py-28 transition-colors duration-500 overflow-hidden"
     >
       <Container>
         <SectionHeader
-          badge={lang === "en" ? "Announcements" : "ঘোষণা ও নোটিশ"}
-          title={
-            lang === "en"
-              ? "Latest Announcements & Featured Notice"
-              : "সর্বশেষ ঘোষণা এবং গুরুত্বপূর্ণ নোটিশ"
-          }
-          highlightWord={lang === "en" ? "Notice" : "নোটিশ"}
-          description={
-            lang === "en"
-              ? "Stay updated with the latest academic schedules, admission updates, and important announcements from Al-Arafah International."
-              : "আল-আরাফাহ ইন্টারন্যাশনালের সর্বশেষ একাডেমিক সময়সূচী, ভর্তির আপডেট এবং গুরুত্বপূর্ণ ঘোষণার সাথে সর্বদা আপডেট থাকুন।"
-          }
+          badge={lang === "en" ? cleanData.header.badgeEn : cleanData.header.badgeBn}
+          title={lang === "en" ? cleanData.header.titleEn : cleanData.header.titleBn}
+          highlightWord={lang === "en" ? cleanData.header.highlightWordEn : cleanData.header.highlightWordBn}
+          description={lang === "en" ? cleanData.header.descEn : cleanData.header.descBn}
           align="left"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-12 md:mt-16 ">
-          <div className="lg:col-span-7 group relative  p-6 md:p-10 rounded-2xl bg-transparent dark:bg-subtle  border  border-neutral-400 dark:border-neutral-600 hover:border-accent hover:bg-linear-to-br from-accent/30 to-transparent transition-all duration-300 shadow-xs hover:shadow-md flex flex-col justify-between select-none will-change-transform">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-12 md:mt-16">
+          <div className="lg:col-span-7 group relative p-6 md:p-10 rounded-2xl bg-transparent dark:bg-neutral-900 border border-neutral-400 dark:border-neutral-800 hover:border-accent hover:bg-gradient-to-br from-accent/30 to-transparent transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between select-none will-change-transform">
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <span className="px-3 py-1 rounded-md text-[10px] font-bold tracking-widest uppercase bg-foreground text-accent dark:bg-accent dark:text-background">
@@ -117,9 +119,9 @@ export default function FeaturedNotice() {
               {listNotices.map((item) => (
                 <div
                   key={item.id}
-                  className="group flex gap-5 p-4 rounded-xl bg-transparent dark:bg-subtle  border  border-neutral-400 dark:border-neutral-600 hover:border-accent hover:bg-linear-to-br from-accent/30 to-transparent  transition-all duration-300 cursor-pointer select-none"
+                  className="group flex gap-5 p-4 rounded-xl bg-transparent dark:bg-neutral-900 border border-neutral-400 dark:border-neutral-800 hover:border-accent hover:bg-gradient-to-br from-accent/30 to-transparent transition-all duration-300 cursor-pointer select-none"
                 >
-                  <div className="w-10 h-10 shrink-0 rounded-xl bg-foreground/3 dark:bg-white/5 text-neutral-500 dark:text-neutral-400 flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-foreground group-hover:text-accent dark:group-hover:bg-accent dark:group-hover:text-background">
+                  <div className="w-10 h-10 shrink-0 rounded-xl bg-foreground/5 dark:bg-white/5 text-neutral-500 dark:text-neutral-400 flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-foreground group-hover:text-accent dark:group-hover:bg-accent dark:group-hover:text-background">
                     <FiFileText className="w-4 h-4" />
                   </div>
 
@@ -136,9 +138,7 @@ export default function FeaturedNotice() {
             </div>
 
             <button className="w-full mt-2 py-3.5 border border-dashed border-neutral-300 dark:border-neutral-700 rounded-xl text-xs md:text-sm font-semibold text-neutral-500 dark:text-neutral-400 hover:text-foreground dark:hover:text-accent hover:border-foreground dark:hover:border-accent transition-all duration-300 cursor-pointer text-center bg-transparent select-none">
-              {lang === "en"
-                ? "View All Announcements"
-                : "সকল নোটিশ ও ঘোষণা দেখুন"}
+              {lang === "en" ? cleanData.buttons.viewAllEn : cleanData.buttons.viewAllBn}
             </button>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import PublicHeader from "@/components/layout/PublicHeader";
 import SmoothScrollProvider from "@/providers/SmoothScrollProviders";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "react-hot-toast";
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="light">
           <LanguageProvider>
             <SmoothScrollProvider>
+              <Toaster position="top-right" reverseOrder={false} />
               <PublicHeader />
               {children}
               <Footer />

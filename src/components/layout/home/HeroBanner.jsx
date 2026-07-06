@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
@@ -8,50 +9,47 @@ import { FiArrowRight } from "react-icons/fi";
 import Container from "@/components/public/Container";
 import Button from "@/components/ui/Button";
 
-const SLIDES_DATA = [
-  {
-    id: 1,
-    tagEn: "Islamic English Medium School",
-    tagBn: "ইসলামিক ইংলিশ মিডিয়াম স্কুল",
-    titleEnLine1: "Nurturing Faith,",
-    titleEnLine2: "Inspiring Excellence",
-    titleBnLine1: "দ্বীনি বিশ্বাস লালন,",
-    titleBnLine2: "সর্বোচ্চ মেধার বিকাশ",
-    descEn:
-      "A refined Cambridge Curriculum pathway integrated with Islamic Tarbiyah, disciplined campus life, and confident English medium scholarship.",
-    descBn:
-      "ইসলামিক তারবিয়াহ, সুশৃঙ্খল ক্যাম্পাস জীবন এবং আত্মবিশ্বাসী ইংলিশ মিডিয়াম স্কলারশিপের সাথে সমন্বিত একটি পরিমার্জিত কেমব্রিজ কারিকুলাম。",
+const cleanData = {
+  images: {
+    even: "/banner/banner2.jpg",
+    odd: "/banner/banner1.jpg",
   },
-  {
-    id: 2,
-    tagEn: "Admissions Open 2026-27",
-    tagBn: "ভর্তি চলছে ২০২৬-২৭",
-    titleEnLine1: "Shaping Future,",
-    titleEnLine2: "Islamic Leaders",
-    titleBnLine1: "ভবিষ্যতের ইসলামিক",
-    titleBnLine2: "নেতৃত্ব গড়ার প্রত্যয়",
-    descEn:
-      "Empowering global standard education built strictly upon moral values, modern technology, and comprehensive Hifzul Quran pathways.",
-    descBn:
-      "নৈতিক মূল্যবোধ, আধুনিক প্রযুক্তি এবং সম্পূর্ণ হিফজুল কুরআন ট্র্যাকের ওপর ভিত্তি করে বিশ্বমানের শিক্ষা নিশ্চিত করা।",
-  },
-  {
-    id: 3,
-    tagEn: "Academic Heritage",
-    tagBn: "একাডেমিক ঐতিহ্য",
-    titleEnLine1: "Modern Science Meets",
-    titleEnLine2: "Divine Knowledge",
-    titleBnLine1: "আধুনিক বিজ্ঞান ও",
-    titleBnLine2: "ঐশী জ্ঞানের মেলবন্ধন",
-    descEn:
-      "State-of-the-art laboratory facilities paired with strict discipline, deep spiritual guidance, and Cambridge world-class resources.",
-    descBn:
-      "সুশৃঙ্খল পরিবেশ, গভীর আধ্যাত্মিক দিকনির্দেশনা এবং কেমব্রিজ মানের রিসোর্সের সাথে আমাদের আধুনিক ল্যাবরেটরি সুবিধা।",
-  },
-];
-
-const EVEN_IMAGE = "/banner/banner2.jpg";
-const ODD_IMAGE = "/banner/banner1.jpg";
+  slides: [
+    {
+      id: 1,
+      tagEn: "Islamic English Medium School",
+      tagBn: "ইসলামিক ইংলিশ মিডিয়াম স্কুল",
+      titleEnLine1: "Nurturing Faith,",
+      titleEnLine2: "Inspiring Excellence",
+      titleBnLine1: "দ্বীনি বিশ্বাস লালন,",
+      titleBnLine2: "সর্বোচ্চ মেধার বিকাশ",
+      descEn: "A refined Cambridge Curriculum pathway integrated with Islamic Tarbiyah, disciplined campus life, and confident English medium scholarship.",
+      descBn: "ইসলামিক তারবিয়াহ, সুশৃঙ্খল ক্যাম্পাস জীবন এবং আত্মবিশ্বাসী ইংলিশ মিডিয়াম স্কলারশিপের সাথে সমন্বিত একটি পরিমার্জিত কেমব্রিজ কারিকুলাম।",
+    },
+    {
+      id: 2,
+      tagEn: "Admissions Open 2026-27",
+      tagBn: "ভর্তি চলছে ২০২৬-২৭",
+      titleEnLine1: "Shaping Future,",
+      titleEnLine2: "Islamic Leaders",
+      titleBnLine1: "ভবিষ্যতের ইসলামিক",
+      titleBnLine2: "নেতৃত্ব গড়ার প্রত্যয়",
+      descEn: "Empowering global standard education built strictly upon moral values, modern technology, and comprehensive Hifzul Quran pathways.",
+      descBn: "নৈতিক মূল্যবোধ, आधुनिक প্রযুক্তি এবং সম্পূর্ণ হিফজুল কুরআন ট্র্যাকের ওপর ভিত্তি করে বিশ্বমানের শিক্ষা নিশ্চিত করা।",
+    },
+    {
+      id: 3,
+      tagEn: "Academic Heritage",
+      tagBn: "একাডেমিক ঐতিহ্য",
+      titleEnLine1: "Modern Science Meets",
+      titleEnLine2: "Divine Knowledge",
+      titleBnLine1: "আধুনিক বিজ্ঞান ও",
+      titleBnLine2: "ঐশী জ্ঞানের মেলবন্ধন",
+      descEn: "State-of-the-art laboratory facilities paired with strict discipline, deep spiritual guidance, and Cambridge world-class resources.",
+      descBn: "সুশৃঙ্খল পরিবেশ, গভীর আধ্যাত্মিক দিকনির্দেশনা এবং কেমব্রিজ মানের রিসোর্সের সাথে আমাদের আধুনিক ল্যাবরেটরি সুবিধা।",
+    },
+  ],
+};
 
 export default function HeroBanner() {
   const { lang } = useLanguage();
@@ -60,7 +58,7 @@ export default function HeroBanner() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % SLIDES_DATA.length);
+      setCurrentSlide((prev) => (prev + 1) % cleanData.slides.length);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
@@ -90,8 +88,8 @@ export default function HeroBanner() {
       className="relative w-full py-16 xs:py-20 lg:py-30 flex items-center overflow-hidden bg-[#032d22]"
     >
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
-        {SLIDES_DATA.map((slide, index) => {
-          const assignedImage = index % 2 === 0 ? EVEN_IMAGE : ODD_IMAGE;
+        {cleanData.slides.map((slide, index) => {
+          const assignedImage = index % 2 === 0 ? cleanData.images.even : cleanData.images.odd;
 
           return (
             <div
@@ -104,9 +102,10 @@ export default function HeroBanner() {
             >
               <Image
                 src={assignedImage}
-                alt={`Al-Arafah Campus Banner`}
+                alt="Al-Arafah Campus Banner"
                 fill
                 priority={index === 0}
+                sizes="100vw"
                 className={`object-cover object-center will-change-transform bg-slide-${index}`}
               />
             </div>
@@ -118,38 +117,38 @@ export default function HeroBanner() {
       </div>
 
       <Container className="w-full relative z-30">
-        <div className=" text-left space-y-6 sm:space-y-8">
+        <div className="text-left space-y-6 sm:space-y-8">
           <div className="js-hero-content-anim flex items-center gap-2 border-l-2 border-accent pl-3">
             <span className="text-accent text-xs font-bold uppercase tracking-widest font-sans">
               {lang === "en"
-                ? SLIDES_DATA[currentSlide].tagEn
-                : SLIDES_DATA[currentSlide].tagBn}
+                ? cleanData.slides[currentSlide].tagEn
+                : cleanData.slides[currentSlide].tagBn}
             </span>
           </div>
 
-          <h1 className="js-hero-content-anim text-3xl xs:text-4xl sm:text-5xl md:text-6xl xl:text-8xl font-serif font-semibold text-[#fefcf8] tracking-wide leading-[1.15] ">
+          <h1 className="js-hero-content-anim text-3xl xs:text-4xl sm:text-5xl md:text-6xl xl:text-8xl font-serif font-semibold text-[#fefcf8] tracking-wide leading-[1.15]">
             {lang === "en" ? (
               <>
-                {SLIDES_DATA[currentSlide].titleEnLine1}
+                {cleanData.slides[currentSlide].titleEnLine1}
                 <br />
-                {SLIDES_DATA[currentSlide].titleEnLine2}
+                {cleanData.slides[currentSlide].titleEnLine2}
               </>
             ) : (
               <>
-                {SLIDES_DATA[currentSlide].titleBnLine1}
+                {cleanData.slides[currentSlide].titleBnLine1}
                 <br />
-                {SLIDES_DATA[currentSlide].titleBnLine2}
+                {cleanData.slides[currentSlide].titleBnLine2}
               </>
             )}
           </h1>
 
           <p className="js-hero-content-anim max-w-xl text-sm sm:text-base text-gray-300/90 font-light leading-relaxed font-sans">
             {lang === "en"
-              ? SLIDES_DATA[currentSlide].descEn
-              : SLIDES_DATA[currentSlide].descBn}
+              ? cleanData.slides[currentSlide].descEn
+              : cleanData.slides[currentSlide].descBn}
           </p>
 
-          <div className="js-hero-content-anim flex  items-center justify-center sm:justify-start gap-4 pt-4 w-full sm:w-auto ">
+          <div className="js-hero-content-anim flex items-center justify-center sm:justify-start gap-4 pt-4 w-full sm:w-auto">
             <Button
               label="Apply Now"
               borderColor="#ffbe0b"
@@ -168,7 +167,7 @@ export default function HeroBanner() {
           </div>
         </div>
         <div className="absolute -bottom-10 right-1/2 translate-x-1/2 sm:translate-x-0 sm:bottom-6 sm:right-12 lg:right-24 z-30 flex items-center gap-2.5">
-          {SLIDES_DATA.map((_, index) => (
+          {cleanData.slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}

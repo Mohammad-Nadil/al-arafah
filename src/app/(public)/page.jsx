@@ -5,16 +5,14 @@ import OurFacilities from "@/components/layout/home/OurFacilities";
 import WelcomeMassage from "@/components/layout/home/WelcomeMassage";
 import React from "react";
 
-const page = () => {
+export default function Homepage() {
   return (
-    <div>
+    <main className="w-full  bg-background text-foreground ">
       <HeroBanner />
       <WelcomeMassage />
       <OurFacilities />
       <FeaturedNotice />
       {/* <HifzHighlights /> */}
-    </div>
+    </main>
   );
-};
-
-export default page;
+}

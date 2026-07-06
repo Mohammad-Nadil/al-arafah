@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
@@ -12,6 +13,43 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
+
+const cleanData = {
+  header: {
+    badgeEn: "Institutional Vision",
+    badgeBn: "প্রাতিষ্ঠানিক লক্ষ্য",
+    titleEn: "Welcome to Al-Arafah Campus",
+    titleBn: "আল-আরাফাহ ক্যাম্পাসে আপনাকে স্বাগত",
+    highlightWordEn: "Al-Arafah",
+    highlightWordBn: "আল-আরাফাহ",
+  },
+  quote: {
+    en: "“Education is not just preparation for life; education is life itself, enriched with divine principles and moral fortitude.”",
+    bn: "“শিক্ষা কেবল জীবনের প্রস্তুতি নয়; শিক্ষাই স্বয়ং জীবন, যা ঐশী আদর্শ এবং নৈতিক শক্তির দ্বারা সমৃদ্ধ।”",
+  },
+  paragraphs: [
+    {
+      en: "At Al-Arafah Islamic International School & College, we believe in holistic development. Our curriculum bridges Cambridge global education standards with deep-rooted Islamic morals, nurturing children into academically brilliant and spiritually conscious individuals.",
+      bn: "আল-আরাফাহ ইসলামিক ইন্টারন্যাশনাল স্কুল অ্যান্ড কলেজে আমরা শিক্ষার্থীদের সামগ্রিক বিকাশে বিশ্বাসী। আমাদের কারিকুলাম কেมব্রিজের বিশ্বমানের শিক্ষার সাথে গভীর ইসলামিক মূল্যবোধের সেতু বন্ধন তৈরি করে, যা প্রতিটি শিশুকে মেধাবী ও দ্বীনি চেতনায় উদ্বুদ্ধ নাগরিক হিসেবে গড়ে তোলে।",
+    },
+    {
+      en: "We foster an environment where modern scientific inquiry meets divine guidance. Our students grow not just as brilliant professionals, but as standard-bearers of integrity and empathy.",
+      bn: "আমরা এমন একটি পরিবেশ তৈরি করি যেখানে আধুনিক বৈজ্ঞানিক অনুসন্ধান এবং ঐশী দিকনির্দেশনার নিখুঁত মেলবন্ধন ঘটে। আমাদের শিক্ষার্থীরা কেবল সফল পেশাদার হিসেবেই নয়, বরং সততা ও সহানুভূতির প্রতীক হিসেবে গড়ে ওঠে।",
+    },
+  ],
+  author: {
+    nameEn: "Alhajj Md. Enamul Haque",
+    nameBn: "আলহাজ্জ মোঃ এনামুল হক",
+    roleEn: "Principal, Al-Arafah",
+    roleBn: "অধ্যক্ষ, আল-আরাফাহ",
+  },
+  image: {
+    src: "/principal.jpeg",
+    badgeVal: "20+",
+    badgeLabelEn: "Years Excellence",
+    badgeLabelBn: "বছরের ঐতিহ্য",
+  },
+};
 
 export default function WelcomeMassage() {
   const { lang } = useLanguage();
@@ -55,8 +93,6 @@ export default function WelcomeMassage() {
     { scope: sectionRef },
   );
 
- 
-
   return (
     <section
       ref={sectionRef}
@@ -68,17 +104,9 @@ export default function WelcomeMassage() {
           <div className="lg:col-span-7 space-y-8">
             <div className="js-welcome-text-anim">
               <SectionHeader
-                badge={
-                  lang === "en"
-                    ? "Institutional Vision"
-                    : "প্রাতিষ্ঠানিক লক্ষ্য"
-                }
-                title={
-                  lang === "en"
-                    ? "Welcome to Al-Arafah Campus"
-                    : "আল-আরাফাহ ক্যাম্পাসে আপনাকে স্বাগতম"
-                }
-                highlightWord={lang === "en" ? "Al-Arafah" : "আল-আরাফাহ"}
+                badge={lang === "en" ? cleanData.header.badgeEn : cleanData.header.badgeBn}
+                title={lang === "en" ? cleanData.header.titleEn : cleanData.header.titleBn}
+                highlightWord={lang === "en" ? cleanData.header.highlightWordEn : cleanData.header.highlightWordBn}
                 align="left"
                 className="mb-0! md:mb-0!"
               />
@@ -87,37 +115,24 @@ export default function WelcomeMassage() {
             <div className="js-welcome-text-anim relative pl-6 border-l-2 border-accent bg-accent/5 py-4 pr-4 rounded-r-xl">
               <RiDoubleQuotesL className="text-accent text-5xl opacity-20 absolute -top-3 left-2" />
               <p className="text-base sm:text-lg font-serif italic text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                {lang === "en"
-                  ? "“Education is not just preparation for life; education is life itself, enriched with divine principles and moral fortitude.”"
-                  : "“শিক্ষা কেবল জীবনের প্রস্তুতি নয়; শিক্ষাই স্বয়ং জীবন, যা ঐশী আদর্শ এবং नैतिक শক্তির দ্বারা সমৃদ্ধ।”"}
+                {lang === "en" ? cleanData.quote.en : cleanData.quote.bn}
               </p>
             </div>
 
             <div className="js-welcome-text-anim space-y-4 text-sm sm:text-base text-neutral-600 dark:text-neutral-400 font-sans leading-relaxed">
-              <p>
-                {lang === "en"
-                  ? "At Al-Arafah Islamic International School & College, we believe in holistic development. Our curriculum bridges Cambridge global education standards with deep-rooted Islamic morals, nurturing children into academically brilliant and spiritually conscious individuals."
-                  : "আল-আরাফাহ ইসলামিক ইন্টারন্যাশনাল স্কুল অ্যান্ড কলেজে আমরা শিক্ষার্থীদের সামগ্রিক বিকাশে বিশ্বাসী। আমাদের কারিকুলাম কেমব্রিজের বিশ্বমানের শিক্ষার সাথে গভীর ইসলামিক মূল্যবোধের সেতু বন্ধন তৈরি করে, যা প্রতিটি শিশুকে মেধাবী ও দ্বীনি চেতনায় উদ্বুদ্ধ নাগরিক হিসেবে গড়ে তোলে।"}
-              </p>
-              <p>
-                {lang === "en"
-                  ? "We foster an environment where modern scientific inquiry meets divine guidance. Our students grow not just as brilliant professionals, but as standard-bearers of integrity and empathy."
-                  : "আমরা এমন একটি পরিবেশ তৈরি করি যেখানে আধুনিক বৈজ্ঞানিক অনুসন্ধান এবং ঐশী দিকনির্দেশনার নিখুঁত মেলবন্ধন ঘটে। আমাদের শিক্ষার্থীরা কেবল সফল পেশাদার হিসেবেই নয়, বরং সততা ও সহানুভূতির প্রতীক হিসেবে গড়ে ওঠে।"}
-              </p>
+              {cleanData.paragraphs.map((para, i) => (
+                <p key={i}>{lang === "en" ? para.en : para.bn}</p>
+              ))}
             </div>
 
             <div className="js-welcome-text-anim pt-4 flex items-center gap-4">
               <div className="h-px w-12 bg-neutral-300 dark:bg-neutral-700" />
               <div>
                 <h4 className="font-serif text-base font-semibold text-primary">
-                  {lang === "en"
-                    ? "Alhajj Md. Enamul Haque"
-                    : "আলহাজ্জ মোঃ এনামুল হক"}
+                  {lang === "en" ? cleanData.author.nameEn : cleanData.author.nameBn}
                 </h4>
                 <p className="text-xs text-neutral-500 uppercase tracking-wider mt-0.5 font-sans">
-                  {lang === "en"
-                    ? "Principal, Al-Arafah"
-                    : "অধ্যক্ষ, আল-আরাফাহ"}
+                  {lang === "en" ? cleanData.author.roleEn : cleanData.author.roleBn}
                 </p>
               </div>
             </div>
@@ -131,22 +146,23 @@ export default function WelcomeMassage() {
 
               <div className="relative w-full aspect-4/5 rounded md:rounded-4xl rounded-bl-none overflow-hidden shadow-xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200/40 dark:border-neutral-800/50 z-10">
                 <Image
-                  src="/principal.jpeg"
+                  src={cleanData.image.src}
                   alt="Principal of Al-Arafah"
                   fill
                   priority
-                  className="object-cover object-top "
+                  sizes="(max-w: 768px) 100vw, (max-w: 1200px) 40vw, 33vw"
+                  className="object-cover object-top"
                 />
 
-                <div className="absolute inset-0 bg-linear-to-t from-[#032d22]/40 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#032d22]/40 via-transparent to-transparent pointer-events-none" />
               </div>
 
               <div className="absolute -bottom-4 -left-4 bg-[#032d22] border border-accent/40 text-[#fefcf8] px-5 py-3 rounded-xl shadow-lg z-20 text-center font-serif">
                 <span className="block text-xl font-bold text-accent leading-none">
-                  20+
+                  {cleanData.image.badgeVal}
                 </span>
                 <span className="text-[10px] uppercase tracking-widest block mt-1 text-gray-300 font-sans">
-                  {lang === "en" ? "Years Excellence" : "বছরের ঐতিহ্য"}
+                  {lang === "en" ? cleanData.image.badgeLabelEn : cleanData.image.badgeLabelBn}
                 </span>
               </div>
             </div>
