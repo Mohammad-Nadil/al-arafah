@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function NoticePage() {
   return (
-    <main className="w-full min-h-screen py-16 bg-background text-foreground">
+    <main className="w-full min-h-screen py-12 md:py-14 xl:py-16py-12 md:py-14 xl:py-16 bg-background text-foreground">
       <Container>
         <SectionHeader
           badge="NOTICE BOARD"

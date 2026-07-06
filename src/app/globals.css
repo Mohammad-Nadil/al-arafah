@@ -23,7 +23,7 @@
 }
 
 @theme {
-  --breakpoint-xs: 359px;
+  --breakpoint-xs: 361px;
 
   --color-background: var(--background);
   --color-subtle:var(--background-subtle);

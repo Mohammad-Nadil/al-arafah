@@ -46,7 +46,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <section className="w-full py-20 bg-background text-foreground">
+    <section className="w-full py-12 md:py-14 xl:py-16 bg-background text-foreground">
       <Container>
         <SectionHeader
           badge={lang === "en" ? "CONTACT US" : "যোগাযোগ"}

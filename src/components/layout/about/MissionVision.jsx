@@ -39,7 +39,7 @@ export default function MissionVision() {
   return (
     <section
       id="mission-vision"
-      className="relative w-full py-20 overflow-hidden transition-colors duration-500 bg-background text-foreground"
+      className="relative w-full py-12 md:py-14 xl:py-16 overflow-hidden transition-colors duration-500 bg-background text-foreground"
     >
       <div className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none top-1/2 left-1/2 w-150 aspect-square bg-gradient-to-br from-primary/5 via-accent/5 to-transparent blur-3xl" />
 

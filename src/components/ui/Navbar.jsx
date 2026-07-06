@@ -26,14 +26,14 @@ const cleanData = {
         name: "Academics",
         href: "/academics",
         submenu: [
-          { name: "Class Routine", href: "/academics?tab=class-routine" },
-          { name: "Exam Routine", href: "/academics?tab=exam-routine" },
-          { name: "Results", href: "/academics?tab=results" },
+          { name: "Curriculum", href: "/academics/curriculum" },
+          { name: "Class Routine", href: "/academics/class-routine" },
+          { name: "Exam Routine", href: "/academics/exam-routine" },
+          { name: "Results", href: "/academics/results" },
         ],
       },
       { name: "Admissions", href: "/admissions" },
       { name: "Notices", href: "/notices" },
-      { name: "Gallery", href: "/gallery" },
       { name: "Contact", href: "/contact" },
     ],
     bn: [
