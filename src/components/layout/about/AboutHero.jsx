@@ -13,8 +13,8 @@ const AboutHero = () => {
       id="about-hero" 
       className="w-full py-20 bg-background transition-colors duration-500 overflow-hidden relative"
     >
-      <div className="absolute top-1/4 -right-20 w-100 aspect-square bg-linear-to-br from-primary/20  to-transparent rounded-full blur-2xl dark:blur-3xl pointer-events-none" />
-      <div className="absolute top-10 left-10 w-30 md:w-40 aspect-square rounded-full bg-primary/10  animate-pulse blur-xl dark:blur-2xl" />
+      <div className="absolute top-1/4 -right-20 w-100 aspect-square bg-linear-to-br  from-primary/20 to-transparent rounded-full blur-3xl dark:blur-3xl pointer-events-none hidden xl:flex " />
+      <div className="absolute top-10 left-10 w-32 md:w-40 aspect-square rounded-full bg-primary/5 xl:bg-primary/10 animate-pulse blur-xl dark:blur-2xl" />
 
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center relative">
@@ -38,7 +38,7 @@ const AboutHero = () => {
                 <>
                   ঐশী প্রজ্ঞা ও <br />
                   <span className="font-sans font-light italic text-primary dark:text-accent">বৈশ্বিক মেধার</span> <br />
-                  অনন্য মহাকাব্য।
+                  অনন্য সমন্বয়।
                 </>
               )}
             </h1>
@@ -49,7 +49,7 @@ const AboutHero = () => {
                 : "আল-আরাফাহ শিক্ষার এক অত্যাধুনিক রূপরেখা তৈরি করে—যেখানে কেমব্রিজের বিশ্বমানের মেধা-চর্চার সাথে পবিত্র কুরআনের তারবিয়াহর আধ্যাত্মিক বিশুদ্ধতা সুনিপুণভাবে মিশে যায়।"}
             </p>
 
-            <div className="flex flex-wrap items-center gap-x-8 gap-y-4 mt-12 text-xs font-sans font-semibold tracking-wider uppercase text-neutral-400 dark:text-neutral-500">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4  sm:gap-x-8 gap-y-4 mt-12 text-[8px] xs:text-[10px] sm:text-xs font-sans font-semibold tracking-wider uppercase text-neutral-400 dark:text-neutral-500">
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 <span>Cambridge UK</span>
@@ -80,9 +80,9 @@ const AboutHero = () => {
             </div>
 
             <div className="absolute top-0 right-0 w-[42%] h-[68%] rounded-[2.5rem] overflow-hidden border border-neutral-200/60 dark:border-neutral-800/60 shadow-2xl group/secondary transition-all duration-700 hover:scale-[1.03] hover:-translate-y-2 z-20">
-              <div className="absolute inset-0 p-px bg-linear-to-b from-white/20 to-transparent rounded-[2.5rem] pointer-events-none z-30" />
+              <div className="absolute inset-0 p-px bg-gradient-to-b from-white/20 to-transparent rounded-[2.5rem] pointer-events-none z-30" />
               <Image
-                src="/about/about-hero-2.jpg" // 🎯 তোমার ইমেজ পাথ
+                src="/about/about-hero-2.jpg" 
                 alt="Cambridge Excellence"
                 fill
                 className="object-cover transition-transform duration-1000 group-hover/secondary:scale-105"
@@ -93,10 +93,10 @@ const AboutHero = () => {
 
             <div className="absolute bottom-0 left-[40%] w-[35%] h-[35%] rounded-2xl overflow-hidden border border-neutral-200/80 dark:border-neutral-800/80 shadow-lg group/tertiary transition-all duration-700 hover:scale-[1.05] hover:rotate-1 z-30">
               <Image
-                src="/about/about-hero-3.jpg" // 🎯 তোমার ইমেজ পাথ
+                src="/about/about-hero-3.jpg" 
                 alt="Tech & Islamic Values"
                 fill
-                className="object-cover transition-transform duration-1000 "
+                className="object-cover transition-transform duration-1000"
                 sizes="20vw"
               />
             </div>
@@ -110,4 +110,4 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero; 
+export default AboutHero;
