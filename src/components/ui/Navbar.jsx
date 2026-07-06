@@ -50,7 +50,6 @@ const cleanData = {
       },
       { name: "ভর্তি তথ্য", href: "/admissions" },
       { name: "নোটিশ", href: "/notices" },
-      { name: "গ্যালারি", href: "/gallery" },
       { name: "যোগাযোগ", href: "/contact" },
     ],
   },
@@ -62,7 +61,6 @@ const Navbar = () => {
   const [isAcademicOpen, setIsAcademicOpen] = useState(false);
   const navRef = useRef(null);
 
-  // 🔒 মোবাইল মেনু অন হলে ব্যাকগ্রাউন্ড স্ক্রল লক করা
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -74,7 +72,6 @@ const Navbar = () => {
     };
   }, [isOpen]);
 
-  // 🛑 বাইরে ক্লিক করলে মেনু ক্লোজ করার লজিক
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
