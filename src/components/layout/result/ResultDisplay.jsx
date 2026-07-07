@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import confetti from "canvas-confetti";
 
 export default function ResultDisplay({ data }) {
   const cardRef = useRef(null);
@@ -11,6 +12,36 @@ export default function ResultDisplay({ data }) {
       { opacity: 0, y: 30 },
       { opacity: 1, y: 0, duration: 0.2, ease: "power3.out" },
     );
+
+    if (data && data.gpa >= 3.5) {
+      // ভালো রেজাল্টের শর্ত
+
+      // সাধারণ কনফিগারেশন
+      const defaults = {
+        spread: 70,
+        ticks: 60,
+        gravity: 0.8,
+        decay: 0.94,
+        startVelocity: 30,
+        colors: ["#ffbe0b", "#ffffff", "#ff0000"], // আপনার থিম কালার
+      };
+
+      // বাম পাশের জন্য ফায়ারওয়ার্ক
+      confetti({
+        ...defaults,
+        particleCount: 80,
+        origin: { x: 0, y: 0.95 }, // x:0 মানে একদম বামে, y:0.95 মানে স্ক্রিনের নিচে
+        angle: 45, // ডান দিকে এঙ্গেল করবে
+      });
+
+      // ডান পাশের জন্য ফায়ারওয়ার্ক
+      confetti({
+        ...defaults,
+        particleCount: 80,
+        origin: { x: 1, y: 0.95 }, // x:1 মানে একদম ডানে, y:0.95 মানে স্ক্রিনের নিচে
+        angle: 135, // বাম দিকে এঙ্গেল করবে
+      });
+    }
   }, [data]);
   return (
     <div
@@ -18,7 +49,7 @@ export default function ResultDisplay({ data }) {
       className="mt-10 p-4 xl:p-8 rounded-lg xl:rounded-3xl border border-neutral-400 dark:border-neutral-600 shadow-2xl shadow-neutral-200/50 dark:shadow-none max-w-4xl mx-auto transition-all duration-500 opacity-0"
     >
       <div className="flex justify-between items-start mb-8 border-b border-neutral-400 dark:border-neutral-600 pb-8">
-        <div >
+        <div>
           <h2 className="text-3xl font-extrabold text-neutral-800 dark:text-white">
             {data.name}
           </h2>

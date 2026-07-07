@@ -54,10 +54,15 @@ export default function ResultSearch({ onSearch }) {
       <select
         value={exam}
         onChange={(e) => setExam(e.target.value)}
-        className="p-4 border border-primary dark:border-neutral-600 rounded-xl focus:ring-2 focus:ring-primary outline-none transition-all cursor-pointer"
+        className="p-4 border rounded-xl focus:ring-2 focus:ring-primary outline-none transition-all cursor-pointer 
+              
+             text-neutral-800 dark:text-neutral-200 
+             border-primary dark:border-neutral-600"
         required
       >
-        <option value="">{currentT.selectExam}</option>
+        <option value="" className="text-neutral-500">
+          {currentT.selectExam}
+        </option>
         {currentT.exams.map((e, index) => (
           <option
             key={e}
@@ -69,6 +74,7 @@ export default function ResultSearch({ onSearch }) {
                 "Final Examination",
               ][index]
             }
+            className="bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200" 
           >
             {e}
           </option>
