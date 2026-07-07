@@ -22,34 +22,19 @@ const cleanData = {
     en: [
       { name: "Home", href: "/" },
       { name: "About", href: "/about" },
-      {
-        name: "Academics",
-        href: "/academics",
-        submenu: [
-          { name: "Curriculum", href: "/academics/curriculum" },
-          { name: "Class Routine", href: "/academics/class-routine" },
-          { name: "Exam Routine", href: "/academics/exam-routine" },
-          { name: "Results", href: "/academics/results" },
-        ],
-      },
+      { name: "Academics", href: "/academics" },
       { name: "Admissions", href: "/admissions" },
       { name: "Notices", href: "/notices" },
+      { name: "Results", href: "/results" },
       { name: "Contact", href: "/contact" },
     ],
     bn: [
       { name: "হোম", href: "/" },
       { name: "আমাদের সম্পর্কে", href: "/about" },
-      {
-        name: "একাডেমিকস",
-        href: "/academics",
-        submenu: [
-          { name: "ক্লাস রুটিন", href: "/academics?tab=class-routine" },
-          { name: "পরীক্ষার রুটিন", href: "/academics?tab=exam-routine" },
-          { name: "ফলাফল", href: "/academics?tab=results" },
-        ],
-      },
+      { name: "একাডেমিকস",  href: "/academics"},
       { name: "ভর্তি তথ্য", href: "/admissions" },
       { name: "নোটিশ", href: "/notices" },
+      { name: "ফলাফল", href: "/results" },
       { name: "যোগাযোগ", href: "/contact" },
     ],
   },
@@ -100,7 +85,7 @@ const Navbar = () => {
   return (
     <div ref={navRef} className="relative z-50 w-full">
       {isOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/40 backdrop-blur-xs lg:hidden z-40 transition-opacity duration-300"
           onClick={() => setIsOpen(false)}
         />
@@ -109,7 +94,10 @@ const Navbar = () => {
       <nav className="relative z-50 w-full bg-background/50 shadow-sm backdrop-blur-md transition-colors duration-500">
         <Container>
           <div className="flex justify-between h-16 items-center">
-            <a href="/" className="flex items-center gap-3 cursor-pointer select-none">
+            <a
+              href="/"
+              className="flex items-center gap-3 cursor-pointer select-none"
+            >
               <div className="relative w-10 h-10 sm:w-12 sm:h-12 shrink-0 transition-all duration-300">
                 <Image
                   src={logo}
@@ -166,7 +154,7 @@ const Navbar = () => {
                   </a>
                 );
               })}
-              
+
               <div className="flex items-center gap-2 pl-2 border-l border-neutral-200 dark:border-neutral-800">
                 <LanguageSwitcher />
                 <ThemeToggle />
@@ -174,10 +162,10 @@ const Navbar = () => {
 
               <Button
                 label={lang === "en" ? "Apply Now" : "আবেদন করুন"}
-                size="sm" 
-                borderColor="#ffbe0b" 
+                size="sm"
+                borderColor="#ffbe0b"
                 flairColor="#ffbe0b"
-                textHoverColor="#032d22" 
+                textHoverColor="#032d22"
                 className="font-semibold text-xs tracking-wider uppercase shadow-md text-foreground"
               />
             </div>
@@ -195,9 +183,19 @@ const Navbar = () => {
                   stroke="currentColor"
                 >
                   {isOpen ? (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   ) : (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
                   )}
                 </svg>
               </button>

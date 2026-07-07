@@ -51,3 +51,15 @@ body {
 .lang-bn {
   font-family: var(--font-bangla);
 }
+
+
+/* Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}/* Firefox */
+* {
+  scrollbar-width: none;
+}/* IE and Edge */
+* {
+  -ms-overflow-style: none;
+}

@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function Button({
   label,
   bgColor = "transparent",
-  borderColor = "#ff5101",
-  flairColor = "#ff5101",
+  borderColor = "#ffbe0b",
+  flairColor = "#ffbe0b",
   textColor = "currentColor",
   textHoverColor = "#ffffff",
   leftIcon,

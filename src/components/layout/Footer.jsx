@@ -61,7 +61,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-subtle  border-t border-neutral-200/60 dark:border-neutral-800/60 relative py-12 text-neutral-600 dark:text-neutral-400 transition-colors duration-500 overflow-hidden">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-16 border-b border-neutral-200/60 dark:border-neutral-800/60">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-5 border-b border-neutral-200/60 dark:border-neutral-800/60">
           
           {/* Brand & Slogan */}
           <div className="lg:col-span-4 flex flex-col gap-6">
@@ -164,7 +164,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4  ">
           <p className="text-xs font-sans font-light text-neutral-400 dark:text-neutral-500 text-center sm:text-left select-none">
             &copy; {currentYear} Al-Arafah School & College.{" "}
             {lang === "en" ? cleanData.rights.en : cleanData.rights.bn}
