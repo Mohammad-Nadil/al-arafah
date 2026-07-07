@@ -54,15 +54,14 @@ export default function Footer() {
       { href: "/about", en: "About Us", bn: "আমাদের সম্পর্কে" },
       { href: "/admissions", en: "Admissions", bn: "ভর্তি তথ্য" },
       { href: "/curriculum", en: "Curriculum", bn: "কারিকুলাম" },
-      { href: "/notices", en: "Notice Board", bn: "নোটিশ বোর্ড" }
-    ]
+      { href: "/notices", en: "Notice Board", bn: "নোটিশ বোর্ড" },
+    ],
   };
 
   return (
     <footer className="w-full bg-subtle  border-t border-neutral-200/60 dark:border-neutral-800/60 relative py-12 text-neutral-600 dark:text-neutral-400 transition-colors duration-500 overflow-hidden">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-5 border-b border-neutral-200/60 dark:border-neutral-800/60">
-          
           {/* Brand & Slogan */}
           <div className="lg:col-span-4 flex flex-col gap-6">
             <div className="text-xl md:text-2xl font-serif font-bold text-neutral-900 dark:text-neutral-100 flex items-start gap-3 select-none leading-tight tracking-tight">
@@ -99,10 +98,10 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-3.5">
               {cleanData.links.map((link, idx) => (
-                <FooterLink 
-                  key={idx} 
-                  href={link.href} 
-                  text={lang === "en" ? link.en : link.bn} 
+                <FooterLink
+                  key={idx}
+                  href={link.href}
+                  text={lang === "en" ? link.en : link.bn}
                 />
               ))}
             </ul>
@@ -174,15 +173,28 @@ export default function Footer() {
               href="/privacy-policy"
               className="hover:text-primary dark:hover:text-accent transition-colors duration-300 relative group/link"
             >
-              <span>{lang === "en" ? cleanData.privacy.en : cleanData.privacy.bn}</span>
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-primary dark:bg-accent group-hover/link:w-full transition-all duration-300" />
+              <span>
+                {lang === "en" ? cleanData.privacy.en : cleanData.privacy.bn}
+              </span>
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-primary dark:bg-accent group-hover/link:w-full transition-all duration-300" />
             </Link>
             <Link
               href="/terms"
               className="hover:text-primary dark:hover:text-accent transition-colors duration-300 relative group/link"
             >
-              <span>{lang === "en" ? cleanData.terms.en : cleanData.terms.bn}</span>
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-primary dark:bg-accent group-hover/link:w-full transition-all duration-300" />
+              <span>
+                {lang === "en" ? cleanData.terms.en : cleanData.terms.bn}
+              </span>
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-primary dark:bg-accent group-hover/link:w-full transition-all duration-300" />
+            </Link>
+            <Link
+              href="/login"
+              className="hover:text-primary dark:hover:text-accent transition-colors duration-300 relative group/link"
+            >
+              <span>
+                {lang === "en" ? "Login" : "লগইন"}
+              </span>
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-primary dark:bg-accent group-hover/link:w-full transition-all duration-300" />
             </Link>
           </div>
         </div>

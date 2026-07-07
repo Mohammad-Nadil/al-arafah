@@ -37,7 +37,10 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
       className={`${sourceSerif.variable} ${cinzel.variable} ${hindSiliguri.variable} h-full antialiased`}
     >
-      <body suppressHydrationWarning className="min-h-full flex flex-col max-w-screen overflow-x-clip mx-auto">
+      <body
+        suppressHydrationWarning
+        className="min-h-full flex flex-col max-w-screen overflow-x-clip mx-auto"
+      >
         <ThemeProvider attribute="class" defaultTheme="light">
           <LanguageProvider>
             <SmoothScrollProvider>
