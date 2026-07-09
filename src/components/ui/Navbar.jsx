@@ -163,6 +163,7 @@ const Navbar = () => {
               <Button
                 label={lang === "en" ? "Apply Now" : "আবেদন করুন"}
                 size="sm"
+                href={"/admissions"}
                 borderColor="#ffbe0b"
                 flairColor="#ffbe0b"
                 textHoverColor="#032d22"

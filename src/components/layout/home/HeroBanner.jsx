@@ -23,8 +23,10 @@ const cleanData = {
       titleEnLine2: "Inspiring Excellence",
       titleBnLine1: "দ্বীনি বিশ্বাস লালন,",
       titleBnLine2: "সর্বোচ্চ মেধার বিকাশ",
-      descEn: "A refined Cambridge Curriculum pathway integrated with Islamic Tarbiyah, disciplined campus life, and confident English medium scholarship.",
-      descBn: "ইসলামিক তারবিয়াহ, সুশৃঙ্খল ক্যাম্পাস জীবন এবং আত্মবিশ্বাসী ইংলিশ মিডিয়াম স্কলারশিপের সাথে সমন্বিত একটি পরিমার্জিত কেমব্রিজ কারিকুলাম।",
+      descEn:
+        "A refined Cambridge Curriculum pathway integrated with Islamic Tarbiyah, disciplined campus life, and confident English medium scholarship.",
+      descBn:
+        "ইসলামিক তারবিয়াহ, সুশৃঙ্খল ক্যাম্পাস জীবন এবং আত্মবিশ্বাসী ইংলিশ মিডিয়াম স্কলারশিপের সাথে সমন্বিত একটি পরিমার্জিত কেমব্রিজ কারিকুলাম।",
     },
     {
       id: 2,
@@ -34,8 +36,10 @@ const cleanData = {
       titleEnLine2: "Islamic Leaders",
       titleBnLine1: "ভবিষ্যতের ইসলামিক",
       titleBnLine2: "নেতৃত্ব গড়ার প্রত্যয়",
-      descEn: "Empowering global standard education built strictly upon moral values, modern technology, and comprehensive Hifzul Quran pathways.",
-      descBn: "নৈতিক মূল্যবোধ, आधुनिक প্রযুক্তি এবং সম্পূর্ণ হিফজুল কুরআন ট্র্যাকের ওপর ভিত্তি করে বিশ্বমানের শিক্ষা নিশ্চিত করা।",
+      descEn:
+        "Empowering global standard education built strictly upon moral values, modern technology, and comprehensive Hifzul Quran pathways.",
+      descBn:
+        "নৈতিক মূল্যবোধ, आधुनिक প্রযুক্তি এবং সম্পূর্ণ হিফজুল কুরআন ট্র্যাকের ওপর ভিত্তি করে বিশ্বমানের শিক্ষা নিশ্চিত করা।",
     },
     {
       id: 3,
@@ -45,8 +49,10 @@ const cleanData = {
       titleEnLine2: "Divine Knowledge",
       titleBnLine1: "আধুনিক বিজ্ঞান ও",
       titleBnLine2: "ঐশী জ্ঞানের মেলবন্ধন",
-      descEn: "State-of-the-art laboratory facilities paired with strict discipline, deep spiritual guidance, and Cambridge world-class resources.",
-      descBn: "সুশৃঙ্খল পরিবেশ, গভীর আধ্যাত্মিক দিকনির্দেশনা এবং কেমব্রিজ মানের রিসোর্সের সাথে আমাদের আধুনিক ল্যাবরেটরি সুবিধা।",
+      descEn:
+        "State-of-the-art laboratory facilities paired with strict discipline, deep spiritual guidance, and Cambridge world-class resources.",
+      descBn:
+        "সুশৃঙ্খল পরিবেশ, গভীর আধ্যাত্মিক দিকনির্দেশনা এবং কেমব্রিজ মানের রিসোর্সের সাথে আমাদের আধুনিক ল্যাবরেটরি সুবিধা।",
     },
   ],
 };
@@ -89,7 +95,8 @@ export default function HeroBanner() {
     >
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         {cleanData.slides.map((slide, index) => {
-          const assignedImage = index % 2 === 0 ? cleanData.images.even : cleanData.images.odd;
+          const assignedImage =
+            index % 2 === 0 ? cleanData.images.even : cleanData.images.odd;
 
           return (
             <div
@@ -150,19 +157,13 @@ export default function HeroBanner() {
 
           <div className="js-hero-content-anim flex items-center justify-center sm:justify-start gap-4 pt-4 w-full sm:w-auto">
             <Button
+              href={"/admissions"}
               label="Apply Now"
               borderColor="#ffbe0b"
               flairColor="#ffbe0b"
               textColor="#ffbe0b"
               textHoverColor="#032d22"
               rightIcon={<FiArrowRight />}
-            />
-            <Button
-              label="Virtual Tour"
-              borderColor="rgba(255,255,255,0.4)"
-              flairColor="rgba(255,255,255,0.1)"
-              textColor="#ffffff"
-              textHoverColor="#ffffff"
             />
           </div>
         </div>
