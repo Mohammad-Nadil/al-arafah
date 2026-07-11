@@ -46,7 +46,7 @@ export default function AdminLayout({ children }) {
           ))}
         </nav>
       </aside>
-      <main className="flex-1 px-2 py4 md:p-6 overflow-y-auto bg-background">
+      <main className="flex-1 px-2 py-4 md:p-6 overflow-y-auto bg-background">
         <Suspense> {children}</Suspense>
       </main>
     </div>

@@ -4,7 +4,7 @@
 
 :root {
   --background: #f8fafc;
-  --background-subtle:#f5f4eee2;
+  --background-subtle: #f5f4eee2;
   --foreground: #032d22;
   --primary: #017a54;
   --primary-foreground: #ffffff;
@@ -14,10 +14,10 @@
 
 .dark {
   --background: #2d3130;
-  --background-subtle:#121414;
+  --background-subtle: #121414;
   --foreground: #f3f4f6;
-  --primary: #017a54;             
-  --primary-foreground: #ffffff;  
+  --primary: #017a54;
+  --primary-foreground: #ffffff;
   --accent: #fbbf24;
   --accent-foreground: #2d3130;
 }
@@ -26,7 +26,7 @@
   --breakpoint-xs: 361px;
 
   --color-background: var(--background);
-  --color-subtle:var(--background-subtle);
+  --color-subtle: var(--background-subtle);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
@@ -52,14 +52,13 @@ body {
   font-family: var(--font-bangla);
 }
 
-
 /* Chrome, Safari and Opera */
 ::-webkit-scrollbar {
   display: none;
-}/* Firefox */
+} /* Firefox */
 * {
   scrollbar-width: none;
-}/* IE and Edge */
+} /* IE and Edge */
 * {
   -ms-overflow-style: none;
 }

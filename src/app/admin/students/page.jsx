@@ -31,14 +31,17 @@ export default function StudentsPage() {
             Manage {studentData.length} active students
           </p>
         </div>
-        <Link href="/admin/students/form" className="px-5 py-2.5 bg-neutral-900 dark:bg-white/50 text-white dark:text-neutral-900 rounded-xl text-sm font-semibold hover:bg-neutral-800 dark:hover:bg-neutral-200 transition shadow-lg">
+        <Link
+          href="/admin/students/form"
+          className="px-5 py-2.5 bg-neutral-900 dark:bg-white/50 text-white dark:text-neutral-900 rounded-xl text-sm font-semibold hover:bg-neutral-800 dark:hover:bg-neutral-200 transition shadow-lg"
+        >
           Add New Student
         </Link>
       </div>
 
       <div className="space-y-3">
         <div className="flex gap-3">
-          <div className="flex-1 flex items-center gap-3 px-4 py-3 bg-white dark:bg-neutral-900 border border-neutral-400 dark:border-neutral-700 rounded-xl shadow-sm focus-within:border-emerald-400 dark:focus-within:border-emerald-600 transition-colors">
+          <div className="flex-1 flex items-center gap-3 px-4 py-3 bg-white dark:bg-neutral-900 border border-neutral-400 dark:border-neutral-700 rounded-xl shadow-sm focus-within:border-primary/60 dark:focus-within:border-primary/80 transition-colors">
             <MdSearch className="text-xl text-neutral-400 shrink-0" />
             <input
               type="text"
@@ -50,7 +53,7 @@ export default function StudentsPage() {
             onClick={() => setIsFilterOpen((prev) => !prev)}
             className={`px-4 py-3 border rounded-xl flex items-center gap-2 text-sm font-semibold transition-all shrink-0 ${
               isFilterOpen
-                ? "bg-emerald-600 border-emerald-600 text-white shadow-md"
+                ? "bg-primary/80 border-primary/80 text-white shadow-md"
                 : "border-neutral-400 dark:border-neutral-700 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300"
             }`}
           >
@@ -87,7 +90,7 @@ export default function StudentsPage() {
                   >
                     Cancel
                   </button>
-                  <button className="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-[8px] xs:text-xs font-semibold transition-colors shadow-sm">
+                  <button className="px-4 py-2 rounded-lg bg-primary hover:bg-primary text-white text-[8px] xs:text-xs font-semibold transition-colors shadow-sm">
                     Apply Filters
                   </button>
                 </div>
@@ -118,11 +121,11 @@ export default function StudentsPage() {
                 href={`/admin/students/${s.studentId.$oid}`}
                 className="xl:hidden group block relative bg-subtle/30  rounded-2xl border border-neutral-400 dark:border-neutral-800 p-4 active:scale-[0.98] transition-transform duration-200 overflow-hidden"
               >
-                <div className="absolute inset-0 bg-linear-to-br from-emerald-50/0 to-emerald-50/0 group-active:from-emerald-50/60 dark:group-active:from-emerald-900/10 transition-all duration-300 pointer-events-none" />
+                <div className="absolute inset-0  transition-all duration-300 pointer-events-none" />
 
                 <div className="relative flex items-center gap-3">
                   <div className="relative shrink-0">
-                    <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-emerald-100 dark:ring-emerald-900/40 border-2 border-white dark:border-neutral-800 shadow-sm">
+                    <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-primary dark:ring-primary border-2 border-white dark:border-neutral-800 shadow-sm">
                       <Image
                         src={
                           s.gender?.toLowerCase() === "male"
@@ -151,7 +154,7 @@ export default function StudentsPage() {
                     </div>
                   </div>
 
-                  <div className="shrink-0 w-8 h-8 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400 group-active:bg-emerald-500 group-active:text-white transition-colors duration-200">
+                  <div className="shrink-0 w-8 h-8 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400 group-active:bg-primary group-active:text-white transition-colors duration-200">
                     <MdArrowForward size={16} />
                   </div>
                 </div>
@@ -160,7 +163,7 @@ export default function StudentsPage() {
                   <span className="px-2 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 text-[10px] font-bold text-neutral-600 dark:text-neutral-400 uppercase">
                     Sec: {s.section || "-"}
                   </span>
-                  <span className="px-2 py-1 rounded-md bg-emerald-50 dark:bg-emerald-900/20 text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide">
+                  <span className="px-2 py-1 rounded-md   text-[10px] font-bold   uppercase tracking-wide">
                     {s.group || "-"}
                   </span>
                   <div className="ml-auto flex items-center gap-1 text-xs text-neutral-500 dark:text-neutral-400 font-mono text-nowrap">
@@ -189,7 +192,7 @@ export default function StudentsPage() {
                     />
                   </div>
                   <div>
-                    <p className="font-semibold text-neutral-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                    <p className="font-semibold text-neutral-900 dark:text-white group-hover:text-primary dark:group-hover:text-primary transition-colors">
                       {s.fullName}
                     </p>
                   </div>
@@ -207,7 +210,7 @@ export default function StudentsPage() {
                   </span>
                 </div>
                 <div>
-                  <span className="px-2 py-1 rounded-md bg-emerald-50 dark:bg-emerald-900/20 text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide">
+                  <span className="px-2 py-1 rounded-md bg-primary/20  text-[10px] font-bold  uppercase tracking-wide">
                     {s.group || "-"}
                   </span>
                 </div>
@@ -217,8 +220,8 @@ export default function StudentsPage() {
                 </div>
 
                 <div className="col-span-1 text-right flex items-center justify-end">
-                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-neutral-400 dark:border-neutral-700 group-hover:border-emerald-300 dark:group-hover:border-emerald-700 transition-all text-[10px] font-bold text-neutral-600 dark:text-neutral-300">
-                    VIEW <MdArrowForward className="text-emerald-500" />
+                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-neutral-400 dark:border-neutral-700 group-hover:border-primary dark:group-hover:border-primary transition-all text-[10px] font-bold text-neutral-600 dark:text-neutral-300">
+                    VIEW <MdArrowForward className="text-primary" />
                   </div>
                 </div>
               </Link>
@@ -239,7 +242,7 @@ function FilterSelect({ label, placeholder }) {
       <div className="relative">
         <select
           defaultValue=""
-          className="w-full appearance-none px-3 py-2.5 pr-8 bg-neutral-50 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-lg text-sm font-medium text-neutral-700 dark:text-neutral-300 outline-none focus:border-emerald-400 dark:focus:border-emerald-600 transition-colors cursor-pointer"
+          className="w-full appearance-none px-3 py-2.5 pr-8 bg-neutral-50 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-lg text-sm font-medium text-neutral-700 dark:text-neutral-300 outline-none focus:border-primary dark:focus:border-primary transition-colors cursor-pointer"
         >
           <option value="">{placeholder}</option>
         </select>
