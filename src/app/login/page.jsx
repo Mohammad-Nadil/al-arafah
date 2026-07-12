@@ -1,6 +1,8 @@
+import Container from "@/components/public/Container";
+
 export default function LoginPage() {
   return (
-    <div className="flex  pt-20 items-center justify-center bg-neutral-100 dark:bg-neutral-950">
+    <Container className="flex  py-20 items-center justify-center ">
       <form className="bg-white dark:bg-neutral-900 p-8 rounded-2xl w-96 border border-neutral-200 dark:border-neutral-800">
         <h2 className="text-2xl font-bold mb-6">Admin Login</h2>
         <input
@@ -17,6 +19,6 @@ export default function LoginPage() {
           Login
         </a>
       </form>
-    </div>
+    </Container>
   );
 }

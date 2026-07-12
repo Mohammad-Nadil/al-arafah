@@ -5,19 +5,19 @@ export default function DeleteModal({ isOpen, onClose, onConfirm, studentName, i
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 dark:bg-white/20 backdrop-blur-sm">
       <div className="w-full max-w-md bg-white dark:bg-neutral-900 rounded-2xl p-6 shadow-2xl border border-neutral-200 dark:border-neutral-800 animate-in fade-in zoom-in duration-200">
         {/* Header */}
         <div className="flex items-center gap-3 text-red-600 mb-4">
           <div className="p-2 bg-red-100 dark:bg-red-900/20 rounded-full">
             <MdWarning size={24} />
           </div>
-          <h3 className="text-lg font-bold text-neutral-900 dark:text-white">Delete Student?</h3>
+          <h3 className="text-lg font-bold text-neutral-900 dark:text-white">Delete This ?</h3>
         </div>
 
         {/* Info */}
         <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-6">
-          Are you sure you want to delete <strong>{studentName}</strong>? This action cannot be undone. Please enter your password to confirm.
+          Are you sure you want to delete <strong>{name}</strong>? This action cannot be undone. Please enter your password to confirm.
         </p>
 
         {/* Password Input */}

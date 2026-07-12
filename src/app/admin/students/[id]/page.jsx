@@ -289,7 +289,7 @@ export default function StudentDetailsPage() {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         onConfirm={handleDelete}
-        studentName="Jackelyn Witherdon"
+        name="Jackelyn Witherdon"
         isDeleting={isDeleting}
       />
     </div>

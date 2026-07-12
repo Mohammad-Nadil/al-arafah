@@ -8,7 +8,7 @@ import {
   MdClose,
 } from "react-icons/md";
 import studentData from "@/../temp/student.json";
-import Image from "next/image";
+import { Image } from "antd";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
