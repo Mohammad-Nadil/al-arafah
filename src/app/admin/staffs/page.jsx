@@ -7,6 +7,7 @@ import {
   MdClose,
   MdDeleteOutline,
   MdEdit,
+  MdEmail,
 } from "react-icons/md";
 import staffData from "@/../temp/staff.json";
 import { useEffect, useState } from "react";
@@ -36,7 +37,7 @@ export default function StaffsPage() {
   }, []);
 
   return (
-    <div className="max-w-360 mx-auto space-y-6 ">
+    <div className=" mx-auto ">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <h2 className="text-2xl font-bold text-neutral-900 dark:text-white">
@@ -131,24 +132,11 @@ export default function StaffsPage() {
         </div>
       </div>
 
-      <div className="900 xl:border border-neutral-400 dark:border-neutral-800 rounded-2xl overflow-hidden shadow-sm">
-        <div className="hidden xl:grid grid-cols-8 gap-4 px-6 py-4 text-sm  font-bold   uppercase tracking-widest border-b border-neutral-100 dark:border-neutral-800 bg-primary/20 dark:bg-subtle">
-          <div className="col-span-2">Staff Identity</div>
-          <div>Role</div>
-          <div>Department</div>
-          <div>Staff Id</div>
-          <div>Status</div>
-          <div className="">Contact </div>
-          <div className="text-right">Action</div>
-        </div>
-
+      <div className=" xl:text-center 2xl:text-left  rounded-2xl overflow-hidden shadow-sm">
         <div className="grid lg:grid-cols-2 xl:block gap-3 sm:p-3 md:p-0 xl:gap-0 ">
-          {staffs.map((s, index) => (
-            <div
-              key={index}
-              className="xl:odd:bg-background  xl:even:bg-primary/5 dark:xl:even:bg-subtle/40"
-            >
+            {staffs.map((s, index) => (
               <div
+                key={index}
                 href={`/admin/staffs/${s.id.$oid}`}
                 className="xl:hidden group block relative bg-subtle/30  rounded-2xl border border-neutral-400 dark:border-neutral-800 p-4 active:scale-[0.98] transition-transform duration-200 overflow-hidden"
               >
@@ -207,67 +195,125 @@ export default function StaffsPage() {
                   </button>
                 </div>
               </div>
+            ))}
+            <div className="hidden xl:block overflow-x-auto rounded-2xl border border-neutral-300 dark:border-neutral-700 shadow-sm">
+              <table className="w-full text-sm">
+                <thead className="bg-primary/20 dark:bg-subtle">
+                  <tr className="border-b border-neutral-300 dark:border-neutral-700">
+                    <th className="px-6 py-4 text-left font-bold uppercase tracking-wider">
+                      Staff Identity
+                    </th>
+                    <th className="px-4 py-4 text-center 2xl:text-left font-bold uppercase tracking-wider">
+                      Role
+                    </th>
+                    <th className="px-4 py-4 text-center 2xl:text-left font-bold uppercase tracking-wider">
+                      Department
+                    </th>
+                    <th className="px-4 py-4 text-center 2xl:text-left font-bold uppercase tracking-wider">
+                      Staff ID
+                    </th>
+                    <th className="px-4 py-4 text-center 2xl:text-left font-bold uppercase tracking-wider">
+                      Status
+                    </th>
+                    <th className="px-4 py-4 text-center 2xl:text-left font-bold uppercase tracking-wider">
+                      Contact
+                    </th>
+                    <th className="px-6 py-4 text-right font-bold uppercase tracking-wider">
+                      Action
+                    </th>
+                  </tr>
+                </thead>
 
-              <div
-                href={`/admin/staffs/${s.id.$oid}`}
-                className="hidden xl:grid group grid-cols-8 gap-4 px-6 py-4 items-center border-b border-neutral-300 dark:border-neutral-800 hover:bg-primary/5 dark:hover:bg-neutral-800/40 transition-all duration-300 ease-in-out text-sm "
-              >
-                <div className="col-span-2 flex items-center gap-4">
-                  <div className="w-11 h-11 rounded-full overflow-hidden bg-neutral-100 dark:bg-neutral-800 border-2 border-white dark:border-neutral-700 shadow-sm">
-                    <Image
-                      src={s.avatarUrl}
-                      alt={s.fullName}
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-neutral-900 dark:text-white group-hover:text-primary dark:group-hover:text-primary transition-colors">
-                      {s.fullName}
-                    </p>
-                  </div>
-                </div>
+                <tbody>
+                  {staffs.map((s, index) => (
+                    <tr
+                      key={index}
+                      className="
+            border-b border-neutral-200 dark:border-neutral-800
+            even:bg-primary/5 dark:even:bg-background/40
+            hover:bg-primary/10
+            transition-colors
+          "
+                    >
+                      {/* Staff */}
+                      <td className=" px-2 2xl:px-6 py-4">
+                        <div className="flex items-center gap-3">
+                          <Image
+                            src={s.avatarUrl}
+                            alt={s.fullName}
+                            width={44}
+                            height={44}
+                            className="rounded-full object-cover"
+                          />
 
-                <div className="font-medium text-neutral-900 dark:text-neutral-300">
-                  {s.role}
-                </div>
-                <div className="text-neutral-600 dark:text-neutral-400">
-                  {s.department}
-                </div>
-                <div>
-                  <span className="px-2 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 text-[10px] font-bold text-neutral-600 dark:text-neutral-400 uppercase">
-                    {s.staffId || "-"}
-                  </span>
-                </div>
-                <div>
-                  <span className="px-2 py-1 rounded-md bg-primary/20  text-[10px] font-bold  uppercase tracking-wide">
-                    {s.status || "-"}
-                  </span>
-                </div>
+                          <div>
+                            <p className="font-semibold">{s.fullName}</p>
 
-                <div className="flex items-center text-neutral-600 dark:text-neutral-400 font-mono text-nowrap gap-1.5">
-                  <MdPhone className="text-neutral-400" /> {s.contactNumber}
-                </div>
+                            <p className="text-xs text-foreground/60">
+                              {s.email}
+                            </p>
+                          </div>
+                        </div>
+                      </td>
 
-                <div className="col-span-1 text-right flex items-center justify-end gap-2">
-                  <Link
-                    href={`/admin/staffs/${s.id.$oid}`}
-                    className="p-2 rounded-lg border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
-                  >
-                    <MdEdit
-                      size={16}
-                      className="text-neutral-600 dark:text-neutral-400"
-                    />
-                  </Link>
-                  <button
-                    onClick={() => setIsModalOpen(true)}
-                    className="p-2 rounded-lg border border-red-200 dark:border-red-900/50 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
-                  >
-                    <MdDeleteOutline size={16} className="text-red-500" />
-                  </button>
-                </div>
-              </div>
+                      {/* Role */}
+                      <td className="2xl:px-4 py-4 text-center 2xl:text-left">{s.role}</td>
+
+                      {/* Department */}
+                      <td className="2xl:px-4 py-4 text-center 2xl:text-left">{s.department}</td>
+
+                      {/* Staff ID */}
+                      <td className="2xl:px-4 py-4 text-center 2xl:text-left">
+                        <span className="rounded-md bg-background px-3 py-1 text-xs font-semibold">
+                          {s.staffId}
+                        </span>
+                      </td>
+
+                      {/* Status */}
+                      <td className="2xl:px-4 py-4 text-center 2xl:text-left">
+                        <span className="rounded-full bg-primary/15 text-primary px-3 py-1 text-xs font-semibold">
+                          {s.status}
+                        </span>
+                      </td>
+
+                      {/* Contact */}
+                      <td className="2xl:px-4 py-4">
+                        <div className="flex flex-col gap-1 text-xs">
+                          <div className="flex items-center justify-center 2xl:justify-start gap-2">
+                            <MdPhone className="text-primary" />
+                            {s.contactNumber}
+                          </div>
+
+                          <div className="flex items-center justify-center 2xl:justify-start gap-2">
+                            <MdEmail className="text-primary" />
+                            {s.email}
+                          </div>
+                        </div>
+                      </td>
+
+                      {/* Action */}
+                      <td className="px-2 2xl:px-6 py-4">
+                        <div className="flex justify-end gap-2">
+                          <Link
+                            href={`/admin/staffs/${s.id.$oid}`}
+                            className="rounded-lg border border-neutral-300 dark:border-neutral-700 p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+                          >
+                            <MdEdit />
+                          </Link>
+
+                          <button
+                            onClick={() => setIsModalOpen(true)}
+                            className="rounded-lg border border-red-200 dark:border-red-900/50 p-2 hover:bg-red-50 dark:hover:bg-red-900/20"
+                          >
+                            <MdDeleteOutline className="text-red-500" />
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-          ))}
         </div>
       </div>
       <DeleteModal

@@ -15,9 +15,7 @@ const navItems = [
   { name: "Students", icon: <MdPeople />, path: "/admin/students" },
   { name: "Staffs", icon: <MdPeople />, path: "/admin/staffs" },
   { name: "Results", icon: <MdBook />, path: "/admin/results" },
-  { name: "Fees", icon: <MdReceipt />, path: "/admin/fees" },
   { name: "Notices", icon: <MdNotifications />, path: "/admin/notices" },
-  { name: "Mail", icon: <MdMail />, path: "/admin/mail" },
   { name: "Content", icon: <MdEditNote />, path: "/admin/content" },
   { name: "Settings", icon: <MdSettings />, path: "/admin/settings" },
 ];

@@ -21,7 +21,7 @@ export default function StudentsPage() {
   }, []);
 
   return (
-    <div className="max-w-360 mx-auto space-y-6 ">
+    <div className=" mx-auto  ">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <h2 className="text-2xl font-bold text-neutral-900 dark:text-white">
@@ -101,16 +101,6 @@ export default function StudentsPage() {
       </div>
 
       <div className="900 xl:border border-neutral-400 dark:border-neutral-800 rounded-2xl overflow-hidden shadow-sm">
-        <div className="hidden xl:grid grid-cols-8 gap-4 px-6 py-4 text-sm  font-bold   uppercase tracking-widest border-b border-neutral-100 dark:border-neutral-800 bg-primary/20 dark:bg-subtle">
-          <div className="col-span-2">Student Identity</div>
-          <div>Roll</div>
-          <div>Class</div>
-          <div>Section</div>
-          <div>Group</div>
-          <div className="">Contact </div>
-          <div className="text-right">Action</div>
-        </div>
-
         <div className="grid lg:grid-cols-2 xl:block gap-3 sm:p-3 md:p-0 xl:gap-0 ">
           {students.map((s, index) => (
             <div
@@ -175,55 +165,99 @@ export default function StudentsPage() {
 
               <Link
                 href={`/admin/students/${s.studentId.$oid}`}
-                className="hidden xl:grid group grid-cols-8 gap-4 px-6 py-4 items-center border-b border-neutral-300 dark:border-neutral-800 hover:bg-primary/5 dark:hover:bg-neutral-800/40 transition-all duration-300 ease-in-out text-sm "
+                className="hidden xl:block overflow-x-auto rounded-2xl  shadow-sm"
               >
-                <div className="col-span-2 flex items-center gap-4">
-                  <div className="w-11 h-11 rounded-full overflow-hidden bg-neutral-100 dark:bg-neutral-800 border-2 border-white dark:border-neutral-700 shadow-sm">
-                    <Image
-                      src={
-                        s.gender?.toLowerCase() === "male"
-                          ? "/placeholder/boy.jpg"
-                          : "/placeholder/girl.jpg"
-                      }
-                      alt={s.fullName}
-                      width={44}
-                      height={44}
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-neutral-900 dark:text-white group-hover:text-primary dark:group-hover:text-primary transition-colors">
-                      {s.fullName}
-                    </p>
-                  </div>
-                </div>
+                <table className="w-full text-sm">
+                  <thead className="bg-primary text-primary-foreground">
+                    <tr>
+                      <th className="px-6 py-4 text-left">Student</th>
+                      <th className="px-4 py-4 text-center">Roll</th>
+                      <th className="px-4 py-4 text-center">Class</th>
+                      <th className="px-4 py-4 text-center">Section</th>
+                      <th className="px-4 py-4 text-center">Group</th>
+                      <th className="px-4 py-4 text-center hidden 2xl:block">
+                        Status
+                      </th>
+                      <th className="px-4 py-4 text-center">Contact</th>
+                      <th className="px-6 py-4 text-right">Action</th>
+                    </tr>
+                  </thead>
 
-                <div className="font-medium text-neutral-900 dark:text-neutral-300">
-                  {s.rollNumber}
-                </div>
-                <div className="text-neutral-600 dark:text-neutral-400">
-                  {s.className}
-                </div>
-                <div>
-                  <span className="px-2 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 text-[10px] font-bold text-neutral-600 dark:text-neutral-400 uppercase">
-                    {s.section || "-"}
-                  </span>
-                </div>
-                <div>
-                  <span className="px-2 py-1 rounded-md bg-primary/20  text-[10px] font-bold  uppercase tracking-wide">
-                    {s.group || "-"}
-                  </span>
-                </div>
+                  <tbody>
+                    {students.map((s, index) => (
+                      <tr
+                        key={index}
+                        className="border-b border-primary/10 even:bg-primary/5 dark:even:bg-subtle/40 hover:bg-primary/10 transition "
+                      >
+                        <td className="px-6 py-4">
+                          <div className="flex items-center gap-3">
+                            <Image
+                              src={
+                                s.gender?.toLowerCase() === "male"
+                                  ? "/placeholder/boy.jpg"
+                                  : "/placeholder/girl.jpg"
+                              }
+                              alt={s.fullName}
+                              width={42}
+                              height={42}
+                              className="rounded-full"
+                            />
 
-                <div className="flex items-center text-neutral-600 dark:text-neutral-400 font-mono text-nowrap gap-1.5">
-                  <MdPhone className="text-neutral-400" /> {s.contactNumber}
-                </div>
+                            <div>
+                              <p className="font-semibold">{s.fullName}</p>
+                              <p className="text-xs text-foreground/60">
+                                Student ID #{s.rollNumber}
+                              </p>
+                            </div>
+                          </div>
+                        </td>
 
-                <div className="col-span-1 text-right flex items-center justify-end">
-                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-neutral-400 dark:border-neutral-700 group-hover:border-primary dark:group-hover:border-primary transition-all text-[10px] font-bold text-neutral-600 dark:text-neutral-300">
-                    VIEW <MdArrowForward className="text-primary" />
-                  </div>
-                </div>
+                        <td className="px-4 py-4 text-center font-medium">
+                          {s.rollNumber}
+                        </td>
+
+                        <td className="px-4 py-4 text-center">{s.className}</td>
+
+                        <td className="px-4 py-4 text-center">
+                          <span className="rounded-md bg-background px-3 py-1 text-xs font-semibold">
+                            {s.section || "-"}
+                          </span>
+                        </td>
+
+                        <td className="px-4 py-4 text-center">
+                          <span className=" text-foreground px-3 py-1 text-xs font-semibold">
+                            {s.group || "-"}
+                          </span>
+                        </td>
+
+                        <td className="px-4 py-4 text-center hidden 2xl:block">
+                          <span
+                            className={` px-3 py-1 text-xs font-semibold ${s.status === "active" ? "text-green-600" : s.status === "graduated" ? "text-yellow-600" : "text-red-600"}`}
+                          >
+                            {s.status}
+                          </span>
+                        </td>
+
+                        <td className="px-4 py-4">
+                          <div className="flex items-center justify-center gap-2">
+                            <MdPhone className="text-primary" />
+                            {s.contactNumber}
+                          </div>
+                        </td>
+
+                        <td className="px-6 py-4 text-right">
+                          <Link
+                            href={`/admin/students/${s.studentId.$oid}`}
+                            className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:opacity-90"
+                          >
+                            View
+                            <MdArrowForward />
+                          </Link>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </Link>
             </div>
           ))}

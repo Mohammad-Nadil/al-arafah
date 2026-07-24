@@ -1,0 +1,1467 @@
+[
+  {
+    "studentId": "47a4a52a-b82b-423b-8f24-435c47df43be",
+    "academicYear": 2021,
+    "examName": "Unit Test",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Computer", "marks": 1, "grade": "b+" },
+      { "subject": "Computer", "marks": 59, "grade": "d" },
+      { "subject": "English", "marks": 65, "grade": "a+" }
+    ],
+    "totalMarks": 125,
+    "status": "passed"
+  },
+  {
+    "studentId": "7526c95d-b1b8-4e75-aaa2-890f9f2b97a7",
+    "academicYear": 2021,
+    "examName": "mid-Term",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Geography", "marks": 4, "grade": "d" },
+      { "subject": "Science", "marks": 36, "grade": "c" },
+      { "subject": "Geography", "marks": 70, "grade": "a" },
+      { "subject": "Bangla", "marks": 13, "grade": "b+" },
+      { "subject": "Computer", "marks": 61, "grade": "a+" },
+      { "subject": "English", "marks": 97, "grade": "a" },
+      { "subject": "History", "marks": 40, "grade": "d" }
+    ],
+    "totalMarks": 321,
+    "status": "passed"
+  },
+  {
+    "studentId": "ab94c169-5aaf-4bc6-a4e5-ed0db9d292ff",
+    "academicYear": 2025,
+    "examName": "mid-Term",
+    "className": "play",
+    "subjects": [
+      { "subject": "History", "marks": 7, "grade": "b" },
+      { "subject": "mathematics", "marks": 21, "grade": "a+" }
+    ],
+    "totalMarks": 28,
+    "status": "passed"
+  },
+  {
+    "studentId": "11267b5e-deeb-446d-bf21-6990354ccf90",
+    "academicYear": 2026,
+    "examName": "Final",
+    "className": "play",
+    "subjects": [
+      { "subject": "mathematics", "marks": 69, "grade": "a" },
+      { "subject": "Art", "marks": 9, "grade": "c" }
+    ],
+    "totalMarks": 78,
+    "status": "passed"
+  },
+  {
+    "studentId": "b4a7c0df-528c-4218-8133-7e15c04e6055",
+    "academicYear": 2024,
+    "examName": "mid-Term",
+    "className": "play",
+    "subjects": [
+      { "subject": "Art", "marks": 69, "grade": "b" },
+      { "subject": "mathematics", "marks": 1, "grade": "a" },
+      { "subject": "Computer", "marks": 7, "grade": "c" },
+      { "subject": "Science", "marks": 12, "grade": "c" },
+      { "subject": "Science", "marks": 84, "grade": "f" }
+    ],
+    "totalMarks": 173,
+    "status": "passed"
+  },
+  {
+    "studentId": "6de9cc12-79b4-41e6-b887-494c50af0d3e",
+    "academicYear": 2021,
+    "examName": "Final",
+    "className": "STD-III",
+    "subjects": [{ "subject": "Computer", "marks": 4, "grade": "c" }],
+    "totalMarks": 4,
+    "status": "failed"
+  },
+  {
+    "studentId": "7b07f092-f364-4d01-8b6e-92f59cb7ef29",
+    "academicYear": 2023,
+    "examName": "Final",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "Art", "marks": 10, "grade": "f" },
+      { "subject": "Computer", "marks": 15, "grade": "b" },
+      { "subject": "Computer", "marks": 58, "grade": "a" },
+      { "subject": "Computer", "marks": 96, "grade": "c" },
+      { "subject": "Science", "marks": 55, "grade": "c" },
+      { "subject": "History", "marks": 0, "grade": "c" },
+      { "subject": "Bangla", "marks": 75, "grade": "a+" },
+      { "subject": "Art", "marks": 92, "grade": "a" }
+    ],
+    "totalMarks": 401,
+    "status": "failed"
+  },
+  {
+    "studentId": "b00535f1-102a-4627-b223-a1af2c5860b4",
+    "academicYear": 2023,
+    "examName": "Final",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "History", "marks": 55, "grade": "d" },
+      { "subject": "Bangla", "marks": 89, "grade": "a" },
+      { "subject": "mathematics", "marks": 33, "grade": "c" },
+      { "subject": "Computer", "marks": 3, "grade": "b" },
+      { "subject": "Science", "marks": 66, "grade": "f" }
+    ],
+    "totalMarks": 246,
+    "status": "passed"
+  },
+  {
+    "studentId": "774be9d3-bfa6-4ee7-9bf9-827140c161d4",
+    "academicYear": 2020,
+    "examName": "Unit Test",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "Geography", "marks": 100, "grade": "a" },
+      { "subject": "Bangla", "marks": 20, "grade": "b" },
+      { "subject": "Science", "marks": 28, "grade": "a+" },
+      { "subject": "Science", "marks": 41, "grade": "a+" },
+      { "subject": "Geography", "marks": 71, "grade": "b" }
+    ],
+    "totalMarks": 260,
+    "status": "failed"
+  },
+  {
+    "studentId": "4eb8ae6f-c773-4c16-8ab1-06ba693b3d53",
+    "academicYear": 2023,
+    "examName": "Unit Test",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "History", "marks": 46, "grade": "b+" },
+      { "subject": "Computer", "marks": 100, "grade": "c" },
+      { "subject": "mathematics", "marks": 48, "grade": "b+" },
+      { "subject": "Computer", "marks": 63, "grade": "a+" }
+    ],
+    "totalMarks": 257,
+    "status": "failed"
+  },
+  {
+    "studentId": "78163c17-ab61-4a2d-b016-026f44c94367",
+    "academicYear": 2027,
+    "examName": "Final",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "mathematics", "marks": 77, "grade": "a+" },
+      { "subject": "Computer", "marks": 66, "grade": "f" },
+      { "subject": "English", "marks": 86, "grade": "c" }
+    ],
+    "totalMarks": 229,
+    "status": "failed"
+  },
+  {
+    "studentId": "c1432be5-aca9-4ce5-a89f-1fd56bc097dd",
+    "academicYear": 2028,
+    "examName": "mid-Term",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "Science", "marks": 41, "grade": "a+" },
+      { "subject": "Geography", "marks": 36, "grade": "a" },
+      { "subject": "Geography", "marks": 0, "grade": "f" },
+      { "subject": "Computer", "marks": 54, "grade": "a+" },
+      { "subject": "Art", "marks": 70, "grade": "f" },
+      { "subject": "mathematics", "marks": 34, "grade": "a+" }
+    ],
+    "totalMarks": 235,
+    "status": "passed"
+  },
+  {
+    "studentId": "1a791c92-8ef6-42d7-b68e-0be4f4b78a1e",
+    "academicYear": 2022,
+    "examName": "mid-Term",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "Art", "marks": 47, "grade": "a" },
+      { "subject": "Computer", "marks": 22, "grade": "b" }
+    ],
+    "totalMarks": 69,
+    "status": "passed"
+  },
+  {
+    "studentId": "44565fd6-dc75-4125-bfb7-7c8fc64b1831",
+    "academicYear": 2025,
+    "examName": "mid-Term",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "mathematics", "marks": 6, "grade": "b" },
+      { "subject": "Geography", "marks": 34, "grade": "a" },
+      { "subject": "Bangla", "marks": 87, "grade": "b+" },
+      { "subject": "Geography", "marks": 68, "grade": "f" },
+      { "subject": "Computer", "marks": 61, "grade": "b" }
+    ],
+    "totalMarks": 256,
+    "status": "passed"
+  },
+  {
+    "studentId": "16e5eab0-0ae7-4ed1-8125-a4af787aa62e",
+    "academicYear": 2030,
+    "examName": "Final",
+    "className": "play",
+    "subjects": [
+      { "subject": "Science", "marks": 3, "grade": "c" },
+      { "subject": "English", "marks": 98, "grade": "b+" },
+      { "subject": "History", "marks": 38, "grade": "b" }
+    ],
+    "totalMarks": 139,
+    "status": "passed"
+  },
+  {
+    "studentId": "67980859-c8a3-4ada-9d26-71336734afe0",
+    "academicYear": 2029,
+    "examName": "Quarterly",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "Bangla", "marks": 98, "grade": "b+" },
+      { "subject": "History", "marks": 68, "grade": "a" }
+    ],
+    "totalMarks": 166,
+    "status": "passed"
+  },
+  {
+    "studentId": "34085361-396b-474f-800a-c430fd0907ba",
+    "academicYear": 2028,
+    "examName": "Final",
+    "className": "play",
+    "subjects": [
+      { "subject": "Computer", "marks": 45, "grade": "b" },
+      { "subject": "Bangla", "marks": 72, "grade": "b" },
+      { "subject": "History", "marks": 85, "grade": "a" },
+      { "subject": "Computer", "marks": 5, "grade": "a" }
+    ],
+    "totalMarks": 207,
+    "status": "passed"
+  },
+  {
+    "studentId": "95bb7019-2e12-4c93-b1fc-7683e2a900f2",
+    "academicYear": 2023,
+    "examName": "Quarterly",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Geography", "marks": 22, "grade": "a" },
+      { "subject": "Computer", "marks": 57, "grade": "a" },
+      { "subject": "Science", "marks": 2, "grade": "c" },
+      { "subject": "Bangla", "marks": 56, "grade": "d" },
+      { "subject": "Art", "marks": 9, "grade": "b+" },
+      { "subject": "Bangla", "marks": 35, "grade": "b+" }
+    ],
+    "totalMarks": 181,
+    "status": "failed"
+  },
+  {
+    "studentId": "fd6f8dae-5399-465a-88b5-357cc587d206",
+    "academicYear": 2022,
+    "examName": "Unit Test",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Computer", "marks": 6, "grade": "c" },
+      { "subject": "History", "marks": 50, "grade": "d" },
+      { "subject": "mathematics", "marks": 95, "grade": "c" },
+      { "subject": "Geography", "marks": 85, "grade": "a+" },
+      { "subject": "Computer", "marks": 81, "grade": "d" },
+      { "subject": "English", "marks": 12, "grade": "d" }
+    ],
+    "totalMarks": 329,
+    "status": "passed"
+  },
+  {
+    "studentId": "d1164c43-0fa2-42c9-b7af-69a3e20ae4e4",
+    "academicYear": 2029,
+    "examName": "mid-Term",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "Bangla", "marks": 12, "grade": "a+" },
+      { "subject": "Bangla", "marks": 14, "grade": "b+" },
+      { "subject": "Science", "marks": 34, "grade": "a+" },
+      { "subject": "Geography", "marks": 89, "grade": "a" },
+      { "subject": "Bangla", "marks": 19, "grade": "f" }
+    ],
+    "totalMarks": 168,
+    "status": "passed"
+  },
+  {
+    "studentId": "082fcf40-08dd-4b1f-af30-eea456cc888e",
+    "academicYear": 2027,
+    "examName": "Unit Test",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "mathematics", "marks": 80, "grade": "f" },
+      { "subject": "mathematics", "marks": 35, "grade": "f" },
+      { "subject": "Geography", "marks": 73, "grade": "f" },
+      { "subject": "Computer", "marks": 31, "grade": "a" }
+    ],
+    "totalMarks": 219,
+    "status": "failed"
+  },
+  {
+    "studentId": "cb8514d6-1b19-45d2-8c68-047454d517fb",
+    "academicYear": 2028,
+    "examName": "Final",
+    "className": "play",
+    "subjects": [
+      { "subject": "mathematics", "marks": 96, "grade": "b+" },
+      { "subject": "mathematics", "marks": 26, "grade": "b" },
+      { "subject": "Art", "marks": 40, "grade": "c" },
+      { "subject": "History", "marks": 1, "grade": "a+" }
+    ],
+    "totalMarks": 163,
+    "status": "passed"
+  },
+  {
+    "studentId": "9c7bbc95-9d8c-4826-ba96-d2f1a0a75e33",
+    "academicYear": 2028,
+    "examName": "mid-Term",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "Bangla", "marks": 91, "grade": "a+" },
+      { "subject": "Computer", "marks": 8, "grade": "f" },
+      { "subject": "English", "marks": 15, "grade": "b+" },
+      { "subject": "mathematics", "marks": 5, "grade": "a+" }
+    ],
+    "totalMarks": 119,
+    "status": "passed"
+  },
+  {
+    "studentId": "da801e13-a448-4d6b-9c00-b8bf86a48d75",
+    "academicYear": 2024,
+    "examName": "Unit Test",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "Computer", "marks": 26, "grade": "c" },
+      { "subject": "Science", "marks": 100, "grade": "c" },
+      { "subject": "Art", "marks": 22, "grade": "b+" },
+      { "subject": "Geography", "marks": 85, "grade": "b+" },
+      { "subject": "Art", "marks": 24, "grade": "b" },
+      { "subject": "Computer", "marks": 76, "grade": "f" },
+      { "subject": "Bangla", "marks": 28, "grade": "d" },
+      { "subject": "Art", "marks": 35, "grade": "b+" }
+    ],
+    "totalMarks": 396,
+    "status": "failed"
+  },
+  {
+    "studentId": "ef8c6835-ce3a-40b6-96f1-33e885ac158c",
+    "academicYear": 2023,
+    "examName": "Final",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Bangla", "marks": 80, "grade": "a" },
+      { "subject": "Bangla", "marks": 86, "grade": "b" },
+      { "subject": "History", "marks": 89, "grade": "a" },
+      { "subject": "Science", "marks": 14, "grade": "b" },
+      { "subject": "Art", "marks": 90, "grade": "a" },
+      { "subject": "Geography", "marks": 10, "grade": "a+" },
+      { "subject": "English", "marks": 80, "grade": "a" }
+    ],
+    "totalMarks": 449,
+    "status": "failed"
+  },
+  {
+    "studentId": "af80d3a4-9a21-4fa5-ae2a-2edbef740870",
+    "academicYear": 2024,
+    "examName": "Final",
+    "className": "play",
+    "subjects": [
+      { "subject": "Art", "marks": 26, "grade": "b" },
+      { "subject": "Science", "marks": 39, "grade": "b+" },
+      { "subject": "Art", "marks": 4, "grade": "b" },
+      { "subject": "English", "marks": 96, "grade": "d" },
+      { "subject": "Science", "marks": 48, "grade": "d" },
+      { "subject": "mathematics", "marks": 20, "grade": "f" },
+      { "subject": "Computer", "marks": 79, "grade": "c" }
+    ],
+    "totalMarks": 312,
+    "status": "failed"
+  },
+  {
+    "studentId": "088dfaa8-7665-471c-b3f4-9cb4f92015b5",
+    "academicYear": 2021,
+    "examName": "Unit Test",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "Art", "marks": 75, "grade": "c" },
+      { "subject": "English", "marks": 80, "grade": "b" },
+      { "subject": "Art", "marks": 81, "grade": "a+" },
+      { "subject": "Bangla", "marks": 39, "grade": "b" },
+      { "subject": "Bangla", "marks": 63, "grade": "f" },
+      { "subject": "History", "marks": 99, "grade": "a" },
+      { "subject": "Computer", "marks": 90, "grade": "b+" }
+    ],
+    "totalMarks": 527,
+    "status": "failed"
+  },
+  {
+    "studentId": "c33b20ac-62b4-43d1-9787-93600768fcd7",
+    "academicYear": 2024,
+    "examName": "Unit Test",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "mathematics", "marks": 95, "grade": "c" },
+      { "subject": "Art", "marks": 71, "grade": "b+" },
+      { "subject": "Geography", "marks": 52, "grade": "b" },
+      { "subject": "English", "marks": 36, "grade": "b" },
+      { "subject": "Bangla", "marks": 56, "grade": "c" },
+      { "subject": "Computer", "marks": 67, "grade": "f" },
+      { "subject": "Bangla", "marks": 78, "grade": "c" },
+      { "subject": "Geography", "marks": 11, "grade": "c" }
+    ],
+    "totalMarks": 466,
+    "status": "failed"
+  },
+  {
+    "studentId": "8a8b191e-ee40-4916-acb7-e26d750db7a4",
+    "academicYear": 2030,
+    "examName": "Final",
+    "className": "STD-IV",
+    "subjects": [{ "subject": "Computer", "marks": 60, "grade": "d" }],
+    "totalMarks": 60,
+    "status": "failed"
+  },
+  {
+    "studentId": "9d46db40-181c-48b2-954c-bdca660f62ba",
+    "academicYear": 2025,
+    "examName": "Quarterly",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "English", "marks": 76, "grade": "d" },
+      { "subject": "mathematics", "marks": 25, "grade": "b+" },
+      { "subject": "Geography", "marks": 2, "grade": "b" },
+      { "subject": "Bangla", "marks": 12, "grade": "a+" },
+      { "subject": "Bangla", "marks": 55, "grade": "a+" },
+      { "subject": "English", "marks": 27, "grade": "a+" },
+      { "subject": "Geography", "marks": 30, "grade": "b+" },
+      { "subject": "Geography", "marks": 14, "grade": "b" }
+    ],
+    "totalMarks": 241,
+    "status": "failed"
+  },
+  {
+    "studentId": "f1c96545-5bcb-4803-a341-9bcc49e779f3",
+    "academicYear": 2024,
+    "examName": "Final",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "mathematics", "marks": 57, "grade": "b" },
+      { "subject": "mathematics", "marks": 83, "grade": "d" },
+      { "subject": "Bangla", "marks": 6, "grade": "d" }
+    ],
+    "totalMarks": 146,
+    "status": "passed"
+  },
+  {
+    "studentId": "7b6f8e5e-e50e-477a-8e24-cd84a76b22d2",
+    "academicYear": 2023,
+    "examName": "mid-Term",
+    "className": "play",
+    "subjects": [
+      { "subject": "Bangla", "marks": 13, "grade": "a+" },
+      { "subject": "Science", "marks": 5, "grade": "a+" },
+      { "subject": "History", "marks": 62, "grade": "f" },
+      { "subject": "Bangla", "marks": 68, "grade": "b" },
+      { "subject": "Bangla", "marks": 53, "grade": "a+" },
+      { "subject": "mathematics", "marks": 3, "grade": "a+" },
+      { "subject": "English", "marks": 92, "grade": "d" },
+      { "subject": "Art", "marks": 83, "grade": "c" }
+    ],
+    "totalMarks": 379,
+    "status": "failed"
+  },
+  {
+    "studentId": "79e07e84-4418-46b4-80de-3f28cb65c1e2",
+    "academicYear": 2025,
+    "examName": "Quarterly",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Computer", "marks": 97, "grade": "a" },
+      { "subject": "Geography", "marks": 27, "grade": "a+" },
+      { "subject": "Computer", "marks": 38, "grade": "f" }
+    ],
+    "totalMarks": 162,
+    "status": "failed"
+  },
+  {
+    "studentId": "7fbf1b3d-01a7-4f49-a9ea-53bb8ad16ac1",
+    "academicYear": 2025,
+    "examName": "Quarterly",
+    "className": "STD-I",
+    "subjects": [{ "subject": "History", "marks": 85, "grade": "c" }],
+    "totalMarks": 85,
+    "status": "failed"
+  },
+  {
+    "studentId": "4874753b-31b7-4b5b-8952-9409a40ee14b",
+    "academicYear": 2027,
+    "examName": "Unit Test",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "English", "marks": 69, "grade": "a+" },
+      { "subject": "Computer", "marks": 44, "grade": "d" },
+      { "subject": "Art", "marks": 9, "grade": "b+" },
+      { "subject": "Art", "marks": 41, "grade": "a" },
+      { "subject": "Science", "marks": 61, "grade": "d" }
+    ],
+    "totalMarks": 224,
+    "status": "failed"
+  },
+  {
+    "studentId": "a5400d66-2fb2-4286-b68d-cca6f5bcdfda",
+    "academicYear": 2027,
+    "examName": "Final",
+    "className": "STD-V",
+    "subjects": [{ "subject": "Science", "marks": 77, "grade": "a" }],
+    "totalMarks": 77,
+    "status": "passed"
+  },
+  {
+    "studentId": "39ee1f58-bab5-4b9d-83d0-f649b3faabb7",
+    "academicYear": 2029,
+    "examName": "Final",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "Art", "marks": 6, "grade": "b+" },
+      { "subject": "Science", "marks": 0, "grade": "b" },
+      { "subject": "Art", "marks": 84, "grade": "c" },
+      { "subject": "History", "marks": 95, "grade": "a" },
+      { "subject": "Computer", "marks": 25, "grade": "f" },
+      { "subject": "Science", "marks": 45, "grade": "c" },
+      { "subject": "Art", "marks": 17, "grade": "a" },
+      { "subject": "English", "marks": 35, "grade": "d" }
+    ],
+    "totalMarks": 307,
+    "status": "failed"
+  },
+  {
+    "studentId": "bbd6afed-2c36-447c-8d5a-45042fde1d26",
+    "academicYear": 2029,
+    "examName": "mid-Term",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Computer", "marks": 27, "grade": "d" },
+      { "subject": "Computer", "marks": 65, "grade": "f" },
+      { "subject": "Computer", "marks": 91, "grade": "b+" },
+      { "subject": "English", "marks": 8, "grade": "f" }
+    ],
+    "totalMarks": 191,
+    "status": "passed"
+  },
+  {
+    "studentId": "3518b877-660e-4d1e-9988-3614dbb6a4e6",
+    "academicYear": 2022,
+    "examName": "Quarterly",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Geography", "marks": 52, "grade": "d" },
+      { "subject": "English", "marks": 1, "grade": "c" }
+    ],
+    "totalMarks": 53,
+    "status": "passed"
+  },
+  {
+    "studentId": "3e372be9-dabb-41eb-a56c-6035c1bd2508",
+    "academicYear": 2026,
+    "examName": "Final",
+    "className": "play",
+    "subjects": [
+      { "subject": "English", "marks": 56, "grade": "c" },
+      { "subject": "mathematics", "marks": 79, "grade": "b+" },
+      { "subject": "English", "marks": 43, "grade": "f" },
+      { "subject": "English", "marks": 39, "grade": "d" },
+      { "subject": "English", "marks": 100, "grade": "a+" },
+      { "subject": "Computer", "marks": 73, "grade": "a" },
+      { "subject": "Art", "marks": 61, "grade": "b+" },
+      { "subject": "Geography", "marks": 84, "grade": "a" }
+    ],
+    "totalMarks": 535,
+    "status": "failed"
+  },
+  {
+    "studentId": "1cb43851-2c5e-4e5f-a908-4080a15edd06",
+    "academicYear": 2027,
+    "examName": "mid-Term",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Art", "marks": 26, "grade": "f" },
+      { "subject": "History", "marks": 74, "grade": "c" },
+      { "subject": "History", "marks": 20, "grade": "a" },
+      { "subject": "Bangla", "marks": 90, "grade": "b+" },
+      { "subject": "English", "marks": 29, "grade": "f" }
+    ],
+    "totalMarks": 239,
+    "status": "passed"
+  },
+  {
+    "studentId": "c5952024-b74f-4e73-b19a-7e4f2ff80f3d",
+    "academicYear": 2026,
+    "examName": "Final",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "Computer", "marks": 78, "grade": "b+" },
+      { "subject": "Bangla", "marks": 17, "grade": "a" }
+    ],
+    "totalMarks": 95,
+    "status": "passed"
+  },
+  {
+    "studentId": "c33e679f-21e2-4fec-9cc4-d4a39f27a927",
+    "academicYear": 2020,
+    "examName": "Quarterly",
+    "className": "STD-IV",
+    "subjects": [{ "subject": "Science", "marks": 83, "grade": "a+" }],
+    "totalMarks": 83,
+    "status": "passed"
+  },
+  {
+    "studentId": "95b625de-e0fd-4186-a442-5fa37fa0778f",
+    "academicYear": 2027,
+    "examName": "Final",
+    "className": "play",
+    "subjects": [
+      { "subject": "English", "marks": 14, "grade": "c" },
+      { "subject": "English", "marks": 56, "grade": "c" }
+    ],
+    "totalMarks": 70,
+    "status": "failed"
+  },
+  {
+    "studentId": "15ebe128-b9c7-45f5-84bb-1ef4666b38cf",
+    "academicYear": 2020,
+    "examName": "Unit Test",
+    "className": "play",
+    "subjects": [
+      { "subject": "Art", "marks": 68, "grade": "b" },
+      { "subject": "History", "marks": 83, "grade": "d" },
+      { "subject": "Geography", "marks": 0, "grade": "d" },
+      { "subject": "mathematics", "marks": 33, "grade": "a" }
+    ],
+    "totalMarks": 184,
+    "status": "passed"
+  },
+  {
+    "studentId": "30706b04-3aec-49ad-b752-956ede2d8af6",
+    "academicYear": 2030,
+    "examName": "Quarterly",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Art", "marks": 82, "grade": "d" },
+      { "subject": "Art", "marks": 9, "grade": "f" }
+    ],
+    "totalMarks": 91,
+    "status": "failed"
+  },
+  {
+    "studentId": "b234a710-a98e-435c-a28b-4b7524cecdfa",
+    "academicYear": 2022,
+    "examName": "Unit Test",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "mathematics", "marks": 47, "grade": "b+" },
+      { "subject": "English", "marks": 57, "grade": "f" },
+      { "subject": "Science", "marks": 34, "grade": "c" },
+      { "subject": "Science", "marks": 59, "grade": "f" },
+      { "subject": "mathematics", "marks": 81, "grade": "a+" },
+      { "subject": "mathematics", "marks": 95, "grade": "a+" },
+      { "subject": "Geography", "marks": 43, "grade": "f" }
+    ],
+    "totalMarks": 416,
+    "status": "passed"
+  },
+  {
+    "studentId": "6f51e47c-4828-4caa-a62b-65e3054f719b",
+    "academicYear": 2021,
+    "examName": "mid-Term",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "History", "marks": 8, "grade": "a+" },
+      { "subject": "Science", "marks": 75, "grade": "f" },
+      { "subject": "Geography", "marks": 70, "grade": "b" },
+      { "subject": "Science", "marks": 97, "grade": "c" },
+      { "subject": "Computer", "marks": 0, "grade": "c" },
+      { "subject": "Computer", "marks": 96, "grade": "a+" },
+      { "subject": "mathematics", "marks": 4, "grade": "a" },
+      { "subject": "History", "marks": 64, "grade": "f" }
+    ],
+    "totalMarks": 414,
+    "status": "failed"
+  },
+  {
+    "studentId": "143f49ac-33e8-4bbe-8ce7-abce7dae6aa0",
+    "academicYear": 2024,
+    "examName": "Final",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "Computer", "marks": 50, "grade": "a" },
+      { "subject": "Computer", "marks": 90, "grade": "f" },
+      { "subject": "Science", "marks": 87, "grade": "a" },
+      { "subject": "Geography", "marks": 95, "grade": "b" },
+      { "subject": "Art", "marks": 46, "grade": "a" },
+      { "subject": "Bangla", "marks": 7, "grade": "f" }
+    ],
+    "totalMarks": 375,
+    "status": "passed"
+  },
+  {
+    "studentId": "ad94df57-7cc7-45a0-96e7-3f0655cc4490",
+    "academicYear": 2030,
+    "examName": "Unit Test",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Geography", "marks": 31, "grade": "b+" },
+      { "subject": "History", "marks": 47, "grade": "a" },
+      { "subject": "mathematics", "marks": 92, "grade": "a" },
+      { "subject": "History", "marks": 52, "grade": "c" },
+      { "subject": "Science", "marks": 86, "grade": "a" }
+    ],
+    "totalMarks": 308,
+    "status": "passed"
+  },
+  {
+    "studentId": "7406515c-a3f6-43b4-9d15-a5664839241b",
+    "academicYear": 2021,
+    "examName": "mid-Term",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Science", "marks": 88, "grade": "f" },
+      { "subject": "Geography", "marks": 91, "grade": "b" },
+      { "subject": "English", "marks": 13, "grade": "c" },
+      { "subject": "mathematics", "marks": 75, "grade": "b+" },
+      { "subject": "Bangla", "marks": 65, "grade": "a" }
+    ],
+    "totalMarks": 332,
+    "status": "passed"
+  },
+  {
+    "studentId": "cdc7510e-5249-4a0e-b80f-871ddc49e728",
+    "academicYear": 2024,
+    "examName": "Quarterly",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "mathematics", "marks": 8, "grade": "b" },
+      { "subject": "Bangla", "marks": 96, "grade": "b+" }
+    ],
+    "totalMarks": 104,
+    "status": "failed"
+  },
+  {
+    "studentId": "39e3f48a-70a4-4b87-9d53-9fe075bb5118",
+    "academicYear": 2027,
+    "examName": "Unit Test",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Bangla", "marks": 100, "grade": "a" },
+      { "subject": "Computer", "marks": 90, "grade": "b+" },
+      { "subject": "Art", "marks": 84, "grade": "c" },
+      { "subject": "History", "marks": 2, "grade": "a+" },
+      { "subject": "Science", "marks": 19, "grade": "f" },
+      { "subject": "mathematics", "marks": 74, "grade": "a" },
+      { "subject": "Science", "marks": 88, "grade": "c" },
+      { "subject": "Science", "marks": 95, "grade": "a+" }
+    ],
+    "totalMarks": 552,
+    "status": "passed"
+  },
+  {
+    "studentId": "eacd8c33-1c9b-41c7-a9d9-24a1ebf6f696",
+    "academicYear": 2029,
+    "examName": "Unit Test",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "Science", "marks": 17, "grade": "b" },
+      { "subject": "mathematics", "marks": 2, "grade": "f" },
+      { "subject": "Computer", "marks": 14, "grade": "b+" },
+      { "subject": "Geography", "marks": 19, "grade": "b" },
+      { "subject": "History", "marks": 26, "grade": "f" },
+      { "subject": "Computer", "marks": 15, "grade": "d" },
+      { "subject": "English", "marks": 15, "grade": "a+" }
+    ],
+    "totalMarks": 108,
+    "status": "failed"
+  },
+  {
+    "studentId": "1cbf291d-260c-488a-9178-d39885c58b75",
+    "academicYear": 2029,
+    "examName": "Final",
+    "className": "play",
+    "subjects": [
+      { "subject": "Geography", "marks": 57, "grade": "b" },
+      { "subject": "Geography", "marks": 37, "grade": "a" },
+      { "subject": "mathematics", "marks": 47, "grade": "c" },
+      { "subject": "mathematics", "marks": 95, "grade": "a" },
+      { "subject": "History", "marks": 40, "grade": "d" },
+      { "subject": "Computer", "marks": 39, "grade": "f" },
+      { "subject": "Science", "marks": 75, "grade": "b+" }
+    ],
+    "totalMarks": 390,
+    "status": "failed"
+  },
+  {
+    "studentId": "48a0b373-3a85-4ec0-ba40-c8c2ad70c21c",
+    "academicYear": 2024,
+    "examName": "mid-Term",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "English", "marks": 73, "grade": "f" },
+      { "subject": "Science", "marks": 34, "grade": "b+" }
+    ],
+    "totalMarks": 107,
+    "status": "passed"
+  },
+  {
+    "studentId": "e3418e32-3dc1-498f-afba-476ae7216958",
+    "academicYear": 2026,
+    "examName": "Unit Test",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Bangla", "marks": 26, "grade": "f" },
+      { "subject": "Geography", "marks": 67, "grade": "a" }
+    ],
+    "totalMarks": 93,
+    "status": "failed"
+  },
+  {
+    "studentId": "d97d4ff2-a75c-45cd-8900-722d562a7ea8",
+    "academicYear": 2029,
+    "examName": "Final",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "English", "marks": 20, "grade": "d" },
+      { "subject": "English", "marks": 43, "grade": "d" },
+      { "subject": "History", "marks": 100, "grade": "f" },
+      { "subject": "mathematics", "marks": 46, "grade": "b" },
+      { "subject": "Computer", "marks": 70, "grade": "d" },
+      { "subject": "Science", "marks": 89, "grade": "f" }
+    ],
+    "totalMarks": 368,
+    "status": "failed"
+  },
+  {
+    "studentId": "a0ed01f1-edb9-40cd-a856-fc6456c40e63",
+    "academicYear": 2029,
+    "examName": "Quarterly",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "History", "marks": 3, "grade": "d" },
+      { "subject": "Bangla", "marks": 99, "grade": "a" }
+    ],
+    "totalMarks": 102,
+    "status": "passed"
+  },
+  {
+    "studentId": "33540f73-1797-4b53-9a1d-7fadf4eb5a5c",
+    "academicYear": 2022,
+    "examName": "Final",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "English", "marks": 31, "grade": "a+" },
+      { "subject": "Computer", "marks": 35, "grade": "b+" }
+    ],
+    "totalMarks": 66,
+    "status": "failed"
+  },
+  {
+    "studentId": "12eeab6d-9d3b-4b19-8fa4-c64ac842ee4d",
+    "academicYear": 2020,
+    "examName": "Quarterly",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "Science", "marks": 12, "grade": "a" },
+      { "subject": "mathematics", "marks": 66, "grade": "d" },
+      { "subject": "Science", "marks": 66, "grade": "b" },
+      { "subject": "English", "marks": 58, "grade": "c" },
+      { "subject": "mathematics", "marks": 0, "grade": "a" },
+      { "subject": "Bangla", "marks": 67, "grade": "b+" },
+      { "subject": "Art", "marks": 33, "grade": "b+" }
+    ],
+    "totalMarks": 302,
+    "status": "passed"
+  },
+  {
+    "studentId": "87d9cfb7-7c94-470c-8ed9-ec4de58053c5",
+    "academicYear": 2022,
+    "examName": "Unit Test",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "mathematics", "marks": 1, "grade": "b" },
+      { "subject": "Bangla", "marks": 60, "grade": "d" },
+      { "subject": "Computer", "marks": 67, "grade": "d" },
+      { "subject": "English", "marks": 35, "grade": "d" },
+      { "subject": "English", "marks": 56, "grade": "c" },
+      { "subject": "Art", "marks": 45, "grade": "b" },
+      { "subject": "Bangla", "marks": 96, "grade": "f" },
+      { "subject": "Geography", "marks": 100, "grade": "f" }
+    ],
+    "totalMarks": 460,
+    "status": "passed"
+  },
+  {
+    "studentId": "d7b599ed-41a7-4eea-b249-526749038fae",
+    "academicYear": 2029,
+    "examName": "Final",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Computer", "marks": 98, "grade": "f" },
+      { "subject": "Geography", "marks": 6, "grade": "b+" }
+    ],
+    "totalMarks": 104,
+    "status": "passed"
+  },
+  {
+    "studentId": "4bb67c24-8dcf-4bcf-a1cd-ee84258f233a",
+    "academicYear": 2030,
+    "examName": "Quarterly",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "History", "marks": 60, "grade": "a+" },
+      { "subject": "English", "marks": 67, "grade": "d" },
+      { "subject": "Art", "marks": 22, "grade": "b" },
+      { "subject": "History", "marks": 53, "grade": "b+" },
+      { "subject": "mathematics", "marks": 62, "grade": "c" },
+      { "subject": "Computer", "marks": 69, "grade": "f" },
+      { "subject": "English", "marks": 68, "grade": "b+" }
+    ],
+    "totalMarks": 401,
+    "status": "passed"
+  },
+  {
+    "studentId": "86022fad-d168-4897-b066-681be097b848",
+    "academicYear": 2022,
+    "examName": "Final",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "History", "marks": 28, "grade": "c" },
+      { "subject": "Art", "marks": 93, "grade": "d" },
+      { "subject": "Geography", "marks": 5, "grade": "c" },
+      { "subject": "English", "marks": 78, "grade": "b+" },
+      { "subject": "Computer", "marks": 7, "grade": "a" },
+      { "subject": "Geography", "marks": 38, "grade": "f" },
+      { "subject": "Science", "marks": 92, "grade": "b+" },
+      { "subject": "mathematics", "marks": 90, "grade": "f" }
+    ],
+    "totalMarks": 431,
+    "status": "failed"
+  },
+  {
+    "studentId": "4d4be488-c9ab-466a-97c6-98127bfb6e3b",
+    "academicYear": 2020,
+    "examName": "mid-Term",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "English", "marks": 20, "grade": "f" },
+      { "subject": "Science", "marks": 66, "grade": "f" },
+      { "subject": "Geography", "marks": 41, "grade": "b+" },
+      { "subject": "Science", "marks": 91, "grade": "b" }
+    ],
+    "totalMarks": 218,
+    "status": "failed"
+  },
+  {
+    "studentId": "d96754dd-aa9e-4c4c-8d7f-4e1938ec1bc4",
+    "academicYear": 2021,
+    "examName": "Quarterly",
+    "className": "play",
+    "subjects": [
+      { "subject": "Computer", "marks": 4, "grade": "c" },
+      { "subject": "History", "marks": 70, "grade": "b" },
+      { "subject": "Computer", "marks": 96, "grade": "b" },
+      { "subject": "Geography", "marks": 63, "grade": "c" },
+      { "subject": "English", "marks": 38, "grade": "b" },
+      { "subject": "Art", "marks": 72, "grade": "b" },
+      { "subject": "History", "marks": 65, "grade": "a" },
+      { "subject": "mathematics", "marks": 60, "grade": "b" }
+    ],
+    "totalMarks": 468,
+    "status": "passed"
+  },
+  {
+    "studentId": "38a961ee-b613-4a8a-a24b-78ac3b7bc611",
+    "academicYear": 2020,
+    "examName": "Final",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Science", "marks": 87, "grade": "d" },
+      { "subject": "Bangla", "marks": 84, "grade": "b" },
+      { "subject": "Geography", "marks": 41, "grade": "b+" }
+    ],
+    "totalMarks": 212,
+    "status": "passed"
+  },
+  {
+    "studentId": "49f87eaf-eb45-4ecf-8bb9-d255bba34a86",
+    "academicYear": 2023,
+    "examName": "Unit Test",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Science", "marks": 46, "grade": "a+" },
+      { "subject": "Science", "marks": 89, "grade": "c" }
+    ],
+    "totalMarks": 135,
+    "status": "passed"
+  },
+  {
+    "studentId": "ffea572c-431e-463f-832c-b6bf5714a995",
+    "academicYear": 2021,
+    "examName": "Unit Test",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Geography", "marks": 65, "grade": "b+" },
+      { "subject": "History", "marks": 33, "grade": "b+" },
+      { "subject": "History", "marks": 76, "grade": "d" },
+      { "subject": "English", "marks": 87, "grade": "b+" },
+      { "subject": "Bangla", "marks": 82, "grade": "b+" },
+      { "subject": "History", "marks": 68, "grade": "b" },
+      { "subject": "mathematics", "marks": 1, "grade": "b+" }
+    ],
+    "totalMarks": 412,
+    "status": "failed"
+  },
+  {
+    "studentId": "574dfc2e-dfcf-4366-847a-df486f421de7",
+    "academicYear": 2027,
+    "examName": "Unit Test",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "English", "marks": 94, "grade": "d" },
+      { "subject": "History", "marks": 4, "grade": "b+" },
+      { "subject": "mathematics", "marks": 99, "grade": "c" },
+      { "subject": "History", "marks": 37, "grade": "a+" },
+      { "subject": "Art", "marks": 41, "grade": "b" },
+      { "subject": "Science", "marks": 99, "grade": "b+" }
+    ],
+    "totalMarks": 374,
+    "status": "passed"
+  },
+  {
+    "studentId": "9df67991-f2af-475f-9335-7dd06912c479",
+    "academicYear": 2020,
+    "examName": "mid-Term",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "mathematics", "marks": 34, "grade": "c" },
+      { "subject": "Science", "marks": 65, "grade": "c" },
+      { "subject": "Geography", "marks": 22, "grade": "c" },
+      { "subject": "Computer", "marks": 71, "grade": "d" }
+    ],
+    "totalMarks": 192,
+    "status": "failed"
+  },
+  {
+    "studentId": "506bb0ff-2950-494f-8f2f-6c9bd547a87d",
+    "academicYear": 2022,
+    "examName": "Unit Test",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Geography", "marks": 93, "grade": "c" },
+      { "subject": "Bangla", "marks": 15, "grade": "b" },
+      { "subject": "Art", "marks": 67, "grade": "a" },
+      { "subject": "Bangla", "marks": 70, "grade": "d" },
+      { "subject": "English", "marks": 66, "grade": "a" },
+      { "subject": "Geography", "marks": 64, "grade": "f" },
+      { "subject": "Computer", "marks": 81, "grade": "f" }
+    ],
+    "totalMarks": 456,
+    "status": "failed"
+  },
+  {
+    "studentId": "5b7c406d-86c4-40e4-b10f-410bc385b065",
+    "academicYear": 2027,
+    "examName": "Unit Test",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "Science", "marks": 15, "grade": "b+" },
+      { "subject": "Art", "marks": 1, "grade": "c" },
+      { "subject": "Computer", "marks": 3, "grade": "b+" }
+    ],
+    "totalMarks": 19,
+    "status": "passed"
+  },
+  {
+    "studentId": "b35ac7c2-aa56-411c-a0db-c57a733dd0f9",
+    "academicYear": 2026,
+    "examName": "Quarterly",
+    "className": "play",
+    "subjects": [
+      { "subject": "English", "marks": 1, "grade": "a" },
+      { "subject": "Art", "marks": 84, "grade": "d" },
+      { "subject": "mathematics", "marks": 15, "grade": "a+" },
+      { "subject": "mathematics", "marks": 84, "grade": "a+" },
+      { "subject": "Art", "marks": 23, "grade": "b" }
+    ],
+    "totalMarks": 207,
+    "status": "failed"
+  },
+  {
+    "studentId": "5469911c-c006-4fbc-95fa-bcadc132328f",
+    "academicYear": 2020,
+    "examName": "Unit Test",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Bangla", "marks": 19, "grade": "c" },
+      { "subject": "History", "marks": 99, "grade": "a" },
+      { "subject": "English", "marks": 84, "grade": "a" },
+      { "subject": "English", "marks": 43, "grade": "f" },
+      { "subject": "English", "marks": 98, "grade": "b+" }
+    ],
+    "totalMarks": 343,
+    "status": "failed"
+  },
+  {
+    "studentId": "73f72839-0c0b-4874-b153-bd829a0947c1",
+    "academicYear": 2027,
+    "examName": "Final",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Art", "marks": 12, "grade": "c" },
+      { "subject": "mathematics", "marks": 6, "grade": "b+" },
+      { "subject": "Geography", "marks": 22, "grade": "f" }
+    ],
+    "totalMarks": 40,
+    "status": "passed"
+  },
+  {
+    "studentId": "35c45615-8469-4eea-8e84-662a9c6cd138",
+    "academicYear": 2020,
+    "examName": "mid-Term",
+    "className": "play",
+    "subjects": [
+      { "subject": "Science", "marks": 100, "grade": "b" },
+      { "subject": "mathematics", "marks": 74, "grade": "f" },
+      { "subject": "Science", "marks": 27, "grade": "a" },
+      { "subject": "mathematics", "marks": 87, "grade": "a+" },
+      { "subject": "mathematics", "marks": 12, "grade": "b+" },
+      { "subject": "Bangla", "marks": 85, "grade": "f" },
+      { "subject": "History", "marks": 51, "grade": "d" }
+    ],
+    "totalMarks": 436,
+    "status": "failed"
+  },
+  {
+    "studentId": "81b8638b-02e4-43da-9f11-6d39eace7550",
+    "academicYear": 2022,
+    "examName": "mid-Term",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "Art", "marks": 42, "grade": "a" },
+      { "subject": "Science", "marks": 34, "grade": "a+" }
+    ],
+    "totalMarks": 76,
+    "status": "failed"
+  },
+  {
+    "studentId": "128fc22d-2163-458d-adb5-d1b83ba16526",
+    "academicYear": 2029,
+    "examName": "Quarterly",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "Art", "marks": 91, "grade": "c" },
+      { "subject": "History", "marks": 43, "grade": "f" },
+      { "subject": "Geography", "marks": 70, "grade": "b+" }
+    ],
+    "totalMarks": 204,
+    "status": "passed"
+  },
+  {
+    "studentId": "5ec37480-bfe1-4646-8fd3-fa4d019cd16b",
+    "academicYear": 2025,
+    "examName": "Quarterly",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Geography", "marks": 39, "grade": "a" },
+      { "subject": "mathematics", "marks": 92, "grade": "b+" },
+      { "subject": "English", "marks": 9, "grade": "d" },
+      { "subject": "English", "marks": 26, "grade": "a+" },
+      { "subject": "History", "marks": 67, "grade": "d" },
+      { "subject": "Science", "marks": 40, "grade": "c" },
+      { "subject": "Bangla", "marks": 80, "grade": "f" }
+    ],
+    "totalMarks": 353,
+    "status": "passed"
+  },
+  {
+    "studentId": "a9cd12ba-6eb9-465b-b226-ec49d9a2d02d",
+    "academicYear": 2021,
+    "examName": "Quarterly",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "English", "marks": 80, "grade": "b+" },
+      { "subject": "History", "marks": 100, "grade": "b" },
+      { "subject": "Bangla", "marks": 89, "grade": "a+" },
+      { "subject": "English", "marks": 17, "grade": "a" },
+      { "subject": "Geography", "marks": 56, "grade": "b" },
+      { "subject": "Art", "marks": 16, "grade": "d" },
+      { "subject": "Science", "marks": 20, "grade": "a+" },
+      { "subject": "Art", "marks": 85, "grade": "c" }
+    ],
+    "totalMarks": 463,
+    "status": "failed"
+  },
+  {
+    "studentId": "06513ef4-6bd9-42a6-960e-f9e8702e7af6",
+    "academicYear": 2023,
+    "examName": "mid-Term",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "Geography", "marks": 91, "grade": "b" },
+      { "subject": "Computer", "marks": 85, "grade": "b+" },
+      { "subject": "Geography", "marks": 23, "grade": "b+" }
+    ],
+    "totalMarks": 199,
+    "status": "failed"
+  },
+  {
+    "studentId": "57e8d503-e581-479b-aec7-0eee72a96d57",
+    "academicYear": 2022,
+    "examName": "Quarterly",
+    "className": "play",
+    "subjects": [
+      { "subject": "Computer", "marks": 92, "grade": "f" },
+      { "subject": "Science", "marks": 100, "grade": "a" },
+      { "subject": "Art", "marks": 95, "grade": "a+" },
+      { "subject": "Computer", "marks": 14, "grade": "f" }
+    ],
+    "totalMarks": 301,
+    "status": "failed"
+  },
+  {
+    "studentId": "0ee28896-3d18-4ceb-bfe9-cfb170830e28",
+    "academicYear": 2027,
+    "examName": "Final",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "mathematics", "marks": 99, "grade": "a+" },
+      { "subject": "History", "marks": 87, "grade": "f" },
+      { "subject": "Science", "marks": 5, "grade": "f" },
+      { "subject": "Geography", "marks": 37, "grade": "b" }
+    ],
+    "totalMarks": 228,
+    "status": "failed"
+  },
+  {
+    "studentId": "9a046ff3-7b17-43b0-8880-3ac6de23dbe5",
+    "academicYear": 2020,
+    "examName": "Quarterly",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Computer", "marks": 97, "grade": "c" },
+      { "subject": "History", "marks": 22, "grade": "d" },
+      { "subject": "Art", "marks": 26, "grade": "a" }
+    ],
+    "totalMarks": 145,
+    "status": "failed"
+  },
+  {
+    "studentId": "ef4e252b-4f4f-434d-922f-7eb9224e964d",
+    "academicYear": 2030,
+    "examName": "Quarterly",
+    "className": "play",
+    "subjects": [
+      { "subject": "mathematics", "marks": 21, "grade": "d" },
+      { "subject": "History", "marks": 10, "grade": "d" }
+    ],
+    "totalMarks": 31,
+    "status": "failed"
+  },
+  {
+    "studentId": "23c42e83-3716-4e6b-a93c-fe92b6e6e52a",
+    "academicYear": 2029,
+    "examName": "Final",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Science", "marks": 52, "grade": "f" },
+      { "subject": "Bangla", "marks": 34, "grade": "d" },
+      { "subject": "Bangla", "marks": 74, "grade": "a" },
+      { "subject": "History", "marks": 95, "grade": "a+" },
+      { "subject": "History", "marks": 7, "grade": "a+" },
+      { "subject": "English", "marks": 2, "grade": "d" },
+      { "subject": "Art", "marks": 44, "grade": "c" },
+      { "subject": "Art", "marks": 44, "grade": "c" }
+    ],
+    "totalMarks": 352,
+    "status": "passed"
+  },
+  {
+    "studentId": "2163c89e-b3aa-4e1a-bdf6-1d119f8635fb",
+    "academicYear": 2020,
+    "examName": "Final",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "History", "marks": 14, "grade": "a+" },
+      { "subject": "Geography", "marks": 7, "grade": "a+" },
+      { "subject": "Computer", "marks": 92, "grade": "a+" }
+    ],
+    "totalMarks": 113,
+    "status": "passed"
+  },
+  {
+    "studentId": "ca8efca8-2640-441c-81d2-03a4b5a69afa",
+    "academicYear": 2028,
+    "examName": "Unit Test",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "Art", "marks": 72, "grade": "d" },
+      { "subject": "Bangla", "marks": 91, "grade": "b" },
+      { "subject": "Bangla", "marks": 39, "grade": "f" }
+    ],
+    "totalMarks": 202,
+    "status": "failed"
+  },
+  {
+    "studentId": "771bf2c2-5608-4d0b-b22f-5d5a0a9db634",
+    "academicYear": 2025,
+    "examName": "Quarterly",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Geography", "marks": 35, "grade": "f" },
+      { "subject": "Geography", "marks": 45, "grade": "a+" },
+      { "subject": "mathematics", "marks": 12, "grade": "b" },
+      { "subject": "Computer", "marks": 30, "grade": "a+" },
+      { "subject": "Art", "marks": 45, "grade": "c" },
+      { "subject": "Art", "marks": 3, "grade": "a" },
+      { "subject": "Art", "marks": 52, "grade": "b" }
+    ],
+    "totalMarks": 222,
+    "status": "passed"
+  },
+  {
+    "studentId": "7d395f23-60c7-45ed-a2ef-3e7eed6c1b01",
+    "academicYear": 2026,
+    "examName": "Quarterly",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "Bangla", "marks": 58, "grade": "b+" },
+      { "subject": "mathematics", "marks": 29, "grade": "f" },
+      { "subject": "mathematics", "marks": 39, "grade": "a" },
+      { "subject": "History", "marks": 0, "grade": "b" },
+      { "subject": "English", "marks": 52, "grade": "b" },
+      { "subject": "English", "marks": 0, "grade": "a" },
+      { "subject": "History", "marks": 32, "grade": "a" }
+    ],
+    "totalMarks": 210,
+    "status": "failed"
+  },
+  {
+    "studentId": "55eab00e-d6ed-409d-892c-8d21513a624b",
+    "academicYear": 2029,
+    "examName": "Quarterly",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "Science", "marks": 61, "grade": "a" },
+      { "subject": "History", "marks": 32, "grade": "b+" },
+      { "subject": "Art", "marks": 17, "grade": "a" },
+      { "subject": "Art", "marks": 80, "grade": "d" },
+      { "subject": "Art", "marks": 40, "grade": "a+" },
+      { "subject": "Computer", "marks": 44, "grade": "a" }
+    ],
+    "totalMarks": 274,
+    "status": "failed"
+  },
+  {
+    "studentId": "85e472d7-7b8e-4565-80c9-69af909f8102",
+    "academicYear": 2023,
+    "examName": "mid-Term",
+    "className": "STD-I",
+    "subjects": [
+      { "subject": "mathematics", "marks": 19, "grade": "d" },
+      { "subject": "Art", "marks": 63, "grade": "b" },
+      { "subject": "English", "marks": 68, "grade": "a" },
+      { "subject": "Science", "marks": 33, "grade": "f" },
+      { "subject": "English", "marks": 100, "grade": "d" }
+    ],
+    "totalMarks": 283,
+    "status": "passed"
+  },
+  {
+    "studentId": "26f23dc6-0c58-4955-a0b1-cb99860352b3",
+    "academicYear": 2029,
+    "examName": "Unit Test",
+    "className": "play",
+    "subjects": [
+      { "subject": "mathematics", "marks": 81, "grade": "b" },
+      { "subject": "Art", "marks": 70, "grade": "c" },
+      { "subject": "Computer", "marks": 95, "grade": "b" },
+      { "subject": "mathematics", "marks": 30, "grade": "b+" },
+      { "subject": "Science", "marks": 31, "grade": "c" }
+    ],
+    "totalMarks": 307,
+    "status": "passed"
+  },
+  {
+    "studentId": "8dbb5b54-655a-4f8a-806a-79f3987fb5e9",
+    "academicYear": 2021,
+    "examName": "Final",
+    "className": "STD-V",
+    "subjects": [
+      { "subject": "Art", "marks": 2, "grade": "a+" },
+      { "subject": "Science", "marks": 97, "grade": "c" },
+      { "subject": "Bangla", "marks": 6, "grade": "c" },
+      { "subject": "English", "marks": 55, "grade": "a+" },
+      { "subject": "Bangla", "marks": 30, "grade": "a+" }
+    ],
+    "totalMarks": 190,
+    "status": "passed"
+  },
+  {
+    "studentId": "33ab8ba2-654f-42e6-8e0a-326e07e34265",
+    "academicYear": 2022,
+    "examName": "Final",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "Geography", "marks": 34, "grade": "b" },
+      { "subject": "Geography", "marks": 12, "grade": "d" },
+      { "subject": "History", "marks": 21, "grade": "a+" },
+      { "subject": "History", "marks": 63, "grade": "b" },
+      { "subject": "Computer", "marks": 66, "grade": "b+" },
+      { "subject": "English", "marks": 83, "grade": "b" },
+      { "subject": "Computer", "marks": 43, "grade": "b+" },
+      { "subject": "Art", "marks": 25, "grade": "b+" }
+    ],
+    "totalMarks": 347,
+    "status": "failed"
+  },
+  {
+    "studentId": "c5750166-75df-4097-bdfe-d65d60d10007",
+    "academicYear": 2025,
+    "examName": "Final",
+    "className": "STD-II",
+    "subjects": [
+      { "subject": "Computer", "marks": 32, "grade": "a" },
+      { "subject": "Art", "marks": 40, "grade": "a" },
+      { "subject": "Bangla", "marks": 68, "grade": "b+" },
+      { "subject": "mathematics", "marks": 45, "grade": "a+" },
+      { "subject": "mathematics", "marks": 98, "grade": "d" }
+    ],
+    "totalMarks": 283,
+    "status": "passed"
+  },
+  {
+    "studentId": "f5a4cecc-1fb7-4c5a-9f64-6c9b3bd09d4e",
+    "academicYear": 2023,
+    "examName": "Unit Test",
+    "className": "STD-III",
+    "subjects": [
+      { "subject": "English", "marks": 94, "grade": "a+" },
+      { "subject": "Art", "marks": 92, "grade": "a" },
+      { "subject": "Computer", "marks": 6, "grade": "f" },
+      { "subject": "Geography", "marks": 28, "grade": "d" }
+    ],
+    "totalMarks": 220,
+    "status": "failed"
+  },
+  {
+    "studentId": "432599a0-b425-468b-93b3-e99fa732ddde",
+    "academicYear": 2029,
+    "examName": "mid-Term",
+    "className": "STD-IV",
+    "subjects": [
+      { "subject": "mathematics", "marks": 70, "grade": "b" },
+      { "subject": "English", "marks": 53, "grade": "a+" },
+      { "subject": "Art", "marks": 25, "grade": "d" },
+      { "subject": "mathematics", "marks": 70, "grade": "b" },
+      { "subject": "Bangla", "marks": 68, "grade": "a" },
+      { "subject": "History", "marks": 90, "grade": "b+" },
+      { "subject": "Bangla", "marks": 55, "grade": "a+" }
+    ],
+    "totalMarks": 431,
+    "status": "passed"
+  }
+]

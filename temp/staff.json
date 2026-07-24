@@ -19,7 +19,7 @@
     "department": "Support",
     "contactNumber": "208-754-9653",
     "email": "jtuft1@twitter.com",
-    "gender": "Bigender",
+    "gender": "Male",
     "status": "active",
     "avatarUrl": "https://robohash.org/corporisquisnecessitatibus.png?size=50x50&set=set1"
   },
@@ -27,7 +27,7 @@
     "id": { "$oid": "6a539dccfc13ae4e1a35bac4" },
     "staffId": "0011",
     "fullName": "Manfred Baskwell",
-    "role": "Budget/Accounting Analyst I",
+    "role": "Budget / Accounting Analyst I",
     "department": "Research and Development",
     "contactNumber": "318-866-8415",
     "email": "mbaskwell2@si.edu",
@@ -1075,7 +1075,7 @@
     "department": "Training",
     "contactNumber": "479-591-9832",
     "email": "cbolter2h@homestead.com",
-    "gender": "Bigender",
+    "gender": "Male",
     "status": "active",
     "avatarUrl": "https://robohash.org/delectusautcupiditate.png?size=50x50&set=set1"
   },

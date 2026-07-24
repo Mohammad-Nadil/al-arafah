@@ -39,7 +39,7 @@ const cleanData = {
       descEn:
         "Empowering global standard education built strictly upon moral values, modern technology, and comprehensive Hifzul Quran pathways.",
       descBn:
-        "নৈতিক মূল্যবোধ, आधुनिक প্রযুক্তি এবং সম্পূর্ণ হিফজুল কুরআন ট্র্যাকের ওপর ভিত্তি করে বিশ্বমানের শিক্ষা নিশ্চিত করা।",
+        "নৈতিক মূল্যবোধ, আধুনিক প্রযুক্তি এবং সম্পূর্ণ হিফজুল কুরআন ট্র্যাকের ওপর ভিত্তি করে বিশ্বমানের শিক্ষা নিশ্চিত করা।",
     },
     {
       id: 3,
@@ -112,6 +112,7 @@ export default function HeroBanner() {
                 alt="Al-Arafah Campus Banner"
                 fill
                 priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"} // এখানে loading property যুক্ত করা হয়েছে
                 sizes="100vw"
                 className={`object-cover object-center will-change-transform bg-slide-${index}`}
               />
