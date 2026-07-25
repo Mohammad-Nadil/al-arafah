@@ -53,7 +53,7 @@ export default function Footer() {
     links: [
       { href: "/about", en: "About Us", bn: "আমাদের সম্পর্কে" },
       { href: "/admissions", en: "Admissions", bn: "ভর্তি তথ্য" },
-      { href: "/curriculum", en: "Curriculum", bn: "কারিকুলাম" },
+      { href: "/academics", en: "Academics", bn: "শিক্ষা" },
       { href: "/notices", en: "Notice Board", bn: "নোটিশ বোর্ড" },
     ],
   };
@@ -191,9 +191,7 @@ export default function Footer() {
               href="/login"
               className="hover:text-primary dark:hover:text-accent transition-colors duration-300 relative group/link"
             >
-              <span>
-                {lang === "en" ? "Login" : "লগইন"}
-              </span>
+              <span>{lang === "en" ? "Login" : "লগইন"}</span>
               <span className="absolute bottom-0 left-0 w-0 h-px bg-primary dark:bg-accent group-hover/link:w-full transition-all duration-300" />
             </Link>
           </div>
