@@ -11,10 +11,13 @@ import studentData from "@/../temp/student.json";
 import { Image } from "antd";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function StudentsPage() {
   const students = studentData.slice(0, 50);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     window.dispatchEvent(new Event("resize"));
@@ -103,164 +106,159 @@ export default function StudentsPage() {
       <div className="900 xl:border border-neutral-400 dark:border-neutral-800 rounded-2xl overflow-hidden shadow-sm">
         <div className="grid lg:grid-cols-2 xl:block gap-3 sm:p-3 md:p-0 xl:gap-0 ">
           {students.map((s, index) => (
-            <div
+            <Link
               key={index}
-              className="xl:odd:bg-background  xl:even:bg-primary/5 dark:xl:even:bg-subtle/40"
+              href={`/admin/students/${s.studentId.$oid}`}
+              className="xl:hidden group block relative bg-subtle/30  rounded-2xl border border-neutral-400 dark:border-neutral-800 p-4 active:scale-[0.98] transition-transform duration-200 overflow-hidden xl:odd:bg-background  xl:even:bg-primary/5 dark:xl:even:bg-subtle/40"
             >
-              <Link
-                href={`/admin/students/${s.studentId.$oid}`}
-                className="xl:hidden group block relative bg-subtle/30  rounded-2xl border border-neutral-400 dark:border-neutral-800 p-4 active:scale-[0.98] transition-transform duration-200 overflow-hidden"
-              >
-                <div className="absolute inset-0  transition-all duration-300 pointer-events-none" />
+              <div className="absolute inset-0  transition-all duration-300 pointer-events-none" />
 
-                <div className="relative flex items-center gap-3">
-                  <div className="relative shrink-0">
-                    <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-primary dark:ring-primary border-2 border-white dark:border-neutral-800 shadow-sm">
-                      <Image
-                        src={
-                          s.gender?.toLowerCase() === "male"
-                            ? "/placeholder/boy.jpg"
-                            : "/placeholder/girl.jpg"
-                        }
-                        alt={s.fullName}
-                        width={56}
-                        height={56}
-                        className="object-cover w-full h-full"
-                      />
-                    </div>
+              <div className="relative flex items-center gap-3">
+                <div className="relative shrink-0">
+                  <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-primary dark:ring-primary border-2 border-white dark:border-neutral-800 shadow-sm">
+                    <Image
+                      src={
+                        s.gender?.toLowerCase() === "male"
+                          ? "/placeholder/boy.jpg"
+                          : "/placeholder/girl.jpg"
+                      }
+                      alt={s.fullName}
+                      width={56}
+                      height={56}
+                      className="object-cover w-full h-full"
+                    />
                   </div>
+                </div>
 
-                  <div className="flex-1 min-w-0">
-                    <p className="font-bold text-neutral-900 dark:text-white truncate text-sm xs:text-base">
-                      {s.fullName}
+                <div className="flex-1 min-w-0">
+                  <p className="font-bold text-neutral-900 dark:text-white truncate text-sm xs:text-base">
+                    {s.fullName}
+                  </p>
+                  <div>
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium mt-0.5">
+                      Class:{s.className}
                     </p>
-                    <div>
-                      <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium mt-0.5">
-                        Class:{s.className}
-                      </p>
-                      <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium mt-0.5">
-                        Roll #{s.rollNumber}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="shrink-0 w-8 h-8 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400 group-active:bg-primary group-active:text-white transition-colors duration-200">
-                    <MdArrowForward size={16} />
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium mt-0.5">
+                      Roll #{s.rollNumber}
+                    </p>
                   </div>
                 </div>
 
-                <div className="relative flex flex-wrap items-center gap-1.5 mt-3 pt-3 border-t border-dashed border-neutral-100 dark:border-neutral-800">
-                  <span className="px-2 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 text-[10px] font-bold text-neutral-600 dark:text-neutral-400 uppercase">
-                    Sec: {s.section || "-"}
-                  </span>
-                  <span className="px-2 py-1 rounded-md   text-[10px] font-bold   uppercase tracking-wide">
-                    {s.group || "-"}
-                  </span>
-                  <div className="ml-auto flex items-center gap-1 text-xs text-neutral-500 dark:text-neutral-400 font-mono text-nowrap">
-                    <MdPhone className="text-neutral-400" size={13} />
-                    {s.contactNumber}
-                  </div>
+                <div className="shrink-0 w-8 h-8 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400 group-active:bg-primary group-active:text-white transition-colors duration-200">
+                  <MdArrowForward size={16} />
                 </div>
-              </Link>
+              </div>
 
-              <Link
-                href={`/admin/students/${s.studentId.$oid}`}
-                className="hidden xl:block overflow-x-auto rounded-2xl  shadow-sm"
-              >
-                <table className="w-full text-sm">
-                  <thead className="bg-primary text-primary-foreground">
-                    <tr>
-                      <th className="px-6 py-4 text-left">Student</th>
-                      <th className="px-4 py-4 text-center">Roll</th>
-                      <th className="px-4 py-4 text-center">Class</th>
-                      <th className="px-4 py-4 text-center">Section</th>
-                      <th className="px-4 py-4 text-center">Group</th>
-                      <th className="px-4 py-4 text-center hidden 2xl:block">
-                        Status
-                      </th>
-                      <th className="px-4 py-4 text-center">Contact</th>
-                      <th className="px-6 py-4 text-right">Action</th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    {students.map((s, index) => (
-                      <tr
-                        key={index}
-                        className="border-b border-primary/10 even:bg-primary/5 dark:even:bg-subtle/40 hover:bg-primary/10 transition "
-                      >
-                        <td className="px-6 py-4">
-                          <div className="flex items-center gap-3">
-                            <Image
-                              src={
-                                s.gender?.toLowerCase() === "male"
-                                  ? "/placeholder/boy.jpg"
-                                  : "/placeholder/girl.jpg"
-                              }
-                              alt={s.fullName}
-                              width={42}
-                              height={42}
-                              className="rounded-full"
-                            />
-
-                            <div>
-                              <p className="font-semibold">{s.fullName}</p>
-                              <p className="text-xs text-foreground/60">
-                                Student ID #{s.rollNumber}
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-
-                        <td className="px-4 py-4 text-center font-medium">
-                          {s.rollNumber}
-                        </td>
-
-                        <td className="px-4 py-4 text-center">{s.className}</td>
-
-                        <td className="px-4 py-4 text-center">
-                          <span className="rounded-md bg-background px-3 py-1 text-xs font-semibold">
-                            {s.section || "-"}
-                          </span>
-                        </td>
-
-                        <td className="px-4 py-4 text-center">
-                          <span className=" text-foreground px-3 py-1 text-xs font-semibold">
-                            {s.group || "-"}
-                          </span>
-                        </td>
-
-                        <td className="px-4 py-4 text-center hidden 2xl:block">
-                          <span
-                            className={` px-3 py-1 text-xs font-semibold ${s.status === "active" ? "text-green-600" : s.status === "graduated" ? "text-yellow-600" : "text-red-600"}`}
-                          >
-                            {s.status}
-                          </span>
-                        </td>
-
-                        <td className="px-4 py-4">
-                          <div className="flex items-center justify-center gap-2">
-                            <MdPhone className="text-primary" />
-                            {s.contactNumber}
-                          </div>
-                        </td>
-
-                        <td className="px-6 py-4 text-right">
-                          <Link
-                            href={`/admin/students/${s.studentId.$oid}`}
-                            className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:opacity-90"
-                          >
-                            View
-                            <MdArrowForward />
-                          </Link>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </Link>
-            </div>
+              <div className="relative flex flex-wrap items-center gap-1.5 mt-3 pt-3 border-t border-dashed border-neutral-100 dark:border-neutral-800">
+                <span className="px-2 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 text-[10px] font-bold text-neutral-600 dark:text-neutral-400 uppercase">
+                  Sec: {s.section || "-"}
+                </span>
+                <span className="px-2 py-1 rounded-md   text-[10px] font-bold   uppercase tracking-wide">
+                  {s.group || "-"}
+                </span>
+                <div className="ml-auto flex items-center gap-1 text-xs text-neutral-500 dark:text-neutral-400 font-mono text-nowrap">
+                  <MdPhone className="text-neutral-400" size={13} />
+                  {s.contactNumber}
+                </div>
+              </div>
+            </Link>
           ))}
+          <div className="hidden xl:block overflow-x-auto rounded-2xl  shadow-sm">
+            <table className="w-full text-sm">
+              <thead className="bg-primary text-primary-foreground">
+                <tr>
+                  <th className="px-6 py-4 text-left">Student</th>
+                  <th className="px-4 py-4 text-center">Roll</th>
+                  <th className="px-4 py-4 text-center">Class</th>
+                  <th className="px-4 py-4 text-center">Section</th>
+                  <th className="px-4 py-4 text-center">Group</th>
+                  <th className="px-4 py-4 text-center hidden 2xl:block">
+                    Status
+                  </th>
+                  <th className="px-4 py-4 text-center">Contact</th>
+                  <th className="px-6 py-4 text-right">Action</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {students.map((s) => (
+                  <tr
+                    key={s.studentId.$oid}
+                    onClick={() =>
+                      router.push(`/admin/students/${s.studentId.$oid}`)
+                    }
+                    className="border-b border-primary/10 even:bg-primary/5 dark:even:bg-subtle/40 hover:bg-primary/10 transition "
+                  >
+                    <td className="px-6 py-4">
+                      <div className="flex items-center gap-3">
+                        <Image
+                          src={
+                            s.gender?.toLowerCase() === "male"
+                              ? "/placeholder/boy.jpg"
+                              : "/placeholder/girl.jpg"
+                          }
+                          alt={s.fullName}
+                          width={42}
+                          height={42}
+                          className="rounded-full"
+                        />
+
+                        <div>
+                          <p className="font-semibold">{s.fullName}</p>
+                          <p className="text-xs text-foreground/60">
+                            Student ID #{s.rollNumber}
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td className="px-4 py-4 text-center font-medium">
+                      {s.rollNumber}
+                    </td>
+
+                    <td className="px-4 py-4 text-center">{s.className}</td>
+
+                    <td className="px-4 py-4 text-center">
+                      <span className="rounded-md bg-background px-3 py-1 text-xs font-semibold">
+                        {s.section || "-"}
+                      </span>
+                    </td>
+
+                    <td className="px-4 py-4 text-center">
+                      <span className=" text-foreground px-3 py-1 text-xs font-semibold">
+                        {s.group || "-"}
+                      </span>
+                    </td>
+
+                    <td className="px-4 py-4 text-center hidden 2xl:block">
+                      <span
+                        className={` px-3 py-1 text-xs font-semibold ${s.status === "active" ? "text-green-600" : s.status === "graduated" ? "text-yellow-600" : "text-red-600"}`}
+                      >
+                        {s.status}
+                      </span>
+                    </td>
+
+                    <td className="px-4 py-4">
+                      <div className="flex items-center justify-center gap-2">
+                        <MdPhone className="text-primary" />
+                        {s.contactNumber}
+                      </div>
+                    </td>
+
+                    <td className="px-6 py-4 text-right">
+                      <Link
+                        href={`/admin/students/${s.studentId.$oid}`}
+                        className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:opacity-90"
+                      >
+                        View
+                        <MdArrowForward />
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

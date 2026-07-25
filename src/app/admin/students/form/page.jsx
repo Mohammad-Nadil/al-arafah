@@ -12,6 +12,7 @@ import {
   MdSave,
 } from "react-icons/md";
 import DragDrop from "@/components/ui/DragDrop";
+import Loading from "@/components/public/Loading";
 
 // ---------- Dropdown option lists (replace with DB-driven lists later) ----------
 const GENDERS = ["Male", "Female"];
@@ -94,8 +95,12 @@ export default function StudentFormPage() {
   };
 
   if (loading) {
-    return <FormSkeleton />;
+    return <Loading />;
   }
+
+    useEffect(() => {
+    window.dispatchEvent(new Event("resize"));
+  }, []);
 
   return (
     <div className="space-y-6">
@@ -385,37 +390,3 @@ function FormSelect({
   );
 }
 
-// ---------- Loading Skeleton ----------
-function FormSkeleton() {
-  return (
-    <div className="max-w-4xl mx-auto px-4 md:px-6 py-6 space-y-6 animate-pulse">
-      <div className="h-4 w-20 bg-neutral-200 dark:bg-subtle/30 rounded" />
-      <div className="h-7 w-48 bg-neutral-200 dark:bg-subtle/30 rounded" />
-
-      <div className="bg-background dark:bg-neutral-900 border border-neutral-400 dark:border-subtle/30 rounded-2xl p-6 shadow-sm flex items-center gap-5">
-        <div className="w-24 h-24 rounded-2xl bg-neutral-200 dark:bg-subtle/30 shrink-0" />
-        <div className="flex-1 space-y-2">
-          <div className="h-4 w-32 bg-neutral-200 dark:bg-subtle/30 rounded" />
-          <div className="h-3 w-48 bg-neutral-200 dark:bg-subtle/30 rounded" />
-        </div>
-      </div>
-
-      {[1, 2, 3].map((i) => (
-        <div
-          key={i}
-          className="bg-background dark:bg-neutral-900 border border-neutral-400 dark:border-subtle/30 rounded-2xl p-6 shadow-sm space-y-4"
-        >
-          <div className="h-3 w-32 bg-neutral-200 dark:bg-subtle/30 rounded" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[1, 2].map((j) => (
-              <div key={j} className="space-y-1.5">
-                <div className="h-2.5 w-16 bg-neutral-200 dark:bg-subtle/30 rounded" />
-                <div className="h-10 bg-neutral-200 dark:bg-subtle/30 rounded-lg" />
-              </div>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}

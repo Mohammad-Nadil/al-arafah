@@ -3,9 +3,7 @@ import {
   MdDashboard,
   MdPeople,
   MdBook,
-  MdReceipt,
   MdNotifications,
-  MdMail,
   MdSettings,
   MdEditNote,
 } from "react-icons/md";

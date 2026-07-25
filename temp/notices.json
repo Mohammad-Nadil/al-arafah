@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "topic": "academic",
+    "title": "annual sports day registration",
+    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula.",
+    "date": "7/14/2026"
+  },
+  {
+    "id": 2,
+    "topic": "academic",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices.",
+    "date": "7/8/2026"
+  },
+  {
+    "id": 3,
+    "topic": "urgent",
+    "title": "annual sports day registration",
+    "description": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.",
+    "date": "8/3/2026"
+  },
+  {
+    "id": 4,
+    "topic": "urgent",
+    "title": "annual sports day registration",
+    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum.",
+    "date": "8/24/2026"
+  },
+  {
+    "id": 5,
+    "topic": "urgent",
+    "title": "Summer Vacation Notice",
+    "description": "Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.",
+    "date": "8/21/2026"
+  },
+  {
+    "id": 6,
+    "topic": "academic",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "Sed accumsan felis.",
+    "date": "7/5/2026"
+  },
+  {
+    "id": 7,
+    "topic": "academic",
+    "title": "annual sports day registration",
+    "description": "Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.",
+    "date": "7/13/2026"
+  },
+  {
+    "id": 8,
+    "topic": "event",
+    "title": "Summer Vacation Notice",
+    "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "date": "7/26/2026"
+  },
+  {
+    "id": 9,
+    "topic": "academic",
+    "title": "annual sports day registration",
+    "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+    "date": "7/2/2026"
+  },
+  {
+    "id": 10,
+    "topic": "urgent",
+    "title": "mid-Term examination schedule 2026",
+    "description": "Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+    "date": "8/19/2026"
+  },
+  {
+    "id": 11,
+    "topic": "holiday",
+    "title": "mid-Term examination schedule 2026",
+    "description": "Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
+    "date": "8/28/2026"
+  },
+  {
+    "id": 12,
+    "topic": "holiday",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque.",
+    "date": "7/28/2026"
+  },
+  {
+    "id": 13,
+    "topic": "holiday",
+    "title": "Summer Vacation Notice",
+    "description": "Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+    "date": "7/9/2026"
+  },
+  {
+    "id": 14,
+    "topic": "holiday",
+    "title": "annual sports day registration",
+    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.",
+    "date": "8/3/2026"
+  },
+  {
+    "id": 15,
+    "topic": "academic",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus.",
+    "date": "8/10/2026"
+  },
+  {
+    "id": 16,
+    "topic": "urgent",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis.",
+    "date": "7/18/2026"
+  },
+  {
+    "id": 17,
+    "topic": "academic",
+    "title": "Summer Vacation Notice",
+    "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.",
+    "date": "7/23/2026"
+  },
+  {
+    "id": 18,
+    "topic": "holiday",
+    "title": "Summer Vacation Notice",
+    "description": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.",
+    "date": "7/31/2026"
+  },
+  {
+    "id": 19,
+    "topic": "event",
+    "title": "Summer Vacation Notice",
+    "description": "Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.",
+    "date": "7/14/2026"
+  },
+  {
+    "id": 20,
+    "topic": "event",
+    "title": "annual sports day registration",
+    "description": "In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst.",
+    "date": "8/8/2026"
+  },
+  {
+    "id": 21,
+    "topic": "holiday",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.",
+    "date": "7/6/2026"
+  },
+  {
+    "id": 22,
+    "topic": "academic",
+    "title": "mid-Term examination schedule 2026",
+    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus.",
+    "date": "7/23/2026"
+  },
+  {
+    "id": 23,
+    "topic": "event",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti.",
+    "date": "8/7/2026"
+  },
+  {
+    "id": 24,
+    "topic": "event",
+    "title": "Summer Vacation Notice",
+    "description": "Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante.",
+    "date": "7/30/2026"
+  },
+  {
+    "id": 25,
+    "topic": "urgent",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.",
+    "date": "8/2/2026"
+  },
+  {
+    "id": 26,
+    "topic": "holiday",
+    "title": "Summer Vacation Notice",
+    "description": "Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.",
+    "date": "7/27/2026"
+  },
+  {
+    "id": 27,
+    "topic": "urgent",
+    "title": "Summer Vacation Notice",
+    "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy.",
+    "date": "7/19/2026"
+  },
+  {
+    "id": 28,
+    "topic": "academic",
+    "title": "Summer Vacation Notice",
+    "description": "Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+    "date": "8/11/2026"
+  },
+  {
+    "id": 29,
+    "topic": "urgent",
+    "title": "annual sports day registration",
+    "description": "In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+    "date": "7/26/2026"
+  },
+  {
+    "id": 30,
+    "topic": "urgent",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst.",
+    "date": "8/21/2026"
+  },
+  {
+    "id": 31,
+    "topic": "event",
+    "title": "Summer Vacation Notice",
+    "description": "Nulla facilisi. Cras non velit nec nisi vulputate nonummy.",
+    "date": "7/10/2026"
+  },
+  {
+    "id": 32,
+    "topic": "holiday",
+    "title": "mid-Term examination schedule 2026",
+    "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.",
+    "date": "8/26/2026"
+  },
+  {
+    "id": 33,
+    "topic": "holiday",
+    "title": "mid-Term examination schedule 2026",
+    "description": "Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.",
+    "date": "8/18/2026"
+  },
+  {
+    "id": 34,
+    "topic": "event",
+    "title": "Summer Vacation Notice",
+    "description": "Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+    "date": "8/5/2026"
+  },
+  {
+    "id": 35,
+    "topic": "event",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+    "date": "7/25/2026"
+  },
+  {
+    "id": 36,
+    "topic": "academic",
+    "title": "annual sports day registration",
+    "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.",
+    "date": "7/21/2026"
+  },
+  {
+    "id": 37,
+    "topic": "holiday",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst.",
+    "date": "8/19/2026"
+  },
+  {
+    "id": 38,
+    "topic": "holiday",
+    "title": "mid-Term examination schedule 2026",
+    "description": "Nulla tellus.",
+    "date": "7/14/2026"
+  },
+  {
+    "id": 39,
+    "topic": "academic",
+    "title": "annual sports day registration",
+    "description": "Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.",
+    "date": "7/13/2026"
+  },
+  {
+    "id": 40,
+    "topic": "event",
+    "title": "Summer Vacation Notice",
+    "description": "Aliquam erat volutpat. In congue. Etiam justo.",
+    "date": "8/29/2026"
+  },
+  {
+    "id": 41,
+    "topic": "holiday",
+    "title": "Summer Vacation Notice",
+    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum.",
+    "date": "7/25/2026"
+  },
+  {
+    "id": 42,
+    "topic": "academic",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit.",
+    "date": "8/24/2026"
+  },
+  {
+    "id": 43,
+    "topic": "holiday",
+    "title": "Summer Vacation Notice",
+    "description": "Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus.",
+    "date": "8/3/2026"
+  },
+  {
+    "id": 44,
+    "topic": "event",
+    "title": "mid-Term examination schedule 2026",
+    "description": "Aenean lectus.",
+    "date": "7/31/2026"
+  },
+  {
+    "id": 45,
+    "topic": "academic",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.",
+    "date": "7/6/2026"
+  },
+  {
+    "id": 46,
+    "topic": "urgent",
+    "title": "annual sports day registration",
+    "description": "Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+    "date": "7/26/2026"
+  },
+  {
+    "id": 47,
+    "topic": "academic",
+    "title": "annual sports day registration",
+    "description": "Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
+    "date": "8/28/2026"
+  },
+  {
+    "id": 48,
+    "topic": "urgent",
+    "title": "mid-Term examination schedule 2026",
+    "description": "Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "date": "8/29/2026"
+  },
+  {
+    "id": 49,
+    "topic": "academic",
+    "title": "annual sports day registration",
+    "description": "Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
+    "date": "7/21/2026"
+  },
+  {
+    "id": 50,
+    "topic": "urgent",
+    "title": "Campus Closure Due to Weather Conditions",
+    "description": "Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo.",
+    "date": "8/1/2026"
+  }
+]

@@ -71,9 +71,9 @@ export default function AdminDashboard() {
               <Link href="/admin/students/form" className="flex  items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:opacity-90">
                 <MdAdd className="hidden xs:block"/> Add Student
               </Link>
-              <button className="flex items-center gap-2 px-4 py-2 bg-neutral-200 dark:bg-subtle rounded-lg">
+              <Link href="/admin/notices/new" className="flex items-center gap-2 px-4 py-2 bg-neutral-200 dark:bg-subtle rounded-lg">
                 <MdEdit className="hidden xs:block" /> Post Notice
-              </button>
+              </Link>
           </div>
         </div>
 
