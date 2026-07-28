@@ -22,8 +22,8 @@ const stats = [
     color: "bg-emerald-500",
   },
   {
-    name: "Pending Fees",
-    value: "৳ 45,200",
+    name: "Exams",
+    value: "৳ 45",
     icon: <MdReceipt />,
     color: "bg-amber-500",
   },
