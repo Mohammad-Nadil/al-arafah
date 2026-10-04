@@ -15,7 +15,7 @@ export default function LoginPage() {
           placeholder="Password"
           className="w-full p-3 mb-6 rounded-lg bg-neutral-50 dark:bg-neutral-800 border"
         />
-        <a href="/admin" className="w-full  bg-primary text-white p-3 px-6 rounded-lg font-bold text-right">
+        <a href="/" className="w-full  bg-primary text-white p-3 px-6 rounded-lg font-bold text-right">
           Login
         </a>
       </form>
