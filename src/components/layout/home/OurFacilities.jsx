@@ -93,19 +93,19 @@ export default function OurFacilities() {
           {cleanData.facilities.map((item) => (
             <div
               key={item.id}
-              className="group relative bg-transparent dark:bg-background p-4 md:p-8 rounded-2xl border border-neutral-400 dark:border-neutral-800 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out select-none"
+              className="group relative bg-transparent  p-4 md:p-8 rounded-2xl border border-neutral-400  shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out select-none"
             >
-              <div className="absolute inset-0 bg-linear-to-br from-accent/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+             
 
-              <div className="w-12 h-12 rounded-xl bg-[#032d22]/5 dark:bg-white/5 text-[#032d22] dark:text-accent flex items-center justify-center text-2xl mb-6 transition-all duration-300 ease-in-out group-hover:-translate-y-1 group-hover:bg-[#032d22] group-hover:text-accent dark:group-hover:bg-accent dark:group-hover:text-[#032d22] shadow-sm">
+              <div className="w-12 h-12 rounded-xl bg-primary/5 text-primary flex items-center justify-center text-2xl mb-6 transition-all duration-300 ease-in-out group-hover:-translate-y-1 group-hover:bg-primary group-hover:text-white shadow-sm">
                 {item.icon}
               </div>
 
-              <h3 className="text-lg md:text-xl font-serif font-semibold text-neutral-900 dark:text-neutral-100 group-hover:text-[#032d22] dark:group-hover:text-accent transition-colors duration-300">
+              <h3 className="text-lg md:text-xl font-serif font-semibold text-neutral-900 group-hover:text-primary transition-colors duration-300">
                 {lang === "en" ? item.titleEn : item.titleBn}
               </h3>
 
-              <p className="text-sm text-neutral-600 dark:text-neutral-400 font-sans font-light leading-relaxed mt-3">
+              <p className="text-sm text-neutral-600  font-sans font-light leading-relaxed mt-3">
                 {lang === "en" ? item.descEn : item.descBn}
               </p>
               

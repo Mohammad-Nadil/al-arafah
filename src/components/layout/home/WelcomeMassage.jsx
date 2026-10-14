@@ -114,19 +114,19 @@ export default function WelcomeMassage() {
 
             <div className="js-welcome-text-anim relative pl-6 border-l-2 border-accent bg-accent/5 py-4 pr-4 rounded-r-xl">
               <RiDoubleQuotesL className="text-accent text-5xl opacity-20 absolute -top-3 left-2" />
-              <p className="text-base sm:text-lg font-serif italic text-neutral-700 dark:text-neutral-300 leading-relaxed">
+              <p className="text-base sm:text-lg font-serif italic text-neutral-700  leading-relaxed">
                 {lang === "en" ? cleanData.quote.en : cleanData.quote.bn}
               </p>
             </div>
 
-            <div className="js-welcome-text-anim space-y-4 text-sm sm:text-base text-neutral-600 dark:text-neutral-400 font-sans leading-relaxed">
+            <div className="js-welcome-text-anim space-y-4 text-sm sm:text-base text-neutral-600  font-sans leading-relaxed">
               {cleanData.paragraphs.map((para, i) => (
                 <p key={i}>{lang === "en" ? para.en : para.bn}</p>
               ))}
             </div>
 
             <div className="js-welcome-text-anim pt-4 flex items-center gap-4">
-              <div className="h-px w-12 bg-neutral-300 dark:bg-neutral-700" />
+              <div className="h-px w-12 bg-neutral-300 " />
               <div>
                 <h4 className="font-serif text-base font-semibold text-primary">
                   {lang === "en" ? cleanData.author.nameEn : cleanData.author.nameBn}
@@ -144,7 +144,7 @@ export default function WelcomeMassage() {
 
               <div className="absolute inset-0 border border-accent/30 translate-x-4 translate-y-4 rounded md:rounded-4xl rounded-bl-none pointer-events-none z-0 transition-transform duration-500 group-hover:translate-x-2" />
 
-              <div className="relative w-full aspect-4/5 rounded md:rounded-4xl rounded-bl-none overflow-hidden shadow-xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200/40 dark:border-neutral-800/50 z-10">
+              <div className="relative w-full aspect-4/5 rounded md:rounded-4xl rounded-bl-none overflow-hidden shadow-xl bg-neutral-100  border border-neutral-200/40  z-10">
                 <Image
                   src={cleanData.image.src}
                   alt="Principal of Al-Arafah"
@@ -154,10 +154,10 @@ export default function WelcomeMassage() {
                   className="object-cover object-top"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#032d22]/40 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent pointer-events-none" />
               </div>
 
-              <div className="absolute -bottom-4 -left-4 bg-[#032d22] border border-accent/40 text-[#fefcf8] px-5 py-3 rounded-xl shadow-lg z-20 text-center font-serif">
+              <div className="absolute -bottom-4 -left-4 bg-navy border border-accent/40 text-white px-5 py-3 rounded-xl shadow-lg z-20 text-center font-serif">
                 <span className="block text-xl font-bold text-accent leading-none">
                   {cleanData.image.badgeVal}
                 </span>

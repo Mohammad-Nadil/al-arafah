@@ -53,7 +53,7 @@ export default function NoticeList() {
         <input
           type="text"
           placeholder="Search notices..."
-          className="w-full pl-12 p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 outline-hidden"
+          className="w-full pl-12 p-4 rounded-xl border border-neutral-200  bg-neutral-50  outline-hidden"
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
@@ -63,7 +63,7 @@ export default function NoticeList() {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-5 py-2 rounded-lg text-sm font-medium ${activeTab === tab ? "bg-primary text-white" : "bg-neutral-100 dark:bg-neutral-800"}`}
+            className={`px-5 py-2 rounded-lg text-sm font-medium ${activeTab === tab ? "bg-primary text-white" : "bg-neutral-100 "}`}
           >
             {tab}
           </button>
@@ -75,7 +75,7 @@ export default function NoticeList() {
             <div
               key={n.id}
               onClick={() => setSelectedNotice(n)}
-              className="cursor-pointer p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl flex justify-between items-center bg-card hover:border-primary transition-all group"
+              className="cursor-pointer p-5 border border-neutral-200  rounded-xl flex justify-between items-center bg-card hover:border-primary transition-all group"
             >
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-primary/10 rounded-lg text-primary">
@@ -92,7 +92,7 @@ export default function NoticeList() {
               </div>
 
               <div onClick={(e) => e.stopPropagation()}>
-                <button className="p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg text-neutral-500 hover:text-primary">
+                <button className="p-2 hover:bg-neutral-100  rounded-lg text-neutral-500 hover:text-primary">
                   <FiDownload size={18} />
                 </button>
               </div>
@@ -100,10 +100,10 @@ export default function NoticeList() {
           ))
         ) : (
           <div className="text-center py-20 flex flex-col items-center">
-            <div className="p-4 bg-neutral-100 dark:bg-neutral-800 rounded-full mb-4">
+            <div className="p-4 bg-neutral-100  rounded-full mb-4">
               <FiFileText size={32} className="text-neutral-400" />
             </div>
-            <h3 className="text-lg font-semibold text-neutral-700 dark:text-neutral-300">
+            <h3 className="text-lg font-semibold text-neutral-700 ">
               No notices found
             </h3>
             <p className="text-sm text-neutral-500 mt-1 max-w-xs">
@@ -118,7 +118,7 @@ export default function NoticeList() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm">
           <div
             ref={modalRef}
-            className="bg-background border border-neutral-200 dark:border-neutral-800 p-8 rounded-2xl max-w-lg w-full relative shadow-2xl"
+            className="bg-background border border-neutral-200  p-8 rounded-2xl max-w-lg w-full relative shadow-2xl"
           >
             <button
               onClick={() => setSelectedNotice(null)}
@@ -129,7 +129,7 @@ export default function NoticeList() {
             <h2 className="text-2xl font-bold mb-4 pr-6">
               {selectedNotice.title}
             </h2>
-            <p className="text-neutral-600 dark:text-neutral-300 mb-8 leading-relaxed">
+            <p className="text-neutral-600  mb-8 leading-relaxed">
               {selectedNotice.desc}
             </p>
             <button className="w-full py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary/90 transition-all">

@@ -50,13 +50,13 @@ export default function RulesPolicies() {
         />
 
         <div className="mt-12">
-          <div className="grid divide-y divide-neutral-200 dark:divide-neutral-800 border-y border-neutral-200 dark:border-neutral-800">
+          <div className="grid divide-y divide-neutral-200  border-y border-neutral-200 ">
             {rules.map((rule, idx) => (
               <div key={idx} className="py-8 flex gap-8">
-                <span className="text-xl font-mono font-bold text-neutral-300 dark:text-neutral-700">
+                <span className="text-xl font-mono font-bold text-neutral-300 ">
                   {rule.id}
                 </span>
-                <p className="text-lg font-medium text-neutral-800 dark:text-neutral-200 leading-relaxed">
+                <p className="text-lg font-medium text-neutral-800  leading-relaxed">
                   {lang === "en" ? rule.textEn : rule.textBn}
                 </p>
               </div>

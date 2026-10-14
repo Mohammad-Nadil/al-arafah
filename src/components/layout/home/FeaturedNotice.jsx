@@ -89,23 +89,23 @@ export default function FeaturedNotice() {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-12 md:mt-16">
-          <div className="lg:col-span-7 group relative p-6 md:p-10 rounded-2xl bg-transparent dark:bg-neutral-900 border border-neutral-400 dark:border-neutral-800 hover:border-accent hover:bg-linear-to-br from-accent/30 to-transparent transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between select-none will-change-transform">
+          <div className="lg:col-span-7 group relative p-6 md:p-10 rounded-2xl bg-transparent  border border-neutral-400  hover:border-accent hover:bg-linear-to-br from-accent/30 to-transparent transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between select-none will-change-transform">
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <span className="px-3 py-1 rounded-md text-[10px] font-bold tracking-widest uppercase bg-foreground text-accent dark:bg-accent dark:text-background">
+                <span className="px-3 py-1 rounded-md text-[10px] font-bold tracking-widest uppercase bg-foreground text-accent  ">
                   {lang === "en" ? mainNotice.tagEn : mainNotice.tagBn}
                 </span>
-                <span className="flex items-center gap-1.5 text-xs text-neutral-400 dark:text-neutral-500 font-sans">
+                <span className="flex items-center gap-1.5 text-xs text-neutral-400  font-sans">
                   <FiCalendar className="w-3.5 h-3.5 text-accent" />
                   {mainNotice.date}
                 </span>
               </div>
 
-              <h3 className="text-xl md:text-2xl font-serif font-semibold text-neutral-900 dark:text-neutral-100 group-hover:text-foreground dark:group-hover:text-accent transition-colors duration-300 leading-snug">
+              <h3 className="text-xl md:text-2xl font-serif font-semibold text-neutral-900  group-hover:text-foreground  transition-colors duration-300 leading-snug">
                 {lang === "en" ? mainNotice.titleEn : mainNotice.titleBn}
               </h3>
 
-              <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 font-sans font-light leading-relaxed mt-4">
+              <p className="text-sm md:text-base text-neutral-600  font-sans font-light leading-relaxed mt-4">
                 {lang === "en" ? mainNotice.descEn : mainNotice.descBn}
               </p>
             </div>
@@ -116,17 +116,17 @@ export default function FeaturedNotice() {
               {listNotices.map((item) => (
                 <div
                   key={item.id}
-                  className="group flex gap-5 p-4 rounded-xl bg-transparent dark:bg-neutral-900 border border-neutral-400 dark:border-neutral-800 hover:border-accent hover:bg-linear-to-br from-accent/30 to-transparent transition-all duration-300 cursor-pointer select-none"
+                  className="group flex gap-5 p-4 rounded-xl bg-transparent  border border-neutral-400  hover:border-accent hover:bg-linear-to-br from-accent/30 to-transparent transition-all duration-300 cursor-pointer select-none"
                 >
-                  <div className="w-10 h-10 shrink-0 rounded-xl bg-foreground/5 dark:bg-white/5 text-neutral-500 dark:text-neutral-400 flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-foreground group-hover:text-accent dark:group-hover:bg-accent dark:group-hover:text-background">
+                  <div className="w-10 h-10 shrink-0 rounded-xl bg-foreground/5  text-neutral-500  flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-foreground group-hover:text-accent  ">
                     <FiFileText className="w-4 h-4" />
                   </div>
 
                   <div className="flex flex-col gap-1">
-                    <span className="text-sm font-sans font-medium text-neutral-400 dark:text-neutral-500 flex items-center gap-1">
+                    <span className="text-sm font-sans font-medium text-neutral-400  flex items-center gap-1">
                       {item.date}
                     </span>
-                    <h4 className="text-sm md:text-base font-sans font-medium text-neutral-800 dark:text-neutral-200 group-hover:text-foreground dark:group-hover:text-accent transition-colors duration-300 line-clamp-1 leading-snug">
+                    <h4 className="text-sm md:text-base font-sans font-medium text-neutral-800  group-hover:text-foreground  transition-colors duration-300 line-clamp-1 leading-snug">
                       {lang === "en" ? item.titleEn : item.titleBn}
                     </h4>
                   </div>
@@ -134,7 +134,7 @@ export default function FeaturedNotice() {
               ))}
             </div>
             <Link href="/notices" className="block w-full">
-              <button className="w-full mt-2 py-3.5 border border-dashed border-neutral-300 dark:border-neutral-700 rounded-xl text-xs md:text-sm font-semibold text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:border-neutral-900 dark:hover:border-neutral-400 transition-all duration-300 cursor-pointer text-center bg-transparent select-none">
+              <button className="w-full mt-2 py-3.5 border border-dashed border-neutral-300  rounded-xl text-xs md:text-sm font-semibold text-neutral-500  hover:text-neutral-900  hover:border-neutral-900  transition-all duration-300 cursor-pointer text-center bg-transparent select-none">
                 {lang === "en"
                   ? cleanData.buttons.viewAllEn
                   : cleanData.buttons.viewAllBn}

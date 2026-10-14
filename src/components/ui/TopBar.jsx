@@ -31,7 +31,7 @@ const TopBar = () => {
           </a>
         </div>
 
-        <div className="font-serif tracking-wider text-accent drop-shadow-xs select-none">
+        <div className="font-serif tracking-wider text-foreground drop-shadow-xs select-none">
           {lang === "en" ? siteConfig.slogan.en : siteConfig.slogan.bn}
         </div>
       </Container>

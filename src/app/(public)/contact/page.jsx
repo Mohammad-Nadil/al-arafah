@@ -63,14 +63,14 @@ export default function ContactPage() {
             {infoCards.map((item, idx) => (
               <div
                 key={idx}
-                className="flex gap-4 p-5 rounded-2xl bg-neutral-50 dark:bg-neutral-900/50 border border-neutral-400 dark:border-neutral-800 transition-all hover:border-primary/50"
+                className="flex gap-4 p-5 rounded-2xl bg-neutral-50  border border-neutral-400  transition-all hover:border-primary/50"
               >
                 <div className="text-primary mt-1">{item.icon}</div>
                 <div>
                   <h4 className="font-bold text-xs uppercase tracking-widest text-neutral-400">
                     {item.title}
                   </h4>
-                  <p className="font-medium text-neutral-800 dark:text-neutral-200">
+                  <p className="font-medium text-neutral-800 ">
                     {item.value}
                   </p>
                 </div>
@@ -98,7 +98,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="mt-16 rounded-3xl overflow-hidden border-8 border-neutral-100 dark:border-neutral-900 shadow-2xl h-[450px]">
+        <div className="mt-16 rounded-3xl overflow-hidden border-8 border-neutral-100  shadow-2xl h-[450px]">
           {React.cloneElement(siteConfig.contact.googleMapsLink, {
             className:
               "w-full h-full grayscale hover:grayscale-0 transition-all duration-700",

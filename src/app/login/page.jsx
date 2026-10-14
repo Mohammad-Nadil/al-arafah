@@ -3,17 +3,17 @@ import Container from "@/components/public/Container";
 export default function LoginPage() {
   return (
     <Container className="flex  py-20 items-center justify-center ">
-      <form className="bg-white dark:bg-neutral-900 p-8 rounded-2xl w-96 border border-neutral-200 dark:border-neutral-800">
+      <form className="bg-white  p-8 rounded-2xl w-96 border border-neutral-200 ">
         <h2 className="text-2xl font-bold mb-6">Admin Login</h2>
         <input
           type="email"
           placeholder="Email"
-          className="w-full p-3 mb-4 rounded-lg bg-neutral-50 dark:bg-neutral-800 border"
+          className="w-full p-3 mb-4 rounded-lg bg-neutral-50  border"
         />
         <input
           type="password"
           placeholder="Password"
-          className="w-full p-3 mb-6 rounded-lg bg-neutral-50 dark:bg-neutral-800 border"
+          className="w-full p-3 mb-6 rounded-lg bg-neutral-50  border"
         />
         <a href="/" className="w-full  bg-primary text-white p-3 px-6 rounded-lg font-bold text-right">
           Login

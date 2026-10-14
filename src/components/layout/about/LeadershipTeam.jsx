@@ -67,9 +67,9 @@ export default function LeadershipTeam() {
           {cleanData.leaders.map((leader) => (
             <div 
               key={leader.id}
-              className="group flex flex-col items-center text-center bg-transparent rounded-3xl p-5 border border-transparent hover:border-neutral-200/50 dark:hover:border-neutral-800/40 transition-all duration-500 hover:shadow-xl"
+              className="group flex flex-col items-center text-center bg-transparent rounded-3xl p-5 border border-transparent hover:border-neutral-200/50  transition-all duration-500 hover:shadow-xl"
             >
-              <div className="relative w-48 h-48 md:w-52 md:h-52 rounded-full overflow-hidden border border-neutral-200/60 dark:border-neutral-800/60 shadow-md mb-6 transition-all duration-700 group-hover:scale-105">
+              <div className="relative w-48 h-48 md:w-52 md:h-52 rounded-full overflow-hidden border border-neutral-200/60  shadow-md mb-6 transition-all duration-700 group-hover:scale-105">
                 <div 
                   className="absolute inset-0 rounded-full p-[1.5px] bg-linear-to-tr from-primary via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-20" 
                   style={{ 
@@ -84,27 +84,27 @@ export default function LeadershipTeam() {
                   alt={leader.nameEn}
                   fill
                   sizes="(max-w: 768px) 48vw, (max-w: 1200px) 25vw, 20vw"
-                  className="object-cover opacity-95 dark:opacity-85 filter contrast-[1.02]"
+                  className="object-cover opacity-95  filter contrast-[1.02]"
                 />
               </div>
 
-              <span className="text-[10px] font-sans font-bold tracking-widest text-primary dark:text-accent uppercase mb-1.5">
+              <span className="text-[10px] font-sans font-bold tracking-widest text-primary  uppercase mb-1.5">
                 {lang === "en" ? leader.roleEn : leader.roleBn}
               </span>
               
-              <h3 className="text-lg md:text-xl font-serif font-bold text-neutral-900 dark:text-neutral-100 group-hover:text-primary dark:group-hover:text-accent transition-colors duration-300">
+              <h3 className="text-lg md:text-xl font-serif font-bold text-neutral-900  group-hover:text-primary  transition-colors duration-300">
                 {lang === "en" ? leader.nameEn : leader.nameBn}
               </h3>
               
-              <p className="text-xs md:text-sm font-sans font-light text-neutral-400 dark:text-neutral-500 mt-2 max-w-60">
+              <p className="text-xs md:text-sm font-sans font-light text-neutral-400  mt-2 max-w-60">
                 {lang === "en" ? leader.eduEn : leader.eduBn}
               </p>
 
               <div className="flex items-center gap-3 mt-4 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                <button className="text-neutral-400 hover:text-primary dark:hover:text-accent transition-colors cursor-pointer">
+                <button className="text-neutral-400 hover:text-primary  transition-colors cursor-pointer">
                   <FiMail className="w-4 h-4" />
                 </button>
-                <button className="text-neutral-400 hover:text-primary dark:hover:text-accent transition-colors cursor-pointer">
+                <button className="text-neutral-400 hover:text-primary  transition-colors cursor-pointer">
                   <FiLinkedin className="w-4 h-4" />
                 </button>
               </div>

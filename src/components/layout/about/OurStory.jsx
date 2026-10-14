@@ -44,30 +44,30 @@ export default function OurStory() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           <div className="lg:col-span-7 flex flex-col justify-center order-2 lg:order-1">
-            <div className="w-fit px-4 py-1.5  border border-primary dark:border-accent rounded-full select-none">
-              <span className="text-xs font-sans font-black uppercase tracking-widest text-primary dark:text-accent">
+            <div className="w-fit px-4 py-1.5  border border-primary  rounded-full select-none">
+              <span className="text-xs font-sans font-black uppercase tracking-widest text-primary ">
                 {lang === "en" ? cleanData.header.tagEn : cleanData.header.tagBn}
               </span>
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 dark:text-neutral-50 tracking-tight mt-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900  tracking-tight mt-6 leading-tight">
               {lang === "en" ? cleanData.header.titleEn : cleanData.header.titleBn}
             </h2>
 
-            <div className="text-sm md:text-base text-neutral-500 dark:text-neutral-400 font-sans font-light leading-relaxed mt-6 space-y-4">
+            <div className="text-sm md:text-base text-neutral-500  font-sans font-light leading-relaxed mt-6 space-y-4">
               {cleanData.paragraphs.map((para, idx) => (
                 <p key={idx}>{lang === "en" ? para.en : para.bn}</p>
               ))}
             </div>
           </div>
 
-          <div className="lg:col-span-5 order-1 lg:order-2 w-full aspect-4/3 sm:aspect-16/11 relative rounded-[2.5rem] overflow-hidden border border-neutral-200/40 dark:border-neutral-800/40 shadow-sm group">
+          <div className="lg:col-span-5 order-1 lg:order-2 w-full aspect-4/3 sm:aspect-16/11 relative rounded-[2.5rem] overflow-hidden border border-neutral-200/40  shadow-sm group">
             <Image
               src={cleanData.image.src} 
               alt={cleanData.image.alt}
               fill
               sizes="(max-w: 768px) 100vw, (max-w: 1200px) 40vw, 33vw"
-              className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-95 dark:opacity-85"
+              className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-95 "
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-neutral-950/10 via-transparent to-transparent pointer-events-none" />
           </div>

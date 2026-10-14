@@ -60,9 +60,9 @@ export default function ResultsPage() {
                 label={lang === "en" ? "Search Another" : "নতুন করে খুঁজুন"}
                 onClick={() => setResult(null)}
                 bgColor="transparent"
-                textColor="#017a54"
-                borderColor="#017a54"
-                flairColor="#017a54"
+                textColor="var(--primary)"
+                borderColor="var(--primary)"
+                flairColor="var(--primary)"
                 size="md"
                 className="hover:text-white"
               />

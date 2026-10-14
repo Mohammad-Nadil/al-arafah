@@ -45,51 +45,51 @@ const HomeBannerForm = () => {
         {banners.map((banner, index) => (
           <div
             key={banner.id}
-            className="bg-white dark:bg-subtle/50 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-5 shadow-sm space-y-4"
+            className="bg-white  border border-neutral-200  rounded-2xl p-5 shadow-sm space-y-4"
           >
-            <div className="flex items-center justify-between border-b border-neutral-100 dark:border-neutral-800 pb-3">
-              <span className="px-2.5 py-1 rounded-md bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 font-bold text-xs">
+            <div className="flex items-center justify-between border-b border-neutral-100  pb-3">
+              <span className="px-2.5 py-1 rounded-md bg-primary/10  text-primary  font-bold text-xs">
                 Banner #{banner.id}
               </span>
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">Title (English)</label>
+              <label className="text-xs font-bold text-neutral-600 ">Title (English)</label>
               <input
                 type="text"
                 value={banner.titleEn}
                 onChange={(e) => handleBannerChange(index, "titleEn", e.target.value)}
-                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-subtle/50 dark:text-white focus:ring-2 focus:ring-emerald-600 outline-none"
+                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-subtle/50  focus:ring-2 focus:ring-primary outline-none"
               />
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">Title (Bangla)</label>
+              <label className="text-xs font-bold text-neutral-600 ">Title (Bangla)</label>
               <input
                 type="text"
                 value={banner.titleBn}
                 onChange={(e) => handleBannerChange(index, "titleBn", e.target.value)}
-                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-subtle/50 dark:text-white focus:ring-2 focus:ring-emerald-600 outline-none"
+                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-subtle/50  focus:ring-2 focus:ring-primary outline-none"
               />
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">Subtitle (English)</label>
+              <label className="text-xs font-bold text-neutral-600 ">Subtitle (English)</label>
               <textarea
                 rows={2}
                 value={banner.subtitleEn}
                 onChange={(e) => handleBannerChange(index, "subtitleEn", e.target.value)}
-                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-subtle/50 dark:text-white focus:ring-2 focus:ring-emerald-600 outline-none resize-none"
+                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-subtle/50  focus:ring-2 focus:ring-primary outline-none resize-none"
               />
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">Subtitle (Bangla)</label>
+              <label className="text-xs font-bold text-neutral-600 ">Subtitle (Bangla)</label>
               <textarea
                 rows={2}
                 value={banner.subtitleBn}
                 onChange={(e) => handleBannerChange(index, "subtitleBn", e.target.value)}
-                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-subtle/50 dark:text-white focus:ring-2 focus:ring-emerald-600 outline-none resize-none"
+                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-subtle/50  focus:ring-2 focus:ring-primary outline-none resize-none"
               />
             </div>
           </div>
@@ -99,7 +99,7 @@ const HomeBannerForm = () => {
       <div className="flex justify-end">
         <button
           onClick={handleSave}
-          className="flex items-center gap-2 px-6 py-2.5 bg-emerald-600 text-white rounded-xl text-sm font-semibold hover:bg-emerald-700 transition-colors shadow-sm"
+          className="flex items-center gap-2 px-6 py-2.5 bg-primary text-white rounded-xl text-sm font-semibold hover:bg-primary-deep transition-colors shadow-sm"
         >
           <MdSave size={18} /> Save Banner Changes
         </button>

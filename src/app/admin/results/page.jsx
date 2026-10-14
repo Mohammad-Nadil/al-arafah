@@ -26,17 +26,17 @@ const ResultsPage = () => {
       case "A+":
       case "A":
       case "A-":
-        return "bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400";
+        return "bg-emerald-100 text-emerald-700  ";
 
       case "B":
       case "C":
-        return "bg-yellow-100 text-yellow-700 dark:bg-yellow-500/20 dark:text-yellow-400";
+        return "bg-yellow-100 text-yellow-700  ";
 
       case "D":
-        return "bg-orange-100 text-orange-700 dark:bg-orange-500/20 dark:text-orange-400";
+        return "bg-orange-100 text-orange-700  ";
 
       default:
-        return "bg-red-100 text-red-700 dark:bg-red-500/20 dark:text-red-400";
+        return "bg-red-100 text-red-700  ";
     }
   };
 
@@ -52,24 +52,24 @@ const ResultsPage = () => {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <select className="px-4 py-2 sm:py-2 border rounded-xl bg-white dark:bg-neutral-900 border-neutral-300 dark:border-neutral-700 text-sm">
+          <select className="px-4 py-2 sm:py-2 border rounded-xl bg-white  border-neutral-300  text-sm">
             <option>Select Class</option>
             <option>STD-I</option>
             <option>STD-II</option>
             <option>STD-III</option>
           </select>
-          <select className="px-4 py-2 sm:py-2 border rounded-xl bg-white dark:bg-neutral-900 border-neutral-300 dark:border-neutral-700 text-sm">
+          <select className="px-4 py-2 sm:py-2 border rounded-xl bg-white  border-neutral-300  text-sm">
             <option>select exam</option>
             <option>1st semester</option>
             <option>half yearly</option>
             <option>final</option>
           </select>
-          <select className="px-4 py-2 border rounded-xl bg-white dark:bg-neutral-900 border-neutral-300 dark:border-neutral-700 text-sm">
+          <select className="px-4 py-2 border rounded-xl bg-white  border-neutral-300  text-sm">
             <option>2025</option>
             <option>2026</option>
             <option>2027</option>
           </select>
-          <button className="px-4 py-2 sm:py-2 bg-emerald-600 text-white rounded-xl text-sm font-semibold hover:bg-emerald-700 transition-colors">
+          <button className="px-4 py-2 sm:py-2 bg-primary text-white rounded-xl text-sm font-semibold hover:bg-primary-deep transition-colors">
             Load Results
           </button>
         </div>
@@ -85,7 +85,7 @@ const ResultsPage = () => {
         ].map((stat) => (
           <div
             key={stat.label}
-            className="bg-white dark:bg-neutral-900 p-4 rounded-2xl border shadow-sm border-neutral-400 dark:border-neutral-600"
+            className="bg-white  p-4 rounded-2xl border shadow-sm border-neutral-400 "
           >
             <p className="text-xs text-foreground uppercase">{stat.label}</p>
             <p className="text-xl font-bold mt-1">{stat.val}</p>
@@ -95,7 +95,7 @@ const ResultsPage = () => {
 
       {/* Results Table */}
       <div className="mt-6">
-        <div className="hidden md:block overflow-x-auto rounded-xl border border-primary/20 dark:bg-subtle shadow-sm">
+        <div className="hidden md:block overflow-x-auto rounded-xl border border-primary/20  shadow-sm">
           <table className=" w-full text-sm">
             <thead className="bg-primary text-primary-foreground text-[10px] 2xl:text-base">
               <tr>
@@ -128,7 +128,7 @@ const ResultsPage = () => {
               {placeholder.map((student, index) => (
                 <tr
                   key={index}
-                  className="border-b border-primary/10 transition hover:bg-background dark:even:bg-background/70 even:bg-primary/10"
+                  className="border-b border-primary/10 transition hover:bg-background  even:bg-primary/10"
                 >
                   <td className="px-4 py-3 font-medium">{index + 1}</td>
 
@@ -175,7 +175,7 @@ const ResultsPage = () => {
           {placeholder.map((student, index) => (
             <div
               key={index}
-              className="rounded-xl border border-neutral-400 dark:border-neutral-600  dark:bg-subtle p-4 shadow-sm"
+              className="rounded-xl border border-neutral-400    p-4 shadow-sm"
             >
               {/* Header */}
               <div className="mb-4 flex items-center justify-between">
@@ -238,7 +238,7 @@ const ResultsPage = () => {
 export default ResultsPage;
 
 const Info = ({ label, value }) => (
-  <div className="rounded-xl bg-background border border-neutral-400 dark:border-neutral-600 px-3 py-2">
+  <div className="rounded-xl bg-background border border-neutral-400  px-3 py-2">
     <p className="text-[11px] uppercase tracking-wide text-foreground">
       {label}
     </p>

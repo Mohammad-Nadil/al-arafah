@@ -40,16 +40,16 @@ export default function StaffsPage() {
     <div className=" mx-auto ">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-bold text-neutral-900 dark:text-white">
+          <h2 className="text-2xl font-bold text-neutral-900 ">
             Staff Directory
           </h2>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400">
+          <p className="text-sm text-neutral-500 ">
             Manage {staffData.length} active staffs
           </p>
         </div>
         <Link
           href="/admin/staffs/new"
-          className="px-5 py-2.5 bg-neutral-900 dark:bg-white/50 text-white dark:text-neutral-900 rounded-xl text-sm font-semibold hover:bg-neutral-800 dark:hover:bg-neutral-200 transition shadow-lg"
+          className="px-5 py-2.5 bg-neutral-900  text-white  rounded-xl text-sm font-semibold hover:bg-neutral-800  transition shadow-lg"
         >
           Add New Staff
         </Link>
@@ -57,12 +57,12 @@ export default function StaffsPage() {
 
       <div className="space-y-3">
         <div className="flex gap-3">
-          <div className="flex-1 flex items-center gap-3 px-4 py-3 bg-white dark:bg-neutral-900 border border-neutral-400 dark:border-neutral-700 rounded-xl shadow-sm focus-within:border-primary/60 dark:focus-within:border-primary/80 transition-colors">
+          <div className="flex-1 flex items-center gap-3 px-4 py-3 bg-white  border border-neutral-400  rounded-xl shadow-sm focus-within:border-primary/60  transition-colors">
             <MdSearch className="text-xl text-neutral-400 shrink-0" />
             <input
               type="text"
               placeholder="Search by name, roll, or contact..."
-              className="w-full bg-transparent text-sm outline-none text-neutral-900 dark:text-white placeholder-neutral-400"
+              className="w-full bg-transparent text-sm outline-none text-neutral-900  placeholder-neutral-400"
             />
           </div>
           <button
@@ -70,7 +70,7 @@ export default function StaffsPage() {
             className={`px-4 py-3 border rounded-xl flex items-center gap-2 text-sm font-semibold transition-all shrink-0 ${
               isFilterOpen
                 ? "bg-primary/80 border-primary/80 text-white shadow-md"
-                : "border-neutral-400 dark:border-neutral-700 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300"
+                : "border-neutral-400  bg-white  hover:bg-neutral-50  text-neutral-700 "
             }`}
           >
             <MdFilterList className="text-lg" />
@@ -87,7 +87,7 @@ export default function StaffsPage() {
           <div
             className={`overflow-hidden ${isFilterOpen ? "max-h-70" : "max-h-0"} transition-all duration-300 ease-in-out`}
           >
-            <div className="bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded-2xl p-4 md:p-5 shadow-sm space-y-4">
+            <div className="bg-white  border border-neutral-300  rounded-2xl p-4 md:p-5 shadow-sm space-y-4">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <FilterSelect
                   label="Role"
@@ -111,14 +111,14 @@ export default function StaffsPage() {
                 />
               </div>
 
-              <div className="flex items-center justify-between pt-3 border-t border-dashed border-neutral-200 dark:border-neutral-800">
-                <button className="flex items-center gap-1.5 text-[8px] xs:text-xs font-semibold text-neutral-500 dark:text-neutral-400 hover:text-red-500 dark:hover:text-red-400 transition-colors">
+              <div className="flex items-center justify-between pt-3 border-t border-dashed border-neutral-200 ">
+                <button className="flex items-center gap-1.5 text-[8px] xs:text-xs font-semibold text-neutral-500  hover:text-red-500  transition-colors">
                   <MdClose size={15} /> Clear all filters
                 </button>
                 <div className="flex gap-2">
                   <button
                     onClick={() => setIsFilterOpen(false)}
-                    className="px-3 sm:px-4 py-2 rounded-lg border border-neutral-300 dark:border-neutral-700 text-[8px] xs:text-xs font-semibold text-neutral-600 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors"
+                    className="px-3 sm:px-4 py-2 rounded-lg border border-neutral-300  text-[8px] xs:text-xs font-semibold text-neutral-600  hover:bg-neutral-50  transition-colors"
                   >
                     Cancel
                   </button>
@@ -138,13 +138,13 @@ export default function StaffsPage() {
             <div
               key={index}
               href={`/admin/staffs/${s.id.$oid}`}
-              className="xl:hidden group block relative bg-subtle/30  rounded-2xl border border-neutral-400 dark:border-neutral-800 p-4 active:scale-[0.98] transition-transform duration-200 overflow-hidden"
+              className="xl:hidden group block relative bg-subtle/30  rounded-2xl border border-neutral-400  p-4 active:scale-[0.98] transition-transform duration-200 overflow-hidden"
             >
               <div className="absolute inset-0  transition-all duration-300 pointer-events-none" />
 
               <div className="relative flex items-center gap-2 xs.:gap-3">
                 <div className="relative shrink-0">
-                  <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-primary dark:ring-primary border-2 border-white dark:border-neutral-800 shadow-sm">
+                  <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-primary  border-2 border-white  shadow-sm">
                     <Image
                       src={s.avatarUrl}
                       alt={s.fullName}
@@ -154,52 +154,52 @@ export default function StaffsPage() {
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <p className="font-bold text-neutral-900 dark:text-white truncate text-sm xs:text-base">
+                  <p className="font-bold text-neutral-900  truncate text-sm xs:text-base">
                     {s.fullName}
                   </p>
                   <div>
-                    <p className="text-[10px] xs:text-xs text-neutral-500 dark:text-neutral-400 font-medium mt-0.5">
+                    <p className="text-[10px] xs:text-xs text-neutral-500  font-medium mt-0.5">
                       Department: {s.department}
                     </p>
-                    <p className="text-[10px] xs:text-xs text-neutral-500 dark:text-neutral-400 font-medium mt-0.5">
+                    <p className="text-[10px] xs:text-xs text-neutral-500  font-medium mt-0.5">
                       Role: {s.role}
                     </p>
-                    <p className="text-[10px] xs:text-xs text-neutral-500 dark:text-neutral-400 font-medium mt-0.5">
+                    <p className="text-[10px] xs:text-xs text-neutral-500  font-medium mt-0.5">
                       staff id: {s.staffId}
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="relative flex flex-wrap items-center gap-1 xs:gap-1.5  pt-2 border-t border-dashed border-neutral-100 dark:border-neutral-800">
+              <div className="relative flex flex-wrap items-center gap-1 xs:gap-1.5  pt-2 border-t border-dashed border-neutral-100 ">
                 <span className="px-2 py-1 rounded-md text-[9px] xs:text-[10px] font-bold   uppercase tracking-wide">
                   {s.email || "-"}
                 </span>
-                <div className="ml-auto flex items-center gap-1 text-[9px] xs:text-xs text-neutral-500 dark:text-neutral-400 font-mono text-nowrap">
+                <div className="ml-auto flex items-center gap-1 text-[9px] xs:text-xs text-neutral-500  font-mono text-nowrap">
                   <MdPhone className="text-neutral-400" size={13} />
                   {s.contactNumber}
                 </div>
               </div>
-              <div className="flex justify-end gap-2 pt-2 border-t border-neutral-100 dark:border-neutral-800">
+              <div className="flex justify-end gap-2 pt-2 border-t border-neutral-100 ">
                 <Link
                   href={`/admin/staffs/${s.id.$oid}`}
-                  className="flex-1 py-2 rounded-lg bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 font-bold text-xs flex items-center justify-center gap-1 hover:bg-neutral-200 transition-colors"
+                  className="flex-1 py-2 rounded-lg bg-neutral-100  text-neutral-600  font-bold text-xs flex items-center justify-center gap-1 hover:bg-neutral-200 transition-colors"
                 >
                   <MdEdit size={14} /> Edit
                 </Link>
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="flex-1 py-2 rounded-lg bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 font-bold text-xs flex items-center justify-center gap-1 hover:bg-red-100 transition-colors"
+                  className="flex-1 py-2 rounded-lg bg-red-50  text-red-600  font-bold text-xs flex items-center justify-center gap-1 hover:bg-red-100 transition-colors"
                 >
                   <MdDeleteOutline size={14} /> Delete
                 </button>
               </div>
             </div>
           ))}
-          <div className="hidden xl:block overflow-x-auto rounded-2xl border border-neutral-300 dark:border-neutral-700 shadow-sm">
+          <div className="hidden xl:block overflow-x-auto rounded-2xl border border-neutral-300  shadow-sm">
             <table className="w-full text-sm">
-              <thead className="bg-primary/20 dark:bg-subtle">
-                <tr className="border-b border-neutral-300 dark:border-neutral-700">
+              <thead className="bg-primary/20 ">
+                <tr className="border-b border-neutral-300 ">
                   <th className="px-6 py-4 text-left font-bold uppercase tracking-wider">
                     Staff Identity
                   </th>
@@ -229,8 +229,8 @@ export default function StaffsPage() {
                   <tr
                     key={index}
                     className="
-            border-b border-neutral-200 dark:border-neutral-800
-            even:bg-primary/5 dark:even:bg-background/40
+            border-b border-neutral-200
+            even:bg-primary/5
             hover:bg-primary/10
             transition-colors
           "
@@ -300,14 +300,14 @@ export default function StaffsPage() {
                       <div className="flex justify-end gap-2">
                         <Link
                           href={`/admin/staffs/${s.id.$oid}`}
-                          className="rounded-lg border border-neutral-300 dark:border-neutral-700 p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+                          className="rounded-lg border border-neutral-300  p-2 hover:bg-neutral-100 "
                         >
                           <MdEdit />
                         </Link>
 
                         <button
                           onClick={() => setIsModalOpen(true)}
-                          className="rounded-lg border border-red-200 dark:border-red-900/50 p-2 hover:bg-red-50 dark:hover:bg-red-900/20"
+                          className="rounded-lg border border-red-200  p-2 hover:bg-red-50 "
                         >
                           <MdDeleteOutline className="text-red-500" />
                         </button>
@@ -334,13 +334,13 @@ export default function StaffsPage() {
 function FilterSelect({ label, placeholder, options = [] }) {
   return (
     <div className="space-y-1.5">
-      <label className="text-[10px] font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wide">
+      <label className="text-[10px] font-bold text-neutral-400  uppercase tracking-wide">
         {label}
       </label>
       <div className="relative">
         <select
           defaultValue=""
-          className="w-full appearance-none px-3 py-2.5 pr-8 bg-neutral-50 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-lg text-sm font-medium text-neutral-700 dark:text-neutral-300 outline-none focus:border-neutral-900 dark:focus:border-white transition-colors cursor-pointer"
+          className="w-full appearance-none px-3 py-2.5 pr-8 bg-neutral-50  border border-neutral-300  rounded-lg text-sm font-medium text-neutral-700  outline-none focus:border-neutral-900  transition-colors cursor-pointer"
         >
           <option value="" disabled>
             {placeholder}

@@ -6,10 +6,10 @@ import Link from "next/link";
 export default function Button({
   label,
   bgColor = "transparent",
-  borderColor = "#ffbe0b",
-  flairColor = "#ffbe0b",
+  borderColor = "var(--accent)",
+  flairColor = "var(--accent)",
   textColor = "currentColor",
-  textHoverColor = "#ffffff",
+  textHoverColor = "var(--accent-foreground)",
   leftIcon,
   rightIcon,
   onClick,

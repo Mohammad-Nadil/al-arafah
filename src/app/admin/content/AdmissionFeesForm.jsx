@@ -117,9 +117,9 @@ const AdmissionFeesForm = () => {
   };
 
   return (
-    <div className="space-y-8 bg-white dark:bg-subtle/40 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-6 shadow-sm">
-      <div className="border-b border-neutral-200 dark:border-neutral-800 pb-4">
-        <h3 className="text-lg font-bold text-neutral-900 dark:text-white">
+    <div className="space-y-8 bg-white  border border-neutral-200  rounded-2xl p-6 shadow-sm">
+      <div className="border-b border-neutral-200  pb-4">
+        <h3 className="text-lg font-bold text-neutral-900 ">
           Admission Fees Structure Management
         </h3>
         <p className="text-xs text-neutral-500 mt-0.5">
@@ -129,14 +129,14 @@ const AdmissionFeesForm = () => {
 
       {Object.keys(feesData).map((categoryKey) => (
         <div key={categoryKey} className="space-y-3">
-          <h4 className="font-bold text-sm text-emerald-600 uppercase tracking-wide">
+          <h4 className="font-bold text-sm text-primary uppercase tracking-wide">
             Category: {categoryKey.replace(/_/g, " ").toUpperCase()}
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {feesData[categoryKey].map((feeItem, idx) => (
               <div
                 key={feeItem.id}
-                className="bg-neutral-50 dark:bg-neutral-800/40 border border-neutral-200 dark:border-neutral-700/60 rounded-xl p-4 space-y-3"
+                className="bg-neutral-50  border border-neutral-200  rounded-xl p-4 space-y-3"
               >
                 <div className="grid grid-cols-2 gap-2">
                   <input
@@ -144,14 +144,14 @@ const AdmissionFeesForm = () => {
                     value={feeItem.classEn}
                     onChange={(e) => handleFeeChange(categoryKey, idx, "classEn", e.target.value)}
                     placeholder="Class Name (En)"
-                    className="px-3 py-1.5 rounded-lg border border-neutral-500 bg-white dark:bg-subtle/40 text-xs font-semibold"
+                    className="px-3 py-1.5 rounded-lg border border-neutral-500 bg-white  text-xs font-semibold"
                   />
                   <input
                     type="text"
                     value={feeItem.classBn}
                     onChange={(e) => handleFeeChange(categoryKey, idx, "classBn", e.target.value)}
                     placeholder="Class Name (Bn)"
-                    className="px-3 py-1.5 rounded-lg border border-neutral-500 bg-white dark:bg-subtle/40 text-xs font-semibold"
+                    className="px-3 py-1.5 rounded-lg border border-neutral-500 bg-white  text-xs font-semibold"
                   />
                 </div>
 
@@ -162,7 +162,7 @@ const AdmissionFeesForm = () => {
                       type="text"
                       value={feeItem.sessionEn}
                       onChange={(e) => handleFeeChange(categoryKey, idx, "sessionEn", e.target.value)}
-                      className="w-full px-2 py-1 rounded border border-neutral-500 bg-white dark:bg-subtle/40"
+                      className="w-full px-2 py-1 rounded border border-neutral-500 bg-white "
                     />
                   </div>
                   <div>
@@ -171,7 +171,7 @@ const AdmissionFeesForm = () => {
                       type="text"
                       value={feeItem.tuitionEn}
                       onChange={(e) => handleFeeChange(categoryKey, idx, "tuitionEn", e.target.value)}
-                      className="w-full px-2 py-1 rounded border border-neutral-500 bg-white dark:bg-subtle/40"
+                      className="w-full px-2 py-1 rounded border border-neutral-500 bg-white "
                     />
                   </div>
                   <div>
@@ -180,7 +180,7 @@ const AdmissionFeesForm = () => {
                       type="text"
                       value={feeItem.examEn}
                       onChange={(e) => handleFeeChange(categoryKey, idx, "examEn", e.target.value)}
-                      className="w-full px-2 py-1 rounded border border-neutral-500 bg-white dark:bg-subtle/40"
+                      className="w-full px-2 py-1 rounded border border-neutral-500 bg-white "
                     />
                   </div>
                   <div>
@@ -189,7 +189,7 @@ const AdmissionFeesForm = () => {
                       type="text"
                       value={feeItem.totalEn}
                       onChange={(e) => handleFeeChange(categoryKey, idx, "totalEn", e.target.value)}
-                      className="w-full px-2 py-1 rounded border border-neutral-500 bg-white dark:bg-subtle/40 font-bold text-emerald-600"
+                      className="w-full px-2 py-1 rounded border border-neutral-500 bg-white  font-bold text-primary"
                     />
                   </div>
                 </div>
@@ -199,10 +199,10 @@ const AdmissionFeesForm = () => {
         </div>
       ))}
 
-      <div className="flex justify-end pt-4 border-t border-neutral-200 dark:border-neutral-800">
+      <div className="flex justify-end pt-4 border-t border-neutral-200 ">
         <button
           onClick={handleSave}
-          className="flex items-center gap-2 px-6 py-2.5 bg-emerald-600 text-white rounded-xl text-sm font-semibold hover:bg-emerald-700 transition-colors shadow-sm"
+          className="flex items-center gap-2 px-6 py-2.5 bg-primary text-white rounded-xl text-sm font-semibold hover:bg-primary-deep transition-colors shadow-sm"
         >
           <MdSave size={18} /> Save Fee Structure
         </button>

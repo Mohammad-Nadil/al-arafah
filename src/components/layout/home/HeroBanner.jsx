@@ -91,7 +91,7 @@ export default function HeroBanner() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full py-16 xs:py-20 lg:py-30 flex items-center overflow-hidden bg-[#032d22]"
+      className="relative w-full py-16 xs:py-20 lg:py-30 flex items-center overflow-hidden bg-navy"
     >
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         {cleanData.slides.map((slide, index) => {
@@ -103,7 +103,7 @@ export default function HeroBanner() {
               key={slide.id}
               className={`absolute inset-0 transition-opacity duration-1000 ${
                 index === currentSlide
-                  ? "z-10 opacity-35 dark:opacity-25"
+                  ? "z-10 opacity-35 "
                   : "z-0 opacity-0"
               }`}
             >
@@ -114,14 +114,13 @@ export default function HeroBanner() {
                 priority={index === 0}
                 loading={index === 0 ? "eager" : "lazy"} // এখানে loading property যুক্ত করা হয়েছে
                 sizes="100vw"
-                className={`object-cover object-center will-change-transform bg-slide-${index}`}
+                className={`object-cover object-center will-change-transform bg-slide-${index} brightness-50`}
               />
             </div>
           );
         })}
 
-        <div className="absolute inset-0 z-20 bg-linear-to-r from-[#032d22] via-[#032d22]/80 to-transparent md:from-[#032d22]/95 md:via-[#032d22]/60 hidden dark:block" />
-        <div className="absolute inset-0 z-20 bg-linear-to-r from-[#043d2e] via-[#043d2e]/90 to-transparent md:from-[#043d2e]/70 dark:hidden" />
+        <div className="absolute inset-0 z-20 bg-linear-to-r from-primary-deep via-primary-deep/90 to-transparent md:from-primary-deep/70 brightness-50 " />
       </div>
 
       <Container className="w-full relative z-30">
@@ -160,10 +159,10 @@ export default function HeroBanner() {
             <Button
               href={"/admissions"}
               label="Apply Now"
-              borderColor="#ffbe0b"
-              flairColor="#ffbe0b"
-              textColor="#ffbe0b"
-              textHoverColor="#032d22"
+              borderColor="var(--accent)"
+              flairColor="var(--accent)"
+              textColor="var(--accent)"
+              textHoverColor="var(--foreground)"
               rightIcon={<FiArrowRight />}
             />
           </div>

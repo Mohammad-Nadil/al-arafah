@@ -72,19 +72,19 @@ export default function CampusFacilities() {
           {cleanData.facilities.map((fac) => (
             <div
               key={fac.id}
-              className="relative overflow-hidden transition-all duration-700 border shadow-sm cursor-pointer group aspect-video rounded-xl xl:rounded-4xl border-neutral-200/50 dark:border-neutral-800/40 hover:shadow-2xl"
+              className="relative overflow-hidden transition-all duration-700 border shadow-sm cursor-pointer group aspect-video rounded-xl xl:rounded-4xl border-neutral-200/50  hover:shadow-2xl"
             >
-              <div className="absolute inset-0 w-full h-full transition-transform duration-1000 bg-neutral-200 dark:bg-neutral-900 md:group-hover:scale-105">
+              <div className="absolute inset-0 w-full h-full transition-transform duration-1000 bg-neutral-200  md:group-hover:scale-105">
                 <Image
                   src={fac.image} 
                   alt={fac.titleEn}
                   fill
                   sizes="(max-w: 768px) 100vw, (max-w: 1200px) 50vw, 45vw"
-                  className="object-cover opacity-90 dark:opacity-70 contrast-[1.01]"
+                  className="object-cover opacity-90  contrast-[1.01]"
                 />
               </div>
 
-              <div className="absolute inset-0 transition-opacity duration-500 bg-linear-to-t from-neutral-950/95 via-neutral-950/60 to-neutral-950/20 dark:from-neutral-950/95 dark:via-neutral-950/70 dark:to-transparent md:via-neutral-950/40 md:to-neutral-950/10 md:group-hover:opacity-95" />
+              <div className="absolute inset-0 transition-opacity duration-500 bg-linear-to-t from-neutral-950/95 via-neutral-950/60 to-neutral-950/20    md:via-neutral-950/40 md:to-neutral-950/10 md:group-hover:opacity-95" />
 
               <span className="absolute top-4 right-4 sm:top-6 sm:right-6 text-[9px] sm:text-[10px] font-sans font-black tracking-widest text-white bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10 select-none">
                 {fac.tag}

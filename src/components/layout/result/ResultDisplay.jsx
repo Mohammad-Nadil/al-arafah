@@ -23,7 +23,7 @@ export default function ResultDisplay({ data }) {
         gravity: 0.8,
         decay: 0.94,
         startVelocity: 30,
-        colors: ["#ffbe0b", "#ffffff", "#ff0000"], // আপনার থিম কালার
+        colors: ["#f5d000", "#ffffff", "#c8281e"], // আপনার থিম কালার
       };
 
       // বাম পাশের জন্য ফায়ারওয়ার্ক
@@ -46,14 +46,14 @@ export default function ResultDisplay({ data }) {
   return (
     <div
       ref={cardRef}
-      className="mt-10 p-4 xl:p-8 rounded-lg xl:rounded-3xl border border-neutral-400 dark:border-neutral-600 shadow-2xl shadow-neutral-200/50 dark:shadow-none max-w-4xl mx-auto transition-all duration-500 opacity-0"
+      className="mt-10 p-4 xl:p-8 rounded-lg xl:rounded-3xl border border-neutral-400  shadow-2xl shadow-neutral-200/50  max-w-4xl mx-auto transition-all duration-500 opacity-0"
     >
-      <div className="flex justify-between items-start mb-8 border-b border-neutral-400 dark:border-neutral-600 pb-8">
+      <div className="flex justify-between items-start mb-8 border-b border-neutral-400  pb-8">
         <div>
-          <h2 className="text-3xl font-extrabold text-neutral-800 dark:text-white">
+          <h2 className="text-3xl font-extrabold text-neutral-800 ">
             {data.name}
           </h2>
-          <p className="text-neutral-500 dark:text-neutral-400 mt-1">
+          <p className="text-neutral-500  mt-1">
             {data.class} | Roll: {data.roll}
           </p>
           <div className="mt-3 inline-block bg-primary/10 text-primary px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">
@@ -61,7 +61,7 @@ export default function ResultDisplay({ data }) {
           </div>
         </div>
 
-        <div className="text-right bg-neutral-50 dark:bg-neutral-800 px-6 py-3 rounded-2xl">
+        <div className="text-right bg-neutral-50  px-6 py-3 rounded-2xl">
           <p className="text-xs text-neutral-400 uppercase tracking-widest font-bold">
             Total GPA
           </p>
@@ -77,10 +77,10 @@ export default function ResultDisplay({ data }) {
               <th className="pb-4 font-medium text-right">Grade</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-neutral-400 dark:divide-neutral-600">
+          <tbody className="divide-y divide-neutral-400 ">
             {data.subjects.map((sub, i) => (
               <tr key={i} className="text-sm group">
-                <td className="py-4 font-semibold text-neutral-700 dark:text-neutral-300 group-hover:text-primary transition-colors w-3/5">
+                <td className="py-4 font-semibold text-neutral-700  group-hover:text-primary transition-colors w-3/5">
                   {sub.subject}
                 </td>
                 <td className="py-4 text-neutral-500">

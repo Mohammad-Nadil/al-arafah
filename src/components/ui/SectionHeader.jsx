@@ -79,7 +79,7 @@ export default function SectionHeader({
       />
 
       {description && (
-        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300/90 font-light leading-relaxed max-w-2xl font-sans">
+        <p className="text-sm sm:text-base text-gray-600  font-light leading-relaxed max-w-2xl font-sans">
           {description}
         </p>
       )}

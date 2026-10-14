@@ -19,7 +19,7 @@ const stats = [
     name: "Total Staffs",
     value: "56",
     icon: <MdPeople />,
-    color: "bg-emerald-500",
+    color: "bg-primary",
   },
   {
     name: "Exams",
@@ -49,7 +49,7 @@ export default function AdminDashboard() {
         {stats.map((stat) => (
           <div
             key={stat.name}
-            className="p-6  dark:bg-subtle/30 rounded-2xl border border-neutral-400 dark:border-neutral-800 shadow-sm"
+            className="p-6   rounded-2xl border border-neutral-400  shadow-sm"
           >
             <div
               className={`w-12 h-12 rounded-xl ${stat.color} flex items-center justify-center text-white text-2xl mb-4`}
@@ -65,19 +65,19 @@ export default function AdminDashboard() {
       </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-        <div className=" p-4 sm:p-6  dark:bg-subtle/30 rounded-2xl border border-neutral-400 dark:border-neutral-800">
+        <div className=" p-4 sm:p-6   rounded-2xl border border-neutral-400 ">
           <h3 className="font-bold mb-4">Quick Actions</h3>
           <div className="flex justify-between sm:justify-start text-sm sm:text-base gap-4">
               <Link href="/admin/students/form" className="flex  items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:opacity-90">
                 <MdAdd className="hidden xs:block"/> Add Student
               </Link>
-              <Link href="/admin/notices/new" className="flex items-center gap-2 px-4 py-2 bg-neutral-200 dark:bg-subtle rounded-lg">
+              <Link href="/admin/notices/new" className="flex items-center gap-2 px-4 py-2 bg-neutral-200  rounded-lg">
                 <MdEdit className="hidden xs:block" /> Post Notice
               </Link>
           </div>
         </div>
 
-        <div className="p-6  dark:bg-subtle/30 rounded-2xl border border-neutral-400 dark:border-neutral-800">
+        <div className="p-6   rounded-2xl border border-neutral-400 ">
           <h3 className="font-bold mb-4">System Alerts</h3>
           <p className="text-sm text-neutral-500 italic">
             No critical alerts for today.

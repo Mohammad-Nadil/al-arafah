@@ -54,18 +54,18 @@ export default function MissionVision() {
           {cleanData.items.map((item) => (
             <div
               key={item.id}
-              className="relative flex flex-col justify-between p-4 transition-all duration-700 border shadow-sm group bg-background-subtle border-primary/40 dark:border-accent/40 rounded-xl md:rounded-4xl md:p-6 hover:shadow-2xl hover:border-neutral-300 dark:hover:border-neutral-700 hover:-translate-y-2"
+              className="relative flex flex-col justify-between p-4 transition-all duration-700 border shadow-sm group bg-background-subtle border-primary/40  rounded-xl md:rounded-4xl md:p-6 hover:shadow-2xl hover:border-neutral-300  hover:-translate-y-2"
             >
               <div>
-                <div className="flex items-center justify-center w-12 h-12 mb-8 transition-transform duration-500 rounded-2xl bg-primary/10 dark:bg-accent/10 text-primary dark:text-accent group-hover:scale-110">
+                <div className="flex items-center justify-center w-12 h-12 mb-8 transition-transform duration-500 rounded-2xl bg-primary/10  text-primary  group-hover:scale-110">
                   {item.icon}
                 </div>
 
-                <h3 className="font-serif text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50">
+                <h3 className="font-serif text-2xl font-bold tracking-tight text-neutral-900 ">
                   {lang === "en" ? item.titleEn : item.titleBn}
                 </h3>
 
-                <p className="mt-4 font-sans text-sm font-light leading-relaxed md:text-base text-neutral-500 dark:text-neutral-400">
+                <p className="mt-4 font-sans text-sm font-light leading-relaxed md:text-base text-neutral-500 ">
                   {lang === "en" ? item.descEn : item.descBn}
                 </p>
               </div>

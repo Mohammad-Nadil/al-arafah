@@ -93,17 +93,17 @@ export default function StaffFormPage() {
       <div className="flex items-center justify-between">
         <button
           onClick={() => router.back()}
-          className="flex items-center gap-1.5 text-sm font-semibold text-neutral-500 dark:text-neutral-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+          className="flex items-center gap-1.5 text-sm font-semibold text-neutral-500  hover:text-primary  transition-colors"
         >
           <MdArrowBack /> Back
         </button>
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold text-neutral-900 dark:text-white">
+        <h2 className="text-2xl font-bold text-neutral-900 ">
           {isEditMode ? "Edit Staff" : "Add New Staff"}
         </h2>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400">
+        <p className="text-sm text-neutral-500 ">
           {isEditMode
             ? "Update the staff member's information below"
             : "Fill in the details to add a new staff member"}
@@ -112,10 +112,10 @@ export default function StaffFormPage() {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Combined Avatar and Basic Info Card */}
-        <div className="bg-background dark:bg-subtle/30 border border-neutral-400 dark:border-subtle/30 rounded-2xl p-5 md:p-6 shadow-sm flex flex-col md:flex-row gap-6">
+        <div className="bg-background  border border-neutral-400  rounded-2xl p-5 md:p-6 shadow-sm flex flex-col md:flex-row gap-6">
           {/* Left: Image Upload Section */}
           <div className="w-full md:w-1/3 shrink-0">
-            <h3 className="text-xs font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-widest mb-4">
+            <h3 className="text-xs font-bold text-neutral-400  uppercase tracking-widest mb-4">
               Staff Photo
             </h3>
             <div className="w-full h-64">
@@ -125,14 +125,14 @@ export default function StaffFormPage() {
                 preview={avatarPreview}
               />
             </div>
-            <p className="text-[10px] text-neutral-500 dark:text-neutral-400 mt-3 text-center">
+            <p className="text-[10px] text-neutral-500  mt-3 text-center">
               PNG or JPG, square image recommended (min 200x200px)
             </p>
           </div>
 
           {/* Right: Basic Info Section */}
           <div className="flex-1">
-            <h3 className="text-xs font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-widest mb-4">
+            <h3 className="text-xs font-bold text-neutral-400  uppercase tracking-widest mb-4">
               Basic Information
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -210,13 +210,13 @@ export default function StaffFormPage() {
           <button
             type="button"
             onClick={() => router.back()}
-            className="px-5 py-2.5 rounded-xl border border-neutral-300 dark:border-neutral-800 text-sm font-semibold text-neutral-600 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-subtle/30 transition-colors"
+            className="px-5 py-2.5 rounded-xl border border-neutral-300  text-sm font-semibold text-neutral-600  hover:bg-neutral-50  transition-colors"
           >
             Cancel
           </button>
           <button
             type="submit"
-            className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold transition-colors shadow-sm"
+            className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-primary hover:bg-primary-deep text-white text-sm font-semibold transition-colors shadow-sm"
           >
             <MdSave size={17} />
             {isEditMode ? "Save Changes" : "Add Staff"}
@@ -230,8 +230,8 @@ export default function StaffFormPage() {
 // ---------- Reusable Form Section ----------
 function FormSection({ title, children, className }) {
   return (
-    <div className="bg-background dark:bg-subtle/30 border border-neutral-400 dark:border-subtle/30 rounded-2xl p-5 md:p-6 shadow-sm">
-      <h3 className="text-xs font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-widest mb-4">
+    <div className="bg-background  border border-neutral-400  rounded-2xl p-5 md:p-6 shadow-sm">
+      <h3 className="text-xs font-bold text-neutral-400  uppercase tracking-widest mb-4">
         {title}
       </h3>
       <div
@@ -254,7 +254,7 @@ function FormInput({
 }) {
   return (
     <div className="space-y-1.5">
-      <label className="text-xs font-semibold text-neutral-600 dark:text-neutral-400">
+      <label className="text-xs font-semibold text-neutral-600 ">
         {label} {required && <span className="text-red-500">*</span>}
       </label>
       <input
@@ -262,7 +262,7 @@ function FormInput({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full px-3.5 py-2.5 bg-background dark:bg-subtle/70 border border-neutral-300 dark:border-neutral-800 rounded-lg text-sm font-medium text-neutral-900 dark:text-neutral-100 outline-none focus:border-emerald-500 dark:focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all placeholder-neutral-400 dark:placeholder-neutral-600"
+        className="w-full px-3.5 py-2.5 bg-background  border border-neutral-300  rounded-lg text-sm font-medium text-neutral-900  outline-none focus:border-primary  focus:ring-2 focus:ring-primary/20 transition-all placeholder-neutral-400 "
       />
     </div>
   );
@@ -279,23 +279,23 @@ function FormSelect({
 }) {
   return (
     <div className="space-y-1.5">
-      <label className="text-xs font-semibold text-neutral-600 dark:text-neutral-400">
+      <label className="text-xs font-semibold text-neutral-600 ">
         {label} {required && <span className="text-red-500">*</span>}
       </label>
       <div className="relative">
         <select
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          className="w-full appearance-none px-3.5 py-2.5 pr-9 bg-background dark:bg-subtle/70 border border-neutral-300 dark:border-neutral-800 rounded-lg text-sm font-medium text-neutral-900 dark:text-neutral-100 outline-none focus:border-emerald-500 dark:focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all cursor-pointer"
+          className="w-full appearance-none px-3.5 py-2.5 pr-9 bg-background  border border-neutral-300  rounded-lg text-sm font-medium text-neutral-900  outline-none focus:border-primary  focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer"
         >
-          <option value="" className="bg-background dark:bg-neutral-900">
+          <option value="" className="bg-background ">
             {placeholder}
           </option>
           {options.map((opt) => (
             <option
               key={opt}
               value={opt}
-              className="bg-background dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
+              className="bg-background  text-neutral-900 "
             >
               {opt}
             </option>

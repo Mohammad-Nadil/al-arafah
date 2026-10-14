@@ -52,7 +52,7 @@ export const SettingsPage = () => {
       {/* Page Header */}
       <div>
         <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
-          <MdSettings className="text-emerald-600" /> Admin Settings
+          <MdSettings className="text-primary" /> Admin Settings
         </h2>
         <p className="text-sm text-neutral-500 mt-0.5">
           Manage system configurations, school profile, and account security
@@ -61,9 +61,9 @@ export const SettingsPage = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* ================= SECTION 1: GENERAL SETTINGS ================= */}
-        <div className="lg:col-span-2 bg-white dark:bg-subtle/50 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-6 shadow-sm space-y-6">
-          <div className="flex items-center gap-2 border-b border-neutral-100 dark:border-neutral-800 pb-4">
-            <MdStore className="text-emerald-600" size={20} />
+        <div className="lg:col-span-2 bg-white  border border-neutral-200  rounded-2xl p-6 shadow-sm space-y-6">
+          <div className="flex items-center gap-2 border-b border-neutral-100  pb-4">
+            <MdStore className="text-primary" size={20} />
             <h3 className="text-base font-bold text-foreground">
               General & School Profile
             </h3>
@@ -72,7 +72,7 @@ export const SettingsPage = () => {
           <form onSubmit={handleSaveGeneral} className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">
+                <label className="text-xs font-bold text-neutral-600 ">
                   School Name (English)
                 </label>
                 <input
@@ -80,12 +80,12 @@ export const SettingsPage = () => {
                   name="schoolNameEn"
                   value={generalSettings.schoolNameEn}
                   onChange={handleGeneralChange}
-                  className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-foreground focus:ring-2 focus:ring-emerald-600 outline-none"
+                  className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-foreground focus:ring-2 focus:ring-primary outline-none"
                 />
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">
+                <label className="text-xs font-bold text-neutral-600 ">
                   School Name (Bangla)
                 </label>
                 <input
@@ -93,14 +93,14 @@ export const SettingsPage = () => {
                   name="schoolNameBn"
                   value={generalSettings.schoolNameBn}
                   onChange={handleGeneralChange}
-                  className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-foreground focus:ring-2 focus:ring-emerald-600 outline-none"
+                  className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-foreground focus:ring-2 focus:ring-primary outline-none"
                 />
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">
+                <label className="text-xs font-bold text-neutral-600 ">
                   Official Email
                 </label>
                 <input
@@ -108,12 +108,12 @@ export const SettingsPage = () => {
                   name="email"
                   value={generalSettings.email}
                   onChange={handleGeneralChange}
-                  className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-foreground focus:ring-2 focus:ring-emerald-600 outline-none"
+                  className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-foreground focus:ring-2 focus:ring-primary outline-none"
                 />
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">
+                <label className="text-xs font-bold text-neutral-600 ">
                   Helpline / Phone
                 </label>
                 <input
@@ -121,14 +121,14 @@ export const SettingsPage = () => {
                   name="phone"
                   value={generalSettings.phone}
                   onChange={handleGeneralChange}
-                  className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-foreground focus:ring-2 focus:ring-emerald-600 outline-none"
+                  className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-foreground focus:ring-2 focus:ring-primary outline-none"
                 />
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">
+                <label className="text-xs font-bold text-neutral-600 ">
                   Active Academic Year
                 </label>
                 <div className="relative">
@@ -136,7 +136,7 @@ export const SettingsPage = () => {
                     name="academicYear"
                     value={generalSettings.academicYear}
                     onChange={handleGeneralChange}
-                    className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-foreground focus:ring-2 focus:ring-emerald-600 outline-none appearance-none"
+                    className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-foreground focus:ring-2 focus:ring-primary outline-none appearance-none"
                   >
                     <option value="2025">2025</option>
                     <option value="2026">2026</option>
@@ -147,7 +147,7 @@ export const SettingsPage = () => {
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">
+                <label className="text-xs font-bold text-neutral-600 ">
                   Address
                 </label>
                 <input
@@ -155,7 +155,7 @@ export const SettingsPage = () => {
                   name="address"
                   value={generalSettings.address}
                   onChange={handleGeneralChange}
-                  className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-foreground focus:ring-2 focus:ring-emerald-600 outline-none"
+                  className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-foreground focus:ring-2 focus:ring-primary outline-none"
                 />
               </div>
             </div>
@@ -163,7 +163,7 @@ export const SettingsPage = () => {
             <div className="flex justify-end pt-2">
               <button
                 type="submit"
-                className="flex items-center gap-2 px-6 py-2.5 bg-emerald-600 text-white rounded-xl text-sm font-semibold hover:bg-emerald-700 transition-colors shadow-sm"
+                className="flex items-center gap-2 px-6 py-2.5 bg-primary text-white rounded-xl text-sm font-semibold hover:bg-primary-deep transition-colors shadow-sm"
               >
                 <MdSave size={18} /> Save Changes
               </button>
@@ -172,9 +172,9 @@ export const SettingsPage = () => {
         </div>
 
         {/* ================= SECTION 2: SECURITY & PASSWORD ================= */}
-        <div className="bg-white dark:bg-subtle/50 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-6 shadow-sm space-y-6">
-          <div className="flex items-center gap-2 border-b border-neutral-100 dark:border-neutral-800 pb-4">
-            <MdLock className="text-emerald-600" size={20} />
+        <div className="bg-white  border border-neutral-200  rounded-2xl p-6 shadow-sm space-y-6">
+          <div className="flex items-center gap-2 border-b border-neutral-100  pb-4">
+            <MdLock className="text-primary" size={20} />
             <h3 className="text-base font-bold text-foreground">
               Change Password
             </h3>
@@ -182,7 +182,7 @@ export const SettingsPage = () => {
 
           <form onSubmit={handleSavePassword} className="space-y-4">
             <div className="space-y-1">
-              <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">
+              <label className="text-xs font-bold text-neutral-600 ">
                 Current Password
               </label>
               <input
@@ -191,12 +191,12 @@ export const SettingsPage = () => {
                 value={passwordData.currentPassword}
                 onChange={handlePasswordChange}
                 placeholder="••••••••"
-                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-foreground focus:ring-2 focus:ring-emerald-600 outline-none"
+                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-foreground focus:ring-2 focus:ring-primary outline-none"
               />
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">
+              <label className="text-xs font-bold text-neutral-600 ">
                 New Password
               </label>
               <input
@@ -205,12 +205,12 @@ export const SettingsPage = () => {
                 value={passwordData.newPassword}
                 onChange={handlePasswordChange}
                 placeholder="••••••••"
-                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-foreground focus:ring-2 focus:ring-emerald-600 outline-none"
+                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-foreground focus:ring-2 focus:ring-primary outline-none"
               />
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-bold text-neutral-600 dark:text-neutral-400">
+              <label className="text-xs font-bold text-neutral-600 ">
                 Confirm New Password
               </label>
               <input
@@ -219,14 +219,14 @@ export const SettingsPage = () => {
                 value={passwordData.confirmPassword}
                 onChange={handlePasswordChange}
                 placeholder="••••••••"
-                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-subtle/50 text-sm text-foreground focus:ring-2 focus:ring-emerald-600 outline-none"
+                className="w-full px-3.5 py-2 rounded-xl border border-neutral-300  bg-white  text-sm text-foreground focus:ring-2 focus:ring-primary outline-none"
               />
             </div>
 
             <div className="flex justify-end pt-2">
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-2.5 bg-neutral-900 dark:bg-neutral-800 hover:bg-neutral-800 text-white rounded-xl text-sm font-semibold transition-colors shadow-sm"
+                className="w-full flex items-center justify-center gap-2 px-6 py-2.5 bg-neutral-900  hover:bg-neutral-800 text-white rounded-xl text-sm font-semibold transition-colors shadow-sm"
               >
                 <MdLock size={16} /> Update Password
               </button>

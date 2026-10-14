@@ -41,7 +41,7 @@ export default function ContactForm() {
 
   // Helper function for input classes
   const inputClass =
-    "w-full pl-12 pr-4 py-4 rounded-xl bg-background border border-neutral-400 dark:border-neutral-800 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-hidden transition-all duration-300";
+    "w-full pl-12 pr-4 py-4 rounded-xl bg-background border border-neutral-400  focus:border-primary focus:ring-2 focus:ring-primary/20 outline-hidden transition-all duration-300";
   const iconClass =
     "absolute left-4 top-4 text-neutral-400 group-focus-within:text-primary transition-colors";
 
@@ -50,7 +50,7 @@ export default function ContactForm() {
       <Toaster position="top-right" />
       <form
         onSubmit={handleSubmit}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6  p-4 md:p-10 rounded-xl md:rounded-2xl xl:rounded-3xl border border-neutral-400 dark:border-neutral-800 bg-background dark:bg-subtle shadow-2xl shadow-neutral-100 dark:shadow-none"
+        className="grid grid-cols-1 md:grid-cols-2 gap-6  p-4 md:p-10 rounded-xl md:rounded-2xl xl:rounded-3xl border border-neutral-400  bg-background  shadow-2xl shadow-neutral-100 "
       >
         {/* Name */}
         <div className="relative group col-span-1">

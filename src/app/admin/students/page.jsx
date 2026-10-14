@@ -27,16 +27,16 @@ export default function StudentsPage() {
     <div className=" mx-auto  ">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-bold text-neutral-900 dark:text-white">
+          <h2 className="text-2xl font-bold text-neutral-900 ">
             Students Directory
           </h2>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400">
+          <p className="text-sm text-neutral-500 ">
             Manage {studentData.length} active students
           </p>
         </div>
         <Link
           href="/admin/students/form"
-          className="px-5 py-2.5 bg-neutral-900 dark:bg-white/50 text-white dark:text-neutral-900 rounded-xl text-sm font-semibold hover:bg-neutral-800 dark:hover:bg-neutral-200 transition shadow-lg"
+          className="px-5 py-2.5 bg-neutral-900  text-white  rounded-xl text-sm font-semibold hover:bg-neutral-800  transition shadow-lg"
         >
           Add New Student
         </Link>
@@ -44,12 +44,12 @@ export default function StudentsPage() {
 
       <div className="space-y-3">
         <div className="flex gap-3">
-          <div className="flex-1 flex items-center gap-3 px-4 py-3 bg-white dark:bg-neutral-900 border border-neutral-400 dark:border-neutral-700 rounded-xl shadow-sm focus-within:border-primary/60 dark:focus-within:border-primary/80 transition-colors">
+          <div className="flex-1 flex items-center gap-3 px-4 py-3 bg-white  border border-neutral-400  rounded-xl shadow-sm focus-within:border-primary/60  transition-colors">
             <MdSearch className="text-xl text-neutral-400 shrink-0" />
             <input
               type="text"
               placeholder="Search by name, roll, or contact..."
-              className="w-full bg-transparent text-sm outline-none text-neutral-900 dark:text-white placeholder-neutral-400"
+              className="w-full bg-transparent text-sm outline-none text-neutral-900  placeholder-neutral-400"
             />
           </div>
           <button
@@ -57,7 +57,7 @@ export default function StudentsPage() {
             className={`px-4 py-3 border rounded-xl flex items-center gap-2 text-sm font-semibold transition-all shrink-0 ${
               isFilterOpen
                 ? "bg-primary/80 border-primary/80 text-white shadow-md"
-                : "border-neutral-400 dark:border-neutral-700 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300"
+                : "border-neutral-400  bg-white  hover:bg-neutral-50  text-neutral-700 "
             }`}
           >
             <MdFilterList className="text-lg" />
@@ -74,7 +74,7 @@ export default function StudentsPage() {
           <div
             className={`overflow-hidden ${isFilterOpen ? "max-h-70" : "max-h-0"} transition-all duration-300 ease-in-out`}
           >
-            <div className="bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded-2xl p-4 md:p-5 shadow-sm space-y-4">
+            <div className="bg-white  border border-neutral-300  rounded-2xl p-4 md:p-5 shadow-sm space-y-4">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <FilterSelect label="Class" placeholder="All Classes" />
                 <FilterSelect label="Section" placeholder="All Sections" />
@@ -82,14 +82,14 @@ export default function StudentsPage() {
                 <FilterSelect label="Status" placeholder="All Status" />
               </div>
 
-              <div className="flex items-center justify-between pt-3 border-t border-dashed border-neutral-200 dark:border-neutral-800">
-                <button className="flex items-center gap-1.5 text-[8px] xs:text-xs font-semibold text-neutral-500 dark:text-neutral-400 hover:text-red-500 dark:hover:text-red-400 transition-colors">
+              <div className="flex items-center justify-between pt-3 border-t border-dashed border-neutral-200 ">
+                <button className="flex items-center gap-1.5 text-[8px] xs:text-xs font-semibold text-neutral-500  hover:text-red-500  transition-colors">
                   <MdClose size={15} /> Clear all filters
                 </button>
                 <div className="flex gap-2">
                   <button
                     onClick={() => setIsFilterOpen(false)}
-                    className="px-4 py-2 rounded-lg border border-neutral-300 dark:border-neutral-700 text-[8px] xs:text-xs font-semibold text-neutral-600 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors"
+                    className="px-4 py-2 rounded-lg border border-neutral-300  text-[8px] xs:text-xs font-semibold text-neutral-600  hover:bg-neutral-50  transition-colors"
                   >
                     Cancel
                   </button>
@@ -103,19 +103,19 @@ export default function StudentsPage() {
         </div>
       </div>
 
-      <div className="900 xl:border border-neutral-400 dark:border-neutral-800 rounded-2xl overflow-hidden shadow-sm">
+      <div className="900 xl:border border-neutral-400  rounded-2xl overflow-hidden shadow-sm">
         <div className="grid lg:grid-cols-2 xl:block gap-3 sm:p-3 md:p-0 xl:gap-0 ">
           {students.map((s, index) => (
             <Link
               key={index}
               href={`/admin/students/${s.studentId.$oid}`}
-              className="xl:hidden group block relative bg-subtle/30  rounded-2xl border border-neutral-400 dark:border-neutral-800 p-4 active:scale-[0.98] transition-transform duration-200 overflow-hidden xl:odd:bg-background  xl:even:bg-primary/5 dark:xl:even:bg-subtle/40"
+              className="xl:hidden group block relative bg-subtle/30  rounded-2xl border border-neutral-400  p-4 active:scale-[0.98] transition-transform duration-200 overflow-hidden xl:odd:bg-background  xl:even:bg-primary/5 "
             >
               <div className="absolute inset-0  transition-all duration-300 pointer-events-none" />
 
               <div className="relative flex items-center gap-3">
                 <div className="relative shrink-0">
-                  <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-primary dark:ring-primary border-2 border-white dark:border-neutral-800 shadow-sm">
+                  <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-primary  border-2 border-white  shadow-sm">
                     <Image
                       src={
                         s.gender?.toLowerCase() === "male"
@@ -131,32 +131,32 @@ export default function StudentsPage() {
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <p className="font-bold text-neutral-900 dark:text-white truncate text-sm xs:text-base">
+                  <p className="font-bold text-neutral-900  truncate text-sm xs:text-base">
                     {s.fullName}
                   </p>
                   <div>
-                    <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium mt-0.5">
+                    <p className="text-xs text-neutral-500  font-medium mt-0.5">
                       Class:{s.className}
                     </p>
-                    <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium mt-0.5">
+                    <p className="text-xs text-neutral-500  font-medium mt-0.5">
                       Roll #{s.rollNumber}
                     </p>
                   </div>
                 </div>
 
-                <div className="shrink-0 w-8 h-8 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400 group-active:bg-primary group-active:text-white transition-colors duration-200">
+                <div className="shrink-0 w-8 h-8 rounded-full bg-neutral-100  flex items-center justify-center text-neutral-400 group-active:bg-primary group-active:text-white transition-colors duration-200">
                   <MdArrowForward size={16} />
                 </div>
               </div>
 
-              <div className="relative flex flex-wrap items-center gap-1.5 mt-3 pt-3 border-t border-dashed border-neutral-100 dark:border-neutral-800">
-                <span className="px-2 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 text-[10px] font-bold text-neutral-600 dark:text-neutral-400 uppercase">
+              <div className="relative flex flex-wrap items-center gap-1.5 mt-3 pt-3 border-t border-dashed border-neutral-100 ">
+                <span className="px-2 py-1 rounded-md bg-neutral-100  text-[10px] font-bold text-neutral-600  uppercase">
                   Sec: {s.section || "-"}
                 </span>
                 <span className="px-2 py-1 rounded-md   text-[10px] font-bold   uppercase tracking-wide">
                   {s.group || "-"}
                 </span>
-                <div className="ml-auto flex items-center gap-1 text-xs text-neutral-500 dark:text-neutral-400 font-mono text-nowrap">
+                <div className="ml-auto flex items-center gap-1 text-xs text-neutral-500  font-mono text-nowrap">
                   <MdPhone className="text-neutral-400" size={13} />
                   {s.contactNumber}
                 </div>
@@ -187,7 +187,7 @@ export default function StudentsPage() {
                     onClick={() =>
                       router.push(`/admin/students/${s.studentId.$oid}`)
                     }
-                    className="border-b border-primary/10 even:bg-primary/5 dark:even:bg-subtle/40 hover:bg-primary/10 transition "
+                    className="border-b border-primary/10 even:bg-primary/5  hover:bg-primary/10 transition "
                   >
                     <td className="px-6 py-4">
                       <div className="flex items-center gap-3">
@@ -268,13 +268,13 @@ export default function StudentsPage() {
 function FilterSelect({ label, placeholder }) {
   return (
     <div className="space-y-1.5">
-      <label className="text-[10px] font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wide">
+      <label className="text-[10px] font-bold text-neutral-400  uppercase tracking-wide">
         {label}
       </label>
       <div className="relative">
         <select
           defaultValue=""
-          className="w-full appearance-none px-3 py-2.5 pr-8 bg-neutral-50 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-lg text-sm font-medium text-neutral-700 dark:text-neutral-300 outline-none focus:border-primary dark:focus:border-primary transition-colors cursor-pointer"
+          className="w-full appearance-none px-3 py-2.5 pr-8 bg-neutral-50  border border-neutral-300  rounded-lg text-sm font-medium text-neutral-700  outline-none focus:border-primary  transition-colors cursor-pointer"
         >
           <option value="">{placeholder}</option>
         </select>

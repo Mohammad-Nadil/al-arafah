@@ -30,7 +30,7 @@ export default function DragDrop({ setImg, setPreview, preview }) {
         handleFile(e.dataTransfer.files[0]);
       }}
       className={`w-full h-full border-2 border-dashed rounded-xl flex items-center justify-center relative transition-colors ${
-        isDragging ? "border-emerald-500 bg-emerald-50/50" : "border-neutral-300 dark:border-neutral-700"
+        isDragging ? "border-primary bg-primary/10/50" : "border-neutral-300 "
       }`}
     >
       <input
@@ -54,7 +54,7 @@ export default function DragDrop({ setImg, setPreview, preview }) {
       ) : (
         <label htmlFor="fileInput" className="cursor-pointer flex flex-col items-center">
           <FaCloudUploadAlt className="text-5xl text-neutral-400 mb-2" />
-          <p className="text-neutral-600">Drag & Drop or <span className="text-emerald-600 font-bold">Browse</span></p>
+          <p className="text-neutral-600">Drag & Drop or <span className="text-primary font-bold">Browse</span></p>
         </label>
       )}
     </div>

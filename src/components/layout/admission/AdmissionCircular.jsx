@@ -90,17 +90,17 @@ export default function AdmissionCircular() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           {cleanData.infoCards.map((card) => (
-            <div key={card.id} className="flex items-center gap-4 p-3 sm:p-5 bg-background border border-neutral-400 dark:border-neutral-600 rounded-xl shadow-xs">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 dark:bg-accent/10 flex items-center justify-center shrink-0">
-                {card.icon === "info" && <FiInfo className="w-5 h-5 text-primary dark:text-accent" />}
-                {card.icon === "check" && <FiCheckCircle className="w-5 h-5 text-primary dark:text-accent" />}
-                {card.icon === "alert" && <FiAlertCircle className="w-5 h-5 text-primary dark:text-accent" />}
+            <div key={card.id} className="flex items-center gap-4 p-3 sm:p-5 bg-background border border-neutral-400  rounded-xl shadow-xs">
+              <div className="w-12 h-12 rounded-xl bg-primary/10  flex items-center justify-center shrink-0">
+                {card.icon === "info" && <FiInfo className="w-5 h-5 text-primary " />}
+                {card.icon === "check" && <FiCheckCircle className="w-5 h-5 text-primary " />}
+                {card.icon === "alert" && <FiAlertCircle className="w-5 h-5 text-primary " />}
               </div>
               <div>
-                <h4 className="text-xs font-sans font-semibold tracking-wider uppercase text-neutral-400 dark:text-neutral-500">
+                <h4 className="text-xs font-sans font-semibold tracking-wider uppercase text-neutral-400 ">
                   {lang === "en" ? card.titleEn : card.titleBn}
                 </h4>
-                <p className="text-sm md:text-base font-sans font-bold text-neutral-800 dark:text-neutral-200 mt-0.5">
+                <p className="text-sm md:text-base font-sans font-bold text-neutral-800  mt-0.5">
                   {lang === "en" ? card.valueEn : card.valueBn}
                 </p>
               </div>
@@ -109,22 +109,22 @@ export default function AdmissionCircular() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16">
-          <div className="border border-neutral-400 dark:border-neutral-600 rounded-2xl p-3 md:p-8 bg-background">
-            <h3 className="font-serif text-xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 border-l-4 border-primary dark:border-accent pl-4 mb-6">
+          <div className="border border-neutral-400  rounded-2xl p-3 md:p-8 bg-background">
+            <h3 className="font-serif text-xl font-bold tracking-tight text-neutral-900  border-l-4 border-primary  pl-4 mb-6">
               {lang === "en" ? cleanData.eligibility.titleEn : cleanData.eligibility.titleBn}
             </h3>
-            <div className="overflow-hidden border border-neutral-200/40 dark:border-neutral-800/40 rounded-xl">
+            <div className="overflow-hidden border border-neutral-200/40  rounded-xl">
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="bg-neutral-100 dark:bg-neutral-900 text-xs font-sans font-bold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 border-b border-neutral-400 dark:border-neutral-600">
+                  <tr className="bg-neutral-100  text-xs font-sans font-bold uppercase tracking-wider text-neutral-500  border-b border-neutral-400 ">
                     <th className="px-6 py-4">{lang === "en" ? "Class" : "শ্রেণী"}</th>
                     <th className="px-6 py-4">{lang === "en" ? "Age Requirement" : "বয়সের সময়সীমা"}</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-neutral-200/40 dark:divide-neutral-800/40 text-sm font-sans font-light text-neutral-700 dark:text-neutral-300">
+                <tbody className="divide-y divide-neutral-200/40  text-sm font-sans font-light text-neutral-700 ">
                   {cleanData.eligibility.classes.map((item) => (
-                    <tr key={item.id} className="hover:bg-neutral-50 dark:hover:bg-neutral-900/30 transition-colors">
-                      <td className="px-6 py-4 font-medium text-neutral-900 dark:text-neutral-100">
+                    <tr key={item.id} className="hover:bg-neutral-50  transition-colors">
+                      <td className="px-6 py-4 font-medium text-neutral-900 ">
                         {lang === "en" ? item.nameEn : item.nameBn}
                       </td>
                       <td className="px-6 py-4">
@@ -137,17 +137,17 @@ export default function AdmissionCircular() {
             </div>
           </div>
 
-          <div className="border border-neutral-400 dark:border-neutral-600 rounded-2xl p-6 md:p-8 bg-background">
-            <h3 className="font-serif text-xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 border-l-4 border-primary dark:border-accent pl-4 mb-6">
+          <div className="border border-neutral-400  rounded-2xl p-6 md:p-8 bg-background">
+            <h3 className="font-serif text-xl font-bold tracking-tight text-neutral-900  border-l-4 border-primary  pl-4 mb-6">
               {lang === "en" ? cleanData.rules.titleEn : cleanData.rules.titleBn}
             </h3>
             <ul className="flex flex-col gap-5">
               {cleanData.rules.items.map((rule) => (
                 <li key={rule.id} className="flex items-start gap-4">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 dark:bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
-                    <div className="w-2 h-2 rounded-full bg-primary dark:bg-accent" />
+                  <div className="w-5 h-5 rounded-full bg-primary/10  flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-2 h-2 rounded-full bg-primary " />
                   </div>
-                  <p className="text-sm font-sans font-light leading-relaxed text-neutral-600 dark:text-neutral-400">
+                  <p className="text-sm font-sans font-light leading-relaxed text-neutral-600 ">
                     {lang === "en" ? rule.en : rule.bn}
                   </p>
                 </li>

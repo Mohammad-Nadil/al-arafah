@@ -20,7 +20,7 @@ export default function DownloadCenter() {
   const { lang } = useLanguage();
 
   return (
-    <section className="py-20 bg-neutral-50 dark:bg-neutral-950">
+    <section className="py-20 bg-neutral-50 ">
       <div className="max-w-5xl mx-auto">
         <SectionHeader
           title={lang === "en" ? "Download Center" : "ডাউনলোড সেন্টার"}
@@ -31,13 +31,13 @@ export default function DownloadCenter() {
           {downloads.map((item, idx) => (
             <div
               key={idx}
-              className="group p-6 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl flex flex-col justify-between hover:border-primary transition-all duration-300"
+              className="group p-6 bg-white  border border-neutral-200  rounded-2xl flex flex-col justify-between hover:border-primary transition-all duration-300"
             >
               <div>
                 <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
                   <FiFileText size={20} />
                 </div>
-                <h3 className="font-bold text-neutral-800 dark:text-neutral-100 mb-1">
+                <h3 className="font-bold text-neutral-800  mb-1">
                   {lang === "en" ? item.titleEn : item.titleBn}
                 </h3>
                 <p className="text-xs text-neutral-400">{item.size}</p>

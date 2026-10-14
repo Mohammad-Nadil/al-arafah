@@ -40,14 +40,14 @@ export default function ResultSearch({ onSearch }) {
         e.preventDefault();
         onSearch(roll, exam);
       }}
-      className="grid grid-cols-1 md:grid-cols-3 gap-4  p-6 rounded-xl xl:rounded-2xl border border-primary dark:border-neutral-600 shadow-sm transition-all max-w-4xl mx-auto"
+      className="grid grid-cols-1 md:grid-cols-3 gap-4  p-6 rounded-xl xl:rounded-2xl border border-primary  shadow-sm transition-all max-w-4xl mx-auto"
     >
       <input
         type="number"
         value={roll}
         onChange={(e) => setRoll(e.target.value)}
         placeholder={currentT.rollPlaceholder}
-        className="p-4 border border-primary dark:border-neutral-600 rounded-xl focus:ring-2 focus:ring-primary outline-none transition-all"
+        className="p-4 border border-primary  rounded-xl focus:ring-2 focus:ring-primary outline-none transition-all"
         required
       />
 
@@ -56,8 +56,8 @@ export default function ResultSearch({ onSearch }) {
         onChange={(e) => setExam(e.target.value)}
         className="p-4 border rounded-xl focus:ring-2 focus:ring-primary outline-none transition-all cursor-pointer 
               
-             text-neutral-800 dark:text-neutral-200 
-             border-primary dark:border-neutral-600"
+             text-neutral-800
+             border-primary "
         required
       >
         <option value="" className="text-neutral-500">
@@ -74,7 +74,7 @@ export default function ResultSearch({ onSearch }) {
                 "Final Examination",
               ][index]
             }
-            className="bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200" 
+            className="bg-white text-neutral-800"
           >
             {e}
           </option>

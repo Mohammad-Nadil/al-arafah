@@ -51,7 +51,7 @@ export default function Curriculum() {
         {curriculum.map((item, idx) => (
           <div
             key={idx}
-            className="group relative p-4 md:p-5 bg-white dark:bg-neutral-900 border border-primary dark:border-neutral-800 rounded-3xl hover:border-primary transition-all duration-300 hover:shadow-lg"
+            className="group relative p-4 md:p-5 bg-white  border border-primary  rounded-3xl hover:border-primary transition-all duration-300 hover:shadow-lg"
           >
             <div className="w-12 h-12 flex items-center justify-center rounded-2xl bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
               {item.icon}
@@ -60,10 +60,10 @@ export default function Curriculum() {
             <span className="text-[11px] font-bold uppercase tracking-widest text-neutral-400">
               {item.stage}
             </span>
-            <h3 className="text-lg font-bold mt-1 mb-3 text-neutral-800 dark:text-neutral-100">
+            <h3 className="text-lg font-bold mt-1 mb-3 text-neutral-800 ">
               {lang === "en" ? item.titleEn : item.titleBn}
             </h3>
-            <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">
+            <p className="text-neutral-600  text-sm leading-relaxed">
               {lang === "en" ? item.descEn : item.descBn}
             </p>
           </div>

@@ -87,8 +87,8 @@ export default function StatsMetric() {
       id="stats-metric"
       className="w-full py-20 bg-background text-foreground transition-colors duration-500 overflow-hidden relative"
     >
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4/5 h-[1px] bg-gradient-to-r from-transparent via-neutral-200/60 dark:via-neutral-800/40 to-transparent" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-[1px] bg-gradient-to-r from-transparent via-neutral-200/60 dark:via-neutral-800/40 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4/5 h-[1px] bg-gradient-to-r from-transparent via-neutral-200/60  to-transparent" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-[1px] bg-gradient-to-r from-transparent via-neutral-200/60  to-transparent" />
 
       <Container>
         <SectionHeader
@@ -100,7 +100,7 @@ export default function StatsMetric() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 max-w-5xl mx-auto text-center relative z-10 mt-16">
           {cleanData.stats.map((stat) => (
             <div key={stat.id} className="flex flex-col items-center group relative">
-              <div className="text-4xl md:text-5xl font-serif font-black text-neutral-900 dark:text-neutral-50 tracking-tight group-hover:text-primary dark:group-hover:text-accent transition-colors duration-300 flex items-center select-none">
+              <div className="text-4xl md:text-5xl font-serif font-black text-neutral-900  tracking-tight group-hover:text-primary  transition-colors duration-300 flex items-center select-none">
                 {stat.prefix && (
                   <span className="mr-0.5 font-serif  opacity-80">{stat.prefix}</span>
                 )}
@@ -112,11 +112,11 @@ export default function StatsMetric() {
                 )}
               </div>
 
-              <span className="text-xs md:text-sm font-serif font-medium text-neutral-400 dark:text-neutral-500 mt-3 tracking-wide max-w-[180px] sm:max-w-none transition-colors duration-300 group-hover:text-neutral-600 dark:group-hover:text-neutral-300">
+              <span className="text-xs md:text-sm font-serif font-medium text-neutral-400  mt-3 tracking-wide max-w-[180px] sm:max-w-none transition-colors duration-300 group-hover:text-neutral-600 ">
                 {lang === "en" ? stat.labelEn : stat.labelBn}
               </span>
 
-              <div className="absolute -inset-4 bg-gradient-to-b from-primary/[0.02] dark:from-accent/[0.01] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl -z-10" />
+              <div className="absolute -inset-4 bg-gradient-to-b from-primary/[0.02]  to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl -z-10" />
             </div>
           ))}
         </div>

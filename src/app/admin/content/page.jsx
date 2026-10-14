@@ -15,8 +15,8 @@ export const ContentManagementPage = () => {
     <div className="flex flex-col gap-">
       {/* Page Header */}
       <div>
-        <h2 className="text-md md:text-2xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
-          <MdLayers className="text-emerald-600" /> Public Website Content
+        <h2 className="text-md md:text-2xl font-bold text-neutral-900  flex items-center gap-2">
+          <MdLayers className="text-primary" /> Public Website Content
           Management
         </h2>
         <p className=" text-xs md:text-sm text-neutral-500 mt-0.5">
@@ -26,13 +26,13 @@ export const ContentManagementPage = () => {
       </div>
 
       {/* Navigation Tabs */}
-      <div className="flex border-b border-neutral-200 dark:border-neutral-800 gap-6 my-4 md:my-8 text-[10px] sm:text-sm">
+      <div className="flex border-b border-neutral-200  gap-6 my-4 md:my-8 text-[10px] sm:text-sm">
         <button
           onClick={() => setActiveTab("banner")}
           className={`pb-3  font-bold flex items-center gap-2 border-b-2 transition-colors ${
             activeTab === "banner"
-              ? "border-emerald-600 text-emerald-600"
-              : "border-transparent text-neutral-500 hover:text-neutral-800 dark:hover:text-white"
+              ? "border-primary text-primary"
+              : "border-transparent text-neutral-500 hover:text-neutral-800 "
           }`}
         >
           <MdHome size={18} /> Home Banners (3 Texts)
@@ -41,8 +41,8 @@ export const ContentManagementPage = () => {
           onClick={() => setActiveTab("fees")}
           className={`pb-3  font-bold flex items-center gap-2 border-b-2 transition-colors ${
             activeTab === "fees"
-              ? "border-emerald-600 text-emerald-600"
-              : "border-transparent text-neutral-500 hover:text-neutral-800 dark:hover:text-white"
+              ? "border-primary text-primary"
+              : "border-transparent text-neutral-500 hover:text-neutral-800 "
           }`}
         >
           <MdSchool size={18} /> Admission Fees Structure

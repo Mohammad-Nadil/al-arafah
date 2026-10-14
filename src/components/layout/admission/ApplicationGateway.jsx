@@ -26,20 +26,20 @@ export default function ApplicationGateway() {
       className="w-full py-16 bg-background text-foreground transition-colors duration-500"
     >
       <Container>
-        <div className="relative max-w-4xl mx-auto overflow-hidden rounded-3xl border border-neutral-300 dark:border-neutral-700 bg-linear-to-br from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-950 p-8 md:p-12 text-center shadow-xs flex flex-col items-center">
+        <div className="relative max-w-4xl mx-auto overflow-hidden rounded-3xl border border-neutral-300  bg-linear-to-br from-neutral-50 to-neutral-100   p-8 md:p-12 text-center shadow-xs flex flex-col items-center">
           
-          <div className="absolute top-0 right-0 -mt-6 -mr-6 w-32 h-32 bg-primary/5 dark:bg-accent/5 rounded-full blur-xl" />
-          <div className="absolute bottom-0 left-0 -mb-6 -ml-6 w-32 h-32 bg-primary/5 dark:bg-accent/5 rounded-full blur-xl" />
+          <div className="absolute top-0 right-0 -mt-6 -mr-6 w-32 h-32 bg-primary/5  rounded-full blur-xl" />
+          <div className="absolute bottom-0 left-0 -mb-6 -ml-6 w-32 h-32 bg-primary/5  rounded-full blur-xl" />
 
-          <div className="w-14 h-14 rounded-2xl bg-primary dark:bg-accent flex items-center justify-center text-white dark:text-background mb-6 shadow-sm">
+          <div className="w-14 h-14 rounded-2xl bg-primary  flex items-center justify-center text-white  mb-6 shadow-sm">
             <FiFileText className="w-6 h-6" />
           </div>
 
-          <h2 className="font-serif text-2xl md:text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 mb-4 max-w-xl">
+          <h2 className="font-serif text-2xl md:text-4xl font-bold tracking-tight text-neutral-900  mb-4 max-w-xl">
             {lang === "en" ? cleanData.content.titleEn : cleanData.content.titleBn}
           </h2>
 
-          <p className="font-sans font-light text-sm md:text-base text-neutral-500 dark:text-neutral-400 max-w-2xl leading-relaxed mb-8">
+          <p className="font-sans font-light text-sm md:text-base text-neutral-500  max-w-2xl leading-relaxed mb-8">
             {lang === "en" ? cleanData.content.subtitleEn : cleanData.content.subtitleBn}
           </p>
 
@@ -52,9 +52,9 @@ export default function ApplicationGateway() {
                 </span>
               }
               size="lg"
-              borderColor="#ffbe0b"
-              flairColor="#ffbe0b"
-              textHoverColor="#032d22"
+              borderColor="var(--accent)"
+              flairColor="var(--accent)"
+              textHoverColor="var(--foreground)"
               className="font-sans font-bold text-sm tracking-wider uppercase shadow-md text-foreground px-8 py-3.5"
             />
           </a>

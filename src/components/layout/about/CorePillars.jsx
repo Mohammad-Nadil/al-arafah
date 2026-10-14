@@ -60,27 +60,27 @@ const CorePillars = () => {
           {cleanData.pillars.map((pillar, idx) => (
             <div
               key={idx}
-              className="relative flex flex-col justify-between p-4 overflow-hidden transition-all duration-300 border shadow-sm md:p-6 xl:p-8 group rounded-xl md:rounded-2xl xl:rounded-3xl bg-transparent dark:bg-background border-neutral-400 dark:border-neutral-600 hover:shadow-xl hover:bg-linear-to-br from-accent/30 to-transparent"
+              className="relative flex flex-col justify-between p-4 overflow-hidden transition-all duration-300 border shadow-sm md:p-6 xl:p-8 group rounded-xl md:rounded-2xl xl:rounded-3xl bg-transparent  border-neutral-400  hover:shadow-xl hover:bg-linear-to-br from-accent/30 to-transparent"
             >
               <div>
-                <span className="text-[10px] font-sans font-bold tracking-widest text-neutral-400 dark:text-neutral-500 block mb-6">
+                <span className="text-[10px] font-sans font-bold tracking-widest text-neutral-400  block mb-6">
                   {pillar.tag}
                 </span>
 
-                <div className="flex items-center justify-center w-12 h-12 transition-all duration-300 border rounded-2xl bg-neutral-100 dark:bg-neutral-900 border-neutral-200/60 dark:border-neutral-800/60 text-primary dark:text-accent group-hover:bg-neutral-900 group-hover:text-white dark:group-hover:bg-accent dark:group-hover:text-background group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-primary/10">
+                <div className="flex items-center justify-center w-12 h-12 transition-all duration-300 border rounded-2xl bg-neutral-100  border-neutral-200/60  text-primary  group-hover:bg-neutral-900 group-hover:text-white   group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-primary/10">
                   {pillar.icon}
                 </div>
 
-                <h3 className="mt-6 font-serif text-xl font-bold tracking-tight transition-colors duration-300 md:text-2xl text-neutral-900 dark:text-neutral-100 group-hover:text-primary dark:group-hover:text-accent">
+                <h3 className="mt-6 font-serif text-xl font-bold tracking-tight transition-colors duration-300 md:text-2xl text-neutral-900  group-hover:text-primary ">
                   {lang === "en" ? pillar.titleEn : pillar.titleBn}
                 </h3>
 
-                <p className="mt-4 font-sans text-sm font-light leading-relaxed text-neutral-500 dark:text-neutral-400">
+                <p className="mt-4 font-sans text-sm font-light leading-relaxed text-neutral-500 ">
                   {lang === "en" ? pillar.descEn : pillar.descBn}
                 </p>
               </div>
 
-              <div className="w-0 h-0.5 bg-primary dark:bg-accent absolute bottom-0 left-0 group-hover:w-full duration-300 transition-all rounded-full" />
+              <div className="w-0 h-0.5 bg-primary  absolute bottom-0 left-0 group-hover:w-full duration-300 transition-all rounded-full" />
             </div>
           ))}
         </div>
