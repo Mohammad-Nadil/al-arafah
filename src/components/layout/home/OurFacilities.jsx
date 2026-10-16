@@ -4,72 +4,87 @@ import React from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import Container from "@/components/public/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
-import { FiBookOpen, FiActivity, FiCpu } from "react-icons/fi";
+import { FiBookOpen, FiMonitor, FiTruck,  } from "react-icons/fi";
 import { MdOutlineMosque } from "react-icons/md";
 import { BiDna } from "react-icons/bi";
 import { LuGraduationCap } from "react-icons/lu";
 
 const cleanData = {
   header: {
-    badgeEn: "World-Class Infrastructure",
-    badgeBn: "বিশ্বমানের অবকাঠামো",
-    titleEn: "Our Premium Facilities & Environment",
-    titleBn: "আমাদের প্রিমিয়াম সুযোগ-সুবিধা ও পরিবেশ",
+    badgeEn: "Learning Facilities",
+    badgeBn: "শিক্ষার সহায়ক সুবিধা",
+    titleEn: "Facilities for Better Learning",
+    titleBn: "উন্নত শিক্ষার জন্য প্রয়োজনীয় সুবিধা",
     highlightWordEn: "Facilities",
-    highlightWordBn: "সুযোগ-সুবিধা",
-    descEn: "We provide an advanced ecosystem designed to empower students with both cutting-edge global standard education and deep moral character.",
-    descBn: "আমরা একটি উন্নত ইকোসিস্টেম প্রদান করি যা শিক্ষার্থীদের যুগোপযোগী বৈশ্বিক মানসম্পন্ন শিক্ষা এবং গভীর নৈতিক চরিত্র উভয় ক্ষেত্রেই সমৃদ্ধ করে।"
+    highlightWordBn: "শিক্ষার",
+    descEn:
+      "A supportive learning environment combining modern education, Islamic values, and practical learning opportunities.",
+    descBn:
+      "আধুনিক শিক্ষা, ইসলামী মূল্যবোধ ও হাতে-কলমে শেখার সুযোগ নিয়ে আমাদের শিক্ষার্থীদের জন্য একটি সুন্দর শিক্ষার পরিবেশ।",
   },
+
   facilities: [
     {
       id: 1,
-      icon: <MdOutlineMosque />,
-      titleEn: "Hifzul Quran Pathway",
-      titleBn: "হিফজুল কুরআন ট্র্যাক",
-      descEn: "Structured Hifz program seamlessly integrated with regular Cambridge academic classes.",
-      descBn: "নিয়মিত কেমব্রিজ একাডেমিক ক্লাসের সাথে সমন্বিত সুপরিকল্পিত হিফজ প্রোগ্রাম।"
+      icon: <LuGraduationCap />,
+      titleEn: "English-Medium Education",
+      titleBn: "ইংরেজি মাধ্যমের শিক্ষা",
+      descEn:
+        "English-medium education from Play Group to O' Level, with Islamic values and Bangla and Arabic learning.",
+      descBn:
+        "প্লে গ্রুপ থেকে ও লেভেল পর্যন্ত ইংরেজি মাধ্যমে পড়াশোনা, পাশাপাশি ইসলামী মূল্যবোধ, বাংলা ও আরবি শিক্ষা।",
     },
     {
       id: 2,
-      icon: <BiDna />,
-      titleEn: "Modern Science Labs",
-      titleBn: "আধুনিক বিজ্ঞান ল্যাব",
-      descEn: "State-of-the-art physics, chemistry, and biology labs for hands-on practical research.",
-      descBn: "হাতে-কলমে ব্যবহারিক গবেষণার জন্য অত্যাধুনিক পদার্থ, রসায়ন এবং জীববিজ্ঞান ল্যাব।"
+      icon: <MdOutlineMosque />,
+      titleEn: "Hifzul Quran Section",
+      titleBn: "হিফজুল কুরআন বিভাগ",
+      descEn:
+        "A dedicated Quran memorization program with a junior section and full-time Hifz opportunities.",
+      descBn:
+        "কুরআন হেফজের জন্য বিশেষ বিভাগ। ছোটদের জুনিয়র বিভাগ ও উপযুক্ত শিক্ষার্থীদের জন্য পূর্ণকালীন হিফজের ব্যবস্থা।",
     },
     {
       id: 3,
-      icon: <FiCpu />,
-      titleEn: "ICT & Robotics Hub",
-      titleBn: "আইসিটি ও রোবোটিক্স হাব",
-      descEn: "Advanced computer labs equipping students with next-gen coding and tech skills.",
-      descBn: "শিক্ষার্থীদের পরবর্তী প্রজন্মের কোডিং এবং প্রযুক্তিগত দক্ষতায় সমৃদ্ধ করার আধুনিক কম্পিউটার ল্যাব।"
+      icon: <FiMonitor />,
+      titleEn: "DigiClass Learning",
+      titleBn: "ডিজিক্লাসে আধুনিক শিক্ষা",
+      descEn:
+        "Multimedia lessons with interactive 3D content, educational games, rhymes, and e-books.",
+      descBn:
+        "ত্রিমাত্রিক উপস্থাপনা, শিক্ষামূলক খেলা, ছড়া ও ই-বুকের মাধ্যমে সহজ ও আনন্দদায়ক পাঠদান।",
     },
     {
       id: 4,
       icon: <FiBookOpen />,
-      titleEn: "Rich Islamic Library",
-      titleBn: "সমৃদ্ধ ইসলামিক লাইব্রেরি",
-      descEn: "A vast collection of academic textbooks, global literature, and deep divine Islamic research papers.",
-      descBn: "একাডেমিক পাঠ্যপুস্তক, বৈশ্বিক সাহিত্য এবং গভীর দ্বীনি গবেষণা পত্রের এক বিশাল সংগ্রহশালা।"
+      titleEn: "Library Facilities",
+      titleBn: "সমৃদ্ধ গ্রন্থাগার",
+      descEn:
+        "Academic books, reference materials, and leisure reading, with access to an additional Islamic library for teachers and senior students.",
+      descBn:
+        "পাঠ্যবই, সহায়ক বই ও গল্প-সাহিত্য পড়ার সুযোগ। শিক্ষক ও জ্যেষ্ঠ শিক্ষার্থীরা অতিরিক্ত একটি ইসলামী গ্রন্থাগারও ব্যবহার করতে পারেন।",
     },
     {
       id: 5,
-      icon: <FiActivity />,
-      titleEn: "Sports & Martial Arts",
-      titleBn: "খেলাধুলা ও মার্শাল আর্ট",
-      descEn: "Spacious playground paired with professional self-defense training and physical tarbiyah.",
-      descBn: "পেশাদার আত্মরক্ষা প্রশিক্ষণ এবং শারীরিক তারবিয়াহর জন্য প্রশস্ত খেলার মাঠ।"
+      icon: <BiDna />,
+      titleEn: "Science & Computer Labs",
+      titleBn: "বিজ্ঞান ও কম্পিউটার ল্যাব",
+      descEn:
+        "Separate science and computer laboratories to support practical learning and computer education.",
+      descBn:
+        "বিজ্ঞান ও কম্পিউটার বিষয়ে হাতে-কলমে শেখার জন্য আলাদা ল্যাবের ব্যবস্থা।",
     },
     {
       id: 6,
-      icon: <LuGraduationCap />,
-      titleEn: "Cambridge Resource Center",
-      titleBn: "কেমব্রিজ রিসোর্স সেন্টার",
-      descEn: "Dedicated guidance desk providing world-class international scholarship planning resources.",
-      descBn: "বিশ্বমানের আন্তর্জাতিক স্কলারশিপ পরিকল্পনার সংস্থান সরবরাহকারী ডেডিকেটেড গাইডেন্স ডেস্ক।"
-    }
-  ]
+      icon: <FiTruck />,
+      titleEn: "School Transport",
+      titleBn: "স্কুল পরিবহন",
+      descEn:
+        "School bus services on designated routes, with experienced drivers and female attendants.",
+      descBn:
+        "নির্ধারিত রুটে স্কুল বাসের ব্যবস্থা, যেখানে অভিজ্ঞ চালকের পাশাপাশি নারী সহকারী থাকেন।",
+    },
+  ],
 };
 
 export default function OurFacilities() {
@@ -93,7 +108,7 @@ export default function OurFacilities() {
           {cleanData.facilities.map((item) => (
             <div
               key={item.id}
-              className="group relative bg-transparent  p-4 md:p-8 rounded-2xl border border-neutral-400  shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out select-none"
+              className="group relative bg-transparent  p-4 md:p-6 rounded-2xl border border-neutral-400  shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out select-none"
             >
              
 

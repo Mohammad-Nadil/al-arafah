@@ -29,6 +29,7 @@ export const metadata = {
   description: "Integrating Academic Excellence with Divine Islamic Tarbiyah",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html

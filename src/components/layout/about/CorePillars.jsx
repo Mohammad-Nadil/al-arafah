@@ -6,40 +6,48 @@ import { useLanguage } from "@/context/LanguageContext";
 import { FiBookOpen, FiAward, FiCpu } from "react-icons/fi";
 import SectionHeader from "@/components/ui/SectionHeader";
 
+
 const cleanData = {
   header: {
     badgeEn: "OUR THREE PILLARS",
-    badgeBn: "আমাদের তিনটি মূল স্তম্ভ",
-    titleEn: "The Foundation of Excellence",
-    titleBn: "অনন্য শ্রেষ্ঠত্বের মজবুত বুনিয়াদ",
+    badgeBn: "আমাদের তিনটি মূল ভিত্তি",
+    titleEn: "The Foundation of Our Education",
+    titleBn: "আমাদের শিক্ষার মূল ভিত্তি",
   },
   pillars: [
     {
       icon: <FiAward className="w-6 h-6" />,
-      titleEn: "Cambridge Curriculum",
-      titleBn: "কেমব্রিজ কারিকুলাম",
-      descEn: "World-class academic excellence delivering global standards of critical thinking, deep analytical skills, and internationally recognized qualification.",
-      descBn: "বিশ্বমানের পাঠ্যক্রম যা শিক্ষার্থীদের মাঝে জটিল চিন্তাভাবনা, গভীর বিশ্লেষণাত্মক দক্ষতা এবং আন্তর্জাতিকভাবে স্বীকৃত যোগ্যতার বিকাশ ঘটায়।",
+      titleEn: "Modern English-Medium Education",
+      titleBn: "আধুনিক ইংরেজি মাধ্যমের শিক্ষা",
+      descEn:
+        "Providing English-medium education from Play Group to O' Level, with a focus on academic learning, computer education, and the development of useful knowledge and skills.",
+      descBn:
+        "প্লে গ্রুপ থেকে ও লেভেল পর্যন্ত ইংরেজি মাধ্যমে শিক্ষার সুযোগ, পাশাপাশি কম্পিউটার শিক্ষা এবং প্রয়োজনীয় জ্ঞান ও দক্ষতা অর্জনের ওপর গুরুত্ব দেওয়া হয়।",
       tag: "ACADEMIC",
     },
     {
       icon: <FiBookOpen className="w-6 h-6" />,
-      titleEn: "Hifzul Quran & Tarbiyah",
-      titleBn: "হিফজুল কুরআন ও তারবিয়াহ",
-      descEn: "Nurturing deep spiritual guidance through structured Quran memorization alongside core moral values and authentic prophetic character building.",
-      descBn: "পবিত্র কুরআন হিফজের পাশাপাশি ইসলামিক নৈতিক মূল্যবোধ এবং খাঁটি সুন্নাহর আলোকে চারিত্রিক ও আধ্যাত্মিক পরিশুদ্ধি গঠন।",
-      tag: "SPIRITUAL",
+      titleEn: "Islamic Values & Hifzul Quran",
+      titleBn: "ইসলামী মূল্যবোধ ও হিফজুল কুরআন",
+      descEn:
+        "Integrating Islamic teachings and moral values into education, with a dedicated Hifzul Quran section to support Quran memorization and character development.",
+      descBn:
+        "শিক্ষার সঙ্গে ইসলামী শিক্ষা ও নৈতিক মূল্যবোধের সমন্বয় করা হয়। পাশাপাশি হিফজুল কুরআন বিভাগে কুরআন মুখস্থ করা ও উত্তম চরিত্র গঠনের সুযোগ রয়েছে।",
+      tag: "ISLAMIC VALUES",
     },
     {
       icon: <FiCpu className="w-6 h-6" />,
-      titleEn: "Future Tech & Robotics",
-      titleBn: "ফিউচার টেক ও রোবোটিক্স",
-      descEn: "Empowering young minds with next-generation coding, robotics, STEM integration, and advanced problem-solving tools for tomorrow.",
-      descBn: "আগামী দিনের চ্যালেঞ্জ মোকাবেলায় নতুন প্রজন্মকে কোডিং, রোবোটিক্স, স্টেম (STEM) শিক্ষা এবং উন্নত সমস্যা-সমাধানের দক্ষতায় দক্ষ করে তোলা।",
+      titleEn: "Technology & Practical Learning",
+      titleBn: "প্রযুক্তি ও ব্যবহারিক শিক্ষা",
+      descEn:
+        "Supporting learning through computer education, separate science and computer labs, and DigiClass multimedia resources with interactive demonstrations and educational activities.",
+      descBn:
+        "কম্পিউটার শিক্ষা, পৃথক বিজ্ঞান ও কম্পিউটার ল্যাব এবং DigiClass-এর মাল্টিমিডিয়া উপকরণের মাধ্যমে শিক্ষার্থীদের শেখার অভিজ্ঞতাকে আরও কার্যকর করা হয়।",
       tag: "INNOVATION",
     },
   ],
 };
+
 
 const CorePillars = () => {
   const { lang } = useLanguage();
@@ -60,7 +68,7 @@ const CorePillars = () => {
           {cleanData.pillars.map((pillar, idx) => (
             <div
               key={idx}
-              className="relative flex flex-col justify-between p-4 overflow-hidden transition-all duration-300 border shadow-sm md:p-6 xl:p-8 group rounded-xl md:rounded-2xl xl:rounded-3xl bg-transparent  border-neutral-400  hover:shadow-xl hover:bg-linear-to-br from-accent/30 to-transparent"
+              className="relative flex flex-col justify-between p-4 overflow-hidden transition-all duration-300 border shadow-sm md:p-6  group rounded-xl md:rounded-2xl xl:rounded-3xl bg-transparent  border-neutral-400  hover:shadow-xl hover:bg-linear-to-br from-accent/30 to-transparent"
             >
               <div>
                 <span className="text-[10px] font-sans font-bold tracking-widest text-neutral-400  block mb-6">

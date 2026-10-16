@@ -5,51 +5,47 @@ import Container from "@/components/public/Container";
 import { useLanguage } from "@/context/LanguageContext";
 import SectionHeader from "@/components/ui/SectionHeader";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
+
 
 const cleanData = {
   header: {
-    badgeEn: "GROWTH & METRICS",
-    badgeBn: "আমাদের গৌরবময় অগ্রগতি",
-    titleEn: "Al-Arafah By The Numbers",
-    titleBn: "পরিসংখ্যানে আমাদের সাফল্য",
+    badgeEn: "OUR JOURNEY & HIGHLIGHTS",
+    badgeBn: "আমাদের পথচলা ও অর্জন",
+    titleEn: "Al-Arafah at a Glance",
+    titleBn: "এক নজরে আল-আরাফাহ",
   },
   stats: [
     {
       id: 1,
-      targetValue: 25,
-      suffix: "+",
-      labelEn: "Global & Moral Co-Curriculars",
-      labelBn: "সহ-শিক্ষা ও নৈতিক কার্যক্রম",
+      targetValue: 1998,
+      labelEn: "Year Established",
+      labelBn: "প্রতিষ্ঠাকাল",
     },
     {
       id: 2,
-      targetValue: 35,
-      suffix: "+",
-      labelEn: "Trained & Certified Educators",
-      labelBn: "প্রশিক্ষণপ্রাপ্ত শিক্ষক মণ্ডলী",
+      targetValue: 2006,
+      labelEn: "English Language Club Since",
+      labelBn: "ইংলিশ ল্যাঙ্গুয়েজ ক্লাবের যাত্রা",
     },
     {
       id: 3,
-      targetValue: 12,
-      prefix: "1:",
-      labelEn: "Teacher-Student Ratio",
-      labelBn: "শিক্ষক-শিক্ষার্থী অনুপাত",
+      targetValue: 2,
+      suffix: "",
+      labelEn: "Dedicated Learning Labs",
+      labelBn: "বিজ্ঞান ও কম্পিউটার ল্যাব",
     },
     {
       id: 4,
-      targetValue: 100,
-      suffix: "%",
-      labelEn: "Multimedia & Lab Integrated",
-      labelBn: "মাল্টিমিডিয়া ও ল্যাব সমৃদ্ধ",
+      targetValue: 3,
+      suffix: "",
+      labelEn: "Core Learning Languages",
+      labelBn: "শিক্ষার প্রধান ভাষা",
     },
   ],
 };
+
 
 export default function StatsMetric() {
   const { lang } = useLanguage();

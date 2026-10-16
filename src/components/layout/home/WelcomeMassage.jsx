@@ -7,12 +7,8 @@ import Container from "@/components/public/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
 
 const cleanData = {
   header: {

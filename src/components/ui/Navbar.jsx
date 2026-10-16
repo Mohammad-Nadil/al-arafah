@@ -10,11 +10,7 @@ import Container from "../public/Container";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "./Button";
-import gsap from "gsap";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
 
 const cleanData = {
   menuItems: {

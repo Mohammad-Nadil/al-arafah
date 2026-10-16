@@ -17,42 +17,42 @@ const cleanData = {
   slides: [
     {
       id: 1,
-      tagEn: "Islamic English Medium School",
-      tagBn: "ইসলামিক ইংলিশ মিডিয়াম স্কুল",
-      titleEnLine1: "Nurturing Faith,",
-      titleEnLine2: "Inspiring Excellence",
-      titleBnLine1: "দ্বীনি বিশ্বাস লালন,",
-      titleBnLine2: "সর্বোচ্চ মেধার বিকাশ",
+      tagEn: "Akhirat First",
+      tagBn: "আখিরাতমুখী শিক্ষা",
+      titleEnLine1: "Akhirat-oriented ",
+      titleEnLine2: "Faith-based Education",
+      titleBnLine1: "আখিরাতকে গুরুত্ব দিয়ে ",
+      titleBnLine2: "ঈমানভিত্তিক শিক্ষা",
       descEn:
-        "A refined Cambridge Curriculum pathway integrated with Islamic Tarbiyah, disciplined campus life, and confident English medium scholarship.",
+        "Nurturing a balanced approach to seek blessings for both this world and the hereafter, avoiding total immersion in worldly interests..",
       descBn:
-        "ইসলামিক তারবিয়াহ, সুশৃঙ্খল ক্যাম্পাস জীবন এবং আত্মবিশ্বাসী ইংলিশ মিডিয়াম স্কলারশিপের সাথে সমন্বিত একটি পরিমার্জিত কেমব্রিজ কারিকুলাম।",
+        "দুনিয়া ও আখিরাত—উভয় জীবনে আল্লাহর রহমত ও কল্যাণ লাভের চেষ্টা করা এবং শুধু দুনিয়ার স্বার্থ নিয়ে ব্যস্ত না থেকে ভারসাম্যপূর্ণ জীবন গড়ে তোলা।",
     },
     {
       id: 2,
-      tagEn: "Admissions Open 2026-27",
-      tagBn: "ভর্তি চলছে ২০২৬-২৭",
-      titleEnLine1: "Shaping Future,",
-      titleEnLine2: "Islamic Leaders",
-      titleBnLine1: "ভবিষ্যতের ইসলামিক",
-      titleBnLine2: "নেতৃত্ব গড়ার প্রত্যয়",
+      tagEn: "Faith & Excellence",
+      tagBn: "ঈমান ও উৎকর্ষ",
+      titleEnLine1: "Education Based ",
+      titleEnLine2: "on Imaan",
+      titleBnLine1: "ঈমানভিত্তিক শিক্ষা",
+      titleBnLine2: "",
       descEn:
-        "Empowering global standard education built strictly upon moral values, modern technology, and comprehensive Hifzul Quran pathways.",
+        "Combines a modern English medium syllabus to build resourceful professionals with values that foster Faithful, Muttaqi, and Akhirat-oriented mindsets.",
       descBn:
-        "নৈতিক মূল্যবোধ, আধুনিক প্রযুক্তি এবং সম্পূর্ণ হিফজুল কুরআন ট্র্যাকের ওপর ভিত্তি করে বিশ্বমানের শিক্ষা নিশ্চিত করা।",
+        " আধুনিক ইংরেজি মাধ্যমের পাঠ্যক্রমের সঙ্গে ইসলামী মূল্যবোধের সমন্বয় করা, যাতে শিক্ষার্থীরা ঈমানদার, আল্লাহভীরু ও আখিরাতের প্রতি সচেতন হওয়ার পাশাপাশি দক্ষ ও যোগ্য পেশাজীবী হিসেবে গড়ে উঠতে পারে।",
     },
     {
       id: 3,
-      tagEn: "Academic Heritage",
-      tagBn: "একাডেমিক ঐতিহ্য",
-      titleEnLine1: "Modern Science Meets",
-      titleEnLine2: "Divine Knowledge",
-      titleBnLine1: "আধুনিক বিজ্ঞান ও",
-      titleBnLine2: "ঐশী জ্ঞানের মেলবন্ধন",
+      tagEn: "Islamic Identity",
+      tagBn: "ইসলামী আদর্শ",
+      titleEnLine1: "Islamic Mind ",
+      titleEnLine2: "and Character",
+      titleBnLine1: "ইসলামী মন ও চরিত্র",
+      titleBnLine2: "",
       descEn:
-        "State-of-the-art laboratory facilities paired with strict discipline, deep spiritual guidance, and Cambridge world-class resources.",
+        "Aligns with international English medium school standards while incorporating ideological subjects to shape children into pious Muslims in faith, conviction, and Sunnah culture, with the ultimate destination being Jannah, Insha-Allah.",
       descBn:
-        "সুশৃঙ্খল পরিবেশ, গভীর আধ্যাত্মিক দিকনির্দেশনা এবং কেমব্রিজ মানের রিসোর্সের সাথে আমাদের আধুনিক ল্যাবরেটরি সুবিধা।",
+        "আন্তর্জাতিক মানের ইংরেজি মাধ্যমের সিলেবাসের পাশাপাশি নিজস্ব আদর্শিক বিষয় যুক্ত করা হয়েছে, যাতে শিক্ষার্থীরা বিশ্বাস ও মননে খাঁটি মুসলিম এবং সংস্কৃতিতে সুন্নাহর অনুসারী হতে পারে",
     },
   ],
 };
@@ -91,7 +91,7 @@ export default function HeroBanner() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full py-16 xs:py-20 lg:py-30 flex items-center overflow-hidden bg-navy"
+      className="relative w-full py-16 xs:py-20  flex items-center overflow-hidden bg-navy"
     >
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         {cleanData.slides.map((slide, index) => {
@@ -102,9 +102,7 @@ export default function HeroBanner() {
             <div
               key={slide.id}
               className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentSlide
-                  ? "z-10 opacity-35 "
-                  : "z-0 opacity-0"
+                index === currentSlide ? "z-10 opacity-35 " : "z-0 opacity-0"
               }`}
             >
               <Image
@@ -133,7 +131,7 @@ export default function HeroBanner() {
             </span>
           </div>
 
-          <h1 className="js-hero-content-anim text-3xl xs:text-4xl sm:text-5xl md:text-6xl xl:text-8xl font-serif font-semibold text-[#fefcf8] tracking-wide leading-[1.15]">
+          <h1 className="js-hero-content-anim text-3xl xs:text-4xl sm:text-5xl md:text-6xl xl:text-8xl font-serif  font-semibold text-[#fefcf8] tracking-wide leading-[1.1]">
             {lang === "en" ? (
               <>
                 {cleanData.slides[currentSlide].titleEnLine1}

@@ -6,52 +6,84 @@ import Container from "@/components/public/Container";
 import { useLanguage } from "@/context/LanguageContext";
 import SectionHeader from "@/components/ui/SectionHeader";
 
+
 const cleanData = {
   header: {
-    badgeEn: "CAMPUS LIFE",
-    badgeBn: "ক্যাম্পাস সুযোগ-সুবিধা",
-    titleEn: "World-Class Infrastructure",
-    titleBn: "আধুনিক ও আন্তর্জাতিক মানের ক্যাম্পাস",
+    badgeEn: "CAMPUS FACILITIES",
+    badgeBn: "আমাদের শিক্ষার সুযোগ-সুবিধা",
+    titleEn: "Facilities That Support Learning",
+    titleBn: "শেখার উপযোগী পরিবেশ ও সুবিধা",
   },
   facilities: [
     {
       id: 1,
-      titleEn: "Smart IT & Computer Lab",
-      titleBn: "স্মার্ট আইটি ও কম্পিউটার ল্যাব",
-      descEn: "Modern, fully-equipped computer labs designed to build early tech skills and digital literacy for the future.",
-      descBn: "শিক্ষার্থীদের প্রযুক্তিগত দক্ষতা এবং ডিজিটাল লিটারেসি বৃদ্ধির জন্য আধুনিক পিসি ও ইন্টারনেট সমৃদ্ধ আইটি ল্যাব।",
+      titleEn: "Computer Learning",
+      titleBn: "কম্পিউটার শিক্ষা",
+      descEn:
+        "Computer education is compulsory from Standard II, helping students develop essential digital knowledge and practical computer skills.",
+      descBn:
+        "দ্বিতীয় শ্রেণি থেকে কম্পিউটার শিক্ষা বাধ্যতামূলক। এর মাধ্যমে শিক্ষার্থীরা প্রয়োজনীয় ডিজিটাল জ্ঞান ও কম্পিউটার ব্যবহারের দক্ষতা অর্জনের সুযোগ পায়।",
       image: "/facility/facility-it.jpg",
-      tag: "TECHNOLOGY"
+      tag: "TECHNOLOGY",
     },
     {
       id: 2,
-      titleEn: "Academic & Islamic Library",
-      titleBn: "একাডেমিক ও ইসলামিক লাইব্রেরি",
-      descEn: "A quiet, resource-rich environment featuring Cambridge reference books, storybooks, and authentic Islamic literature.",
-      descBn: "কেমব্রিজ রেফারেন্স বুক, গল্পের বই এবং বিশুদ্ধ ইসলামিক কিতাব সমৃদ্ধ একটি শান্ত ও জ্ঞানচর্চার উপযুক্ত পরিবেশ।",
+      titleEn: "Library & Reading",
+      titleBn: "লাইব্রেরি ও পাঠাভ্যাস",
+      descEn:
+        "Students can explore academic books, reference materials, and leisure reading resources. Teachers and senior students also have access to an Islamic book library maintained by the Foundation.",
+      descBn:
+        "শিক্ষার্থীদের জন্য রয়েছে পাঠ্যবই, তথ্যসূত্রের বই ও অবসর সময়ে পড়ার উপযোগী বই। এ ছাড়া ফাউন্ডেশন পরিচালিত ইসলামি বইয়ের লাইব্রেরি ব্যবহারের সুযোগ রয়েছে শিক্ষকদের ও জ্যেষ্ঠ শিক্ষার্থীদের।",
       image: "/facility/facility-library.jpg",
-      tag: "KNOWLEDGE"
+      tag: "KNOWLEDGE",
     },
     {
       id: 3,
-      titleEn: "Multimedia Classrooms",
-      titleBn: "মাল্টিমিডিয়া ক্লাসরুম",
-      descEn: "Spacious, well-ventilated classrooms integrated with smart projectors to ensure interactive and engaging learning.",
-      descBn: "শিক্ষার্থীদের মনোযোগ ধরে রাখতে স্মার্ট প্রজেক্টর ও মাল্টিমিডিয়া সুবিধা সম্পন্ন প্রশস্ত ও আরামদায়ক ক্লাসরুম।",
+      titleEn: "DigiClass Learning",
+      titleBn: "ডিজিক্লাসে পাঠদান",
+      descEn:
+        "DigiClass multimedia resources include interactive 3D demonstrations, educational games, rhymes, and e-books to make lessons more engaging.",
+      descBn:
+        "ডিজিক্লাসের মাধ্যমে ত্রিমাত্রিক উপস্থাপনা, শিক্ষামূলক গেম, ছড়া ও ই-বুক ব্যবহার করে পাঠদানকে আরও আকর্ষণীয় ও সহজবোধ্য করার সুযোগ রয়েছে।",
       image: "/facility/facility-classroom.jpg",
-      tag: "ENVIRONMENT"
+      tag: "DIGITAL LEARNING",
     },
     {
       id: 4,
-      titleEn: "Dedicated Hifz Center",
-      titleBn: "ডিকেটেড হিফজ সেন্টার",
-      descEn: "A peaceful and disciplined sanctuary focused purely on accurate Quranic memorization and core moral upbringing.",
-      descBn: "বিশুদ্ধ কুরআন হিফজ এবং উন্নত চরিত্র গঠনের লক্ষ্যে তৈরি সম্পূর্ণ কোলাহলমুক্ত ও সুশৃঙ্খল একটি পরিবেশ।",
+      titleEn: "Science Laboratory",
+      titleBn: "বিজ্ঞানাগার",
+      descEn:
+        "A separate science laboratory supports practical learning and helps students connect classroom lessons with scientific concepts.",
+      descBn:
+        "পৃথক বিজ্ঞানাগার ব্যবহারিক শিক্ষায় সহায়তা করে এবং শ্রেণিকক্ষে শেখা বিষয়গুলোর সঙ্গে বৈজ্ঞানিক ধারণার সম্পর্ক বুঝতে শিক্ষার্থীদের সাহায্য করে।",
+      image: "/facility/facility-laboratory.jpg",
+      tag: "PRACTICAL LEARNING",
+    },
+    {
+      id: 5,
+      titleEn: "Hifzul Quran Section",
+      titleBn: "হিফজুল কুরআন বিভাগ",
+      descEn:
+        "A dedicated section provides opportunities for Quran memorization, with a junior programme for younger children and a full-time Hifz pathway for eligible students.",
+      descBn:
+        "হিফজুল কুরআন বিভাগে ছোট শিশুদের জন্য জুনিয়র কার্যক্রম এবং উপযুক্ত শিক্ষার্থীদের জন্য পূর্ণকালীন হিফজের সুযোগ রয়েছে।",
       image: "/facility/facility-hifz.jpg",
-      tag: "SPIRITUALITY"
-    }
-  ]
+      tag: "QURAN EDUCATION",
+    },
+    {
+      id: 6,
+      titleEn: "School Transport",
+      titleBn: "স্কুল পরিবহন",
+      descEn:
+        "School transport operates on designated routes, with experienced drivers and female attendants to support students during their journeys.",
+      descBn:
+        "নির্ধারিত রুটে স্কুল পরিবহন ব্যবস্থা রয়েছে। যাতায়াতের সময় শিক্ষার্থীদের সহায়তার জন্য অভিজ্ঞ চালক ও নারী সহকারী থাকেন।",
+      image: "/facility/facility-transport.jpg",
+      tag: "TRANSPORT",
+    },
+  ],
 };
+
 
 export default function CampusFacilities() {
   const { lang } = useLanguage();
@@ -68,11 +100,11 @@ export default function CampusFacilities() {
           center={true}
         />
 
-        <div className="relative z-10 grid grid-cols-1 gap-8 mt-16 md:grid-cols-2">
+        <div className="relative z-10 grid grid-cols-1 gap-4 mt-16 md:grid-cols-2 xl:grid-cols-3">
           {cleanData.facilities.map((fac) => (
             <div
               key={fac.id}
-              className="relative overflow-hidden transition-all duration-700 border shadow-sm cursor-pointer group aspect-video rounded-xl xl:rounded-4xl border-neutral-200/50  hover:shadow-2xl"
+              className="relative overflow-hidden transition-all duration-700 border shadow-sm cursor-pointer group aspect-video rounded-xl  border-neutral-200/50  hover:shadow-2xl"
             >
               <div className="absolute inset-0 w-full h-full transition-transform duration-1000 bg-neutral-200  md:group-hover:scale-105">
                 <Image

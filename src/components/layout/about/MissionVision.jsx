@@ -6,32 +6,38 @@ import { useLanguage } from "@/context/LanguageContext";
 import SectionHeader from "@/components/ui/SectionHeader";
 import { FiTarget, FiEye } from "react-icons/fi";
 
+
 const cleanData = {
   header: {
-    badgeEn: "PURPOSE & COMPASS",
+    badgeEn: "PURPOSE & DIRECTION",
     badgeBn: "লক্ষ্য ও দিকনির্দেশনা",
     titleEn: "Our Mission & Vision",
-    titleBn: "আমাদের লক্ষ্য ও দূরদর্শী স্বপ্ন",
+    titleBn: "আমাদের লক্ষ্য ও ভবিষ্যৎ ভাবনা",
   },
   items: [
     {
       id: 1,
       icon: <FiTarget className="w-6 h-6" />,
       titleEn: "Our Mission",
-      titleBn: "আমাদের মিশন",
-      descEn: "To deliver rigorous Cambridge educational standards embedded deeply within Quranic principles, cultivating critical thinkers who are academically elite, technologically fluent, and morally unshakeable.",
-      descBn: "কেমব্রিজ পাঠ্যক্রমের সর্বোচ্চ প্রাতিষ্ঠানিক মানদণ্ডকে পবিত্র কুরআনের তারবিয়াহ ও চিরন্তন আদর্শের সাথে সুনিপুণভাবে মিশ্রিত করা; যাতে আমাদের শিক্ষার্থীরা বিশ্বমানের মেধা ও প্রযুক্তিতে দক্ষ হওয়ার পাশাপাশি নৈতিকভাবে অবিচল ও খাঁটি মানুষ হিসেবে গড়ে ওঠে।",
+      titleBn: "আমাদের লক্ষ্য",
+      descEn:
+        "To provide modern English-medium education alongside Islamic teachings, the values of the Holy Quran and Sunnah, and moral development. We aim to help students gain knowledge, build good character, and develop the skills needed for a responsible and honorable life.",
+      descBn:
+        "আধুনিক ইংরেজি মাধ্যমের শিক্ষার পাশাপাশি পবিত্র কুরআন ও সুন্নাহর শিক্ষা এবং নৈতিক মূল্যবোধ চর্চার সুযোগ তৈরি করা আমাদের লক্ষ্য। শিক্ষার্থীদের জ্ঞান অর্জন, উত্তম চরিত্র গঠন এবং দায়িত্বশীল ও সম্মানজনক জীবন গড়ার প্রয়োজনীয় দক্ষতা অর্জনে সহায়তা করাই আমাদের উদ্দেশ্য।",
     },
     {
       id: 2,
       icon: <FiEye className="w-6 h-6" />,
       titleEn: "Our Vision",
-      titleBn: "আমাদের ভিশন",
-      descEn: "To become a benchmark global citadel of integrated learning, producing generations of leaders who spearhead scientific, intellectual, and societal advancements while beautifully embodying the Prophetic character.",
-      descBn: "সমন্বিত আধুনিক ও ইসলামিক শিক্ষার একটি বিশ্বস্ত বৈশ্বিক রোল-মডেল হওয়া; এমন এক নেতৃত্ব তৈরি করা যারা সুন্নাহর আলোয় নিজেদের চরিত্রকে দীক্ষিত করে পৃথিবীর বৈজ্ঞানিক, বুদ্ধিবৃত্তিক এবং সামাজিক অগ্রগতিতে নেতৃত্ব দেবে।",
+      titleBn: "আমাদের ভবিষ্যৎ ভাবনা",
+      descEn:
+        "To nurture knowledgeable, morally grounded, and responsible individuals through a balanced combination of modern education and Islamic values, preparing them to contribute positively to their families, communities, and society.",
+      descBn:
+        "আধুনিক শিক্ষা ও ইসলামী মূল্যবোধের সমন্বয়ে জ্ঞানী, নৈতিকতাসম্পন্ন ও দায়িত্বশীল মানুষ গড়ে তোলা আমাদের ভবিষ্যৎ ভাবনা। আমরা চাই, শিক্ষার্থীরা নিজেদের পরিবার, সমাজ ও দেশের কল্যাণে ইতিবাচক ভূমিকা রাখুক।",
     },
   ],
 };
+
 
 export default function MissionVision() {
   const { lang } = useLanguage();
