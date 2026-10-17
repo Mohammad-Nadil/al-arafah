@@ -12,7 +12,7 @@ export default function Homepage() {
       <WelcomeMassage />
       <OurFacilities />
       <FeaturedNotice />
-      {/* <HifzHighlights /> */}
+      <HifzHighlights />
     </main>
   );
 }

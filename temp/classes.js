@@ -1,0 +1,35 @@
+export const classEquivalenceData = [
+  {
+    age: "3+",
+    alArafah: "Play Group",
+    british: "Play Group",
+    usa: "Nursery / Pre-K",
+  },
+  { age: "4+", alArafah: "Nursery", british: "Nursery", usa: "Pre-K / LKG" },
+  {
+    age: "5+",
+    alArafah: "KG",
+    british: "Reception / KG",
+    usa: "Kindergarten / UKG",
+  },
+  { age: "6+", alArafah: "Std-I", british: "Year 1", usa: "Grade 1" },
+  { age: "7+", alArafah: "Std-II", british: "Year 2", usa: "Grade 2" },
+  { age: "8+", alArafah: "Std-III", british: "Year 3", usa: "Grade 3" },
+  { age: "9+", alArafah: "Std-IV", british: "Year 4", usa: "Grade 4" },
+  { age: "10+", alArafah: "Std-V", british: "Year 5", usa: "Grade 5" },
+  { age: "11+", alArafah: "Std-VI", british: "Year 6", usa: "Grade 6" },
+  { age: "12+", alArafah: "Std-VII", british: "Year 7", usa: "Grade 7" },
+  { age: "13+", alArafah: "Std-VIII", british: "Year 8", usa: "Grade 8" },
+  {
+    age: "14+",
+    alArafah: "Std-IX",
+    british: "Year 9 / O-Level",
+    usa: "Grade 9 / High School",
+  },
+  {
+    age: "15+",
+    alArafah: "Std-X",
+    british: "Year 10 / O-Level",
+    usa: "Grade 10 / High School",
+  },
+];

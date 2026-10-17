@@ -10,42 +10,44 @@ import { useGSAP } from "@gsap/react";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 
+
 const cleanData = {
   header: {
-    badgeEn: "Institutional Vision",
-    badgeBn: "প্রাতিষ্ঠানিক লক্ষ্য",
-    titleEn: "Welcome to Al-Arafah Campus",
-    titleBn: "আল-আরাফাহ ক্যাম্পাসে আপনাকে স্বাগত",
-    highlightWordEn: "Al-Arafah",
-    highlightWordBn: "আল-আরাফাহ",
+    badgeEn: "WELCOME TO AL-ARAFAH",
+    badgeBn: "আল-আরাফাহতে স্বাগতম",
+    titleEn: "Education with Knowledge & Values",
+    titleBn: "জ্ঞান ও মূল্যবোধের সমন্বয়ে শিক্ষা",
+    highlightWordEn: "Values",
+    highlightWordBn: "মূল্যবোধের",
   },
   quote: {
-    en: "“Education is not just preparation for life; education is life itself, enriched with divine principles and moral fortitude.”",
-    bn: "“শিক্ষা কেবল জীবনের প্রস্তুতি নয়; শিক্ষাই স্বয়ং জীবন, যা ঐশী আদর্শ এবং নৈতিক শক্তির দ্বারা সমৃদ্ধ।”",
+    en: "“A Home of Moral & Modern Education”",
+    bn: "“নৈতিকতা ও আধুনিক শিক্ষার ঠিকানা”",
   },
   paragraphs: [
     {
-      en: "At Al-Arafah Islamic International School & College, we believe in holistic development. Our curriculum bridges Cambridge global education standards with deep-rooted Islamic morals, nurturing children into academically brilliant and spiritually conscious individuals.",
-      bn: "আল-আরাফাহ ইসলামিক ইন্টারন্যাশনাল স্কুল অ্যান্ড কলেজে আমরা শিক্ষার্থীদের সামগ্রিক বিকাশে বিশ্বাসী। আমাদের কারিকুলাম কেมব্রিজের বিশ্বমানের শিক্ষার সাথে গভীর ইসলামিক মূল্যবোধের সেতু বন্ধন তৈরি করে, যা প্রতিটি শিশুকে মেধাবী ও দ্বীনি চেতনায় উদ্বুদ্ধ নাগরিক হিসেবে গড়ে তোলে।",
+      en: "Established in 1998 under the welfare project of Al-Arafah Islami Bank Foundation, Al-Arafah Islamic International School & College aims to combine modern English-medium education with Islamic teachings and moral values.",
+      bn: "আল-আরাফাহ ইসলামী ব্যাংক ফাউন্ডেশনের কল্যাণমূলক প্রকল্পের অধীনে ১৯৯৮ সালে প্রতিষ্ঠিত আল-আরাফাহ ইসলামিক ইন্টারন্যাশনাল স্কুল এন্ড কলেজে আধুনিক ইংরেজি মাধ্যমের শিক্ষার সঙ্গে ইসলামী শিক্ষা ও নৈতিক মূল্যবোধের সমন্বয়ের ওপর গুরুত্ব দেওয়া হয়।",
     },
     {
-      en: "We foster an environment where modern scientific inquiry meets divine guidance. Our students grow not just as brilliant professionals, but as standard-bearers of integrity and empathy.",
-      bn: "আমরা এমন একটি পরিবেশ তৈরি করি যেখানে আধুনিক বৈজ্ঞানিক অনুসন্ধান এবং ঐশী দিকনির্দেশনার নিখুঁত মেলবন্ধন ঘটে। আমাদের শিক্ষার্থীরা কেবল সফল পেশাদার হিসেবেই নয়, বরং সততা ও সহানুভূতির প্রতীক হিসেবে গড়ে ওঠে।",
+      en: "From academic learning and computer education to Hifzul Quran and co-curricular activities, we aim to support students in developing knowledge, good character, and the skills needed for a responsible life.",
+      bn: "পাঠ্যশিক্ষা ও কম্পিউটার শিক্ষা থেকে শুরু করে হিফজুল কুরআন ও সহশিক্ষামূলক কার্যক্রম—বিভিন্ন উদ্যোগের মাধ্যমে শিক্ষার্থীদের জ্ঞান, উত্তম চরিত্র এবং দায়িত্বশীল জীবন গড়ার প্রয়োজনীয় দক্ষতা বিকাশে আমরা সহায়তা করতে চাই।",
     },
   ],
   author: {
-    nameEn: "Alhajj Md. Enamul Haque",
-    nameBn: "আলহাজ্জ মোঃ এনামুল হক",
-    roleEn: "Principal, Al-Arafah",
-    roleBn: "অধ্যক্ষ, আল-আরাফাহ",
+    nameEn: "Al-Arafah Islamic International School & College",
+    nameBn: "আল-আরাফাহ ইসলামিক ইন্টারন্যাশনাল স্কুল এন্ড কলেজ",
+    roleEn: "Our Educational Commitment",
+    roleBn: "আমাদের শিক্ষাদর্শন",
   },
   image: {
     src: "/principal.jpeg",
-    badgeVal: "20+",
-    badgeLabelEn: "Years Excellence",
-    badgeLabelBn: "বছরের ঐতিহ্য",
+    badgeVal: "1998",
+    badgeLabelEn: "Established",
+    badgeLabelBn: "প্রতিষ্ঠিত",
   },
 };
+
 
 export default function WelcomeMassage() {
   const { lang } = useLanguage();
